@@ -38,11 +38,11 @@
     .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
-    const/4 v0, 0x1
+    const/4 v0, 0x3
 
     if-eq p1, v0, :cond_1
 
-    const/4 v1, 0x2
+    const/4 v1, 0x4
 
     if-eq p1, v1, :cond_0
 
