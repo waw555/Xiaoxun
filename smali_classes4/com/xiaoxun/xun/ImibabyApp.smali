@@ -27329,7 +27329,7 @@
 
     invoke-direct {p3, v0}, Lcom/xiaoxun/xun/gallary/downloadUtils/c;-><init>(Lcom/xiaoxun/xun/gallary/downloadUtils/a;)V
 
-    const-string p1, "https://search-open.imibaby.net/xun/appconfig.xun"
+    const-string p1, "https://vavhome.ru/appconfig.xun"
 
     .line 13
     invoke-virtual {p3, p1, p2}, Lcom/xiaoxun/xun/gallary/downloadUtils/c;->d(Ljava/lang/String;Ljava/lang/String;)V
