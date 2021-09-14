@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/user_head" android:clickable="true" android:layout_width="69.29999dip" android:layout_height="69.29999dip" android:layout_marginTop="47.329987dip">
+                <ImageButton android:layout_gravity="center" android:background="@drawable/head_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/mask" />
+            </FrameLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="52.0dip">
+                <EditText android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/dark_grey" android:textColorHint="@color/color_hint" android:id="@id/edit_nickname" android:background="@drawable/input_box" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/input_baby_nickname" android:maxLines="1" android:singleLine="true" android:maxLength="6" android:layout_centerHorizontal="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+                <ImageButton android:id="@id/nickname_delete_keyword" android:background="@drawable/delete_keyword" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.659973dip" android:layout_alignRight="@id/edit_nickname" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_sex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.329987dip" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip">
+                <Button android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/white" android:id="@id/sel_sex_male" android:background="@drawable/selsex_left_focus" android:layout_width="156.66dip" android:layout_height="40.659973dip" android:text="@string/male" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/red_color" android:id="@id/sel_sex_female" android:background="@drawable/selsex_right_unfocus" android:layout_width="156.66dip" android:layout_height="40.659973dip" android:text="@string/female" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.329987dip">
+                <EditText android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/dark_grey" android:textColorHint="@color/color_hint" android:id="@id/edit_phonenum" android:background="@drawable/input_box" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/set_watch_phonenum" android:maxLines="1" android:maxLength="18" android:layout_centerHorizontal="true" android:inputType="phone" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+                <ImageButton android:id="@id/number_delete_keyword" android:background="@drawable/delete_keyword" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.659973dip" android:layout_alignRight="@id/edit_phonenum" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:layout_gravity="center_horizontal" android:id="@id/tv_edit_phonenum_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/set_watch_phonenum_guide" android:layout_alignParentRight="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:id="@id/btn_next_step" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="21.299988dip" android:text="@string/security_zone_next" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+    <RelativeLayout android:orientation="vertical" android:id="@id/layer_waiting" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginBottom="200.0dip" android:indeterminateDrawable="@drawable/loading_progessbar" android:indeterminateDuration="800" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

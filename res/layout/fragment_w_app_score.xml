@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="14.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/wapp_detail_desc" layout="@layout/wapp_detail_desc" />
+            <RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="24.0dip" android:paddingEnd="24.0dip">
+                <TextView android:textSize="15.0sp" android:textColor="@color/alipay_666666" android:id="@id/tv_comment" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:id="@id/rl_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_score" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <com.xiaoxun.xun.views.SimpleRatingBar android:id="@id/scoreratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36.0dip" app:srb_borderColor="#ffff5a00" app:srb_drawBorderEnabled="true" app:srb_fillColor="#ffff5a00" app:srb_numberOfStars="5" app:srb_rating="5.0" app:srb_starBackgroundColor="#ffffffff" app:srb_starBorderWidth="8.0" app:srb_starSize="40.0dip" app:srb_stepSize="1.0" />
+                        <TextView android:textSize="15.0sp" android:textColor="@color/alipay_666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/comment_des" />
+                        <EditText android:textSize="17.0sp" android:gravity="start" android:id="@id/et_comment_content" android:background="@drawable/edit_bg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="13.0dip" android:hint="@string/say_your_feel" android:inputType="textMultiLine" android:imeOptions="actionDone" />
+                        <View android:id="@id/view_bottom" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.66dip" android:layout_below="@id/layout_score">
+                        <Button android:textSize="@dimen/MyTextSize2" android:textColor="@color/white" android:id="@id/btn_send_comment" android:background="@drawable/btn_comment_selector" android:layout_width="313.33594dip" android:layout_height="39.329987dip" android:text="@string/send_comment" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/tv_repair_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <TextView android:id="@id/tv_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toStartOf="@id/tv_track_status" />
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tv_track_status" android:background="@color/bg_color_orange" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" />
+        <TextView android:id="@id/tv_user_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/repair_use_desc" android:layout_below="@id/tv_subject" />
+        <TextView android:id="@id/tv_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_subject" android:layout_toEndOf="@id/tv_user_desc" />
+        <TextView android:id="@id/tv_staff_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="2.0dip" android:text="@string/repair_staff_desc" android:layout_below="@id/tv_subject" android:layout_toEndOf="@id/tv_user_name" />
+        <TextView android:id="@id/tv_staff_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_subject" android:layout_toEndOf="@id/tv_staff_desc" />
+        <TextView android:id="@id/tv_update_time_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/repair_update_at" android:layout_below="@id/tv_user_desc" />
+        <TextView android:id="@id/tv_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/tv_user_desc" android:layout_toEndOf="@id/tv_update_time_desc" />
+        <EditText android:textSize="12.0dip" android:gravity="left" android:id="@id/repair_reply_content" android:background="@drawable/inputbox_whitenum" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="2.0dip" android:hint="@string/repair_edittext_hint" android:layout_below="@id/tv_update_time" />
+        <TextView android:gravity="center" android:id="@id/tv_repair_photo" android:background="@color/line_grey" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/repair_reply_photo" android:layout_below="@id/repair_reply_content" />
+        <TextView android:gravity="center" android:id="@id/tv_repair_photo_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/repair_reply_content" android:layout_toEndOf="@id/tv_repair_photo" />
+        <ImageView android:id="@id/iv_clear_photo_list" android:background="@drawable/fail_icon" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignTop="@id/tv_repair_photo_desc" android:layout_alignParentEnd="true" />
+        <Button android:id="@id/bt_reply" android:background="@drawable/common_button_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/repair_reply_button" android:layout_below="@id/tv_repair_photo_desc" />
+        <TextView android:id="@id/tv_repair_replay_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/bt_reply" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaoxun.xun.BehaviorManager.views.LocalStatView android:paddingLeft="20.0dip" android:paddingBottom="40.0dip" android:layout_width="fill_parent" android:layout_height="300.0dip" app:exampleDimension="24.0sp" app:exampleDrawable="@android:drawable/ic_menu_add" app:exampleString="Hello, LocalStatView" style="@style/Widget.FullBleedTheme.MyView" />
+</FrameLayout>

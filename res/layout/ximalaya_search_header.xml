@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <RelativeLayout android:id="@id/layer_album1" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_album1" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_story_main" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_loveStory" android:singleLine="true" android:layout_below="@id/iv_album1" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album2" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_album2" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_english" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_englishEar" android:singleLine="true" android:layout_below="@id/iv_album2" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album3" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_cultureNice" android:singleLine="true" android:layout_below="@id/iv_album3" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album3" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_masterpiece" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album4" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:id="@id/tv_album_name4" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_childrenSong" android:singleLine="true" android:layout_below="@id/iv_album4" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album4" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_song" android:layout_alignParentTop="true" android:layout_alignStart="@id/tv_album_name4" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album5" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/iv_album5" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_science" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_knowledgeScient" android:singleLine="true" android:layout_below="@id/iv_album5" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <RelativeLayout android:id="@id/layer_album6" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:id="@id/tv_album_name6" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_nationEducation" android:singleLine="true" android:layout_below="@id/iv_album6" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album6" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_chinese" android:layout_alignParentTop="true" android:layout_alignStart="@id/tv_album_name6" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album7" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:id="@id/tv_album_name7" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_parentSchool" android:singleLine="true" android:layout_below="@id/iv_album7" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album7" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_parenting" android:layout_alignParentTop="true" android:layout_alignStart="@id/tv_album_name7" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album8" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_babyShow" android:singleLine="true" android:layout_below="@id/iv_album8" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album8" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_children" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album9" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_cartoonAnimation" android:singleLine="true" android:layout_below="@id/iv_album9" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album9" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_cartoon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layer_album10" android:background="@drawable/setting_item_selector" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_7" android:gravity="center" android:id="@id/tv_album_name10" android:layout_width="60.0dip" android:layout_height="26.699982dip" android:text="@string/ximalaya_search_class_primarySchool" android:singleLine="true" android:layout_below="@id/iv_album10" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/iv_album10" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ximalaya_study" android:layout_alignParentTop="true" android:layout_alignStart="@id/tv_album_name10" />
+        </RelativeLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/halftrans" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ximalaya_hot_focus" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xiaomi_bg_grey" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/history_bill_title" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:id="@id/iv_title_back_layout" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginStart="13.329987dip" android:layout_alignParentStart="true">
+                <ImageButton android:layout_gravity="center" android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_title_layout" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/title_white_color" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/calendar_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@id/bill_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/history_bill_title" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="23.329987dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/xiaomiMyTextSize12" android:id="@id/bill_detail" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recharge_record_detail" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/xiaomiMyTextSize12" android:id="@id/recharge_rec" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recharge_record" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

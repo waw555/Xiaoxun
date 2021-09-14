@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/cardName" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/cardType" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/cardNo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/cardBalance" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:id="@id/cardStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/updateCardButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/update_card" android:layout_weight="1.0" />
+        <Button android:id="@id/issueButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/issue_card" android:layout_weight="1.0" />
+        <Button android:id="@id/defaultButton" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/set_default_card" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

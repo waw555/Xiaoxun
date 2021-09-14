@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reloadView" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/true_black" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.329987dip" android:text="@string/trace_retry_prompt_title" />
+            <View android:background="@color/line_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="23.329987dip" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:layout_gravity="left" android:id="@id/contentText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="23.329987dip" android:layout_marginRight="30.0dip" android:text="@string/trace_retry_prompt_msg" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.669983dip" android:layout_marginBottom="23.329987dip">
+                <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/cancelBtn" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginStart="23.0dip" />
+                <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/confirmBtn" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/retry" android:layout_weight="1.0" android:layout_marginEnd="23.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/waitingView" android:paddingBottom="23.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/exclamation" android:background="@drawable/exclamation_mark_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginTop="3.0dip" />
+                <ProgressBar android:id="@id/loadingBar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="23.329987dip" android:indeterminateDrawable="@drawable/normal_load" android:indeterminateDuration="800" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/waitingText" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginLeft="12.0dip" android:text="正在更新当天数据" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

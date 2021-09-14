@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="sg_download" path="SGDOWNLOAD" />
+    <cache-path name="sg_apk" path="apk" />
+    <external-files-path name="sg_apk" path="apk" />
+    <paths>
+        <root-path name="apk" path="sdcard" />
+    </paths>
+</paths>

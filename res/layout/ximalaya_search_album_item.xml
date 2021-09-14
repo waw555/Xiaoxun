@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_search_album_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="69.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/iv_album_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/track_default" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.699982dip" android:layout_marginRight="13.699982dip" android:layout_toRightOf="@id/iv_album_icon" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:textColor="@color/color_7" android:id="@id/tv_album_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ximalaya_story_album_default" android:layout_toLeftOf="@id/iv_downloading" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_13" android:id="@id/tv_album_hot_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="11345" android:layout_below="@id/tv_album_name" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_13" android:id="@id/tv_album_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="20k" android:layout_toRightOf="@id/tv_album_hot_show" android:layout_alignBaseline="@id/tv_album_hot_show" />
+        </RelativeLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

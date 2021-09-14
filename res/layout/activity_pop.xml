@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/halftrans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_set_top_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:background="@color/color_11" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <ImageButton android:id="@id/btn_set_top" android:background="@drawable/btn_chat_long_click_item" android:layout_width="fill_parent" android:layout_height="49.659973dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/dark_grey" android:id="@id/tv_set_top_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.299988dip" android:text="@string/set_top" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

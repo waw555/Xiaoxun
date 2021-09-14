@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_setting="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <android.support.v7.widget.CardView android:id="@id/card_netdisk_authorization" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_marginTop="20.0dip" android:layout_marginStart="13.299988dip" android:layout_marginEnd="13.299988dip" app:cardCornerRadius="8.0dip">
+            <RelativeLayout android:orientation="vertical" android:id="@id/line_head" android:background="@drawable/bg_watch_detail" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <FrameLayout android:id="@id/user_head" android:clickable="true" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="35.0dip" android:layout_marginBottom="35.0dip" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip">
+                    <ImageButton android:layout_gravity="center" android:background="@drawable/avatar_bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/head_2" />
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:id="@id/line_username" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_alignTop="@id/user_head" android:layout_centerHorizontal="true" android:layout_toEndOf="@id/user_head">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize0" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nickname" />
+                </LinearLayout>
+                <ImageView android:id="@id/iv_edit_username" android:background="@drawable/bianji" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_toRightOf="@id/line_username" android:layout_alignTop="@id/line_username" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/white" android:id="@id/tv_need_admin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen7" android:text="@string/need_admit_edit" android:layout_below="@id/line_username" android:layout_toEndOf="@id/user_head" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_phone_number" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" app:tv_title="@string/phone_number" app:tv_title_size="@dimen/xiaomiMyTextSize3" />
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_sex" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" app:tv_title="@string/sex" app:tv_title_size="@dimen/xiaomiMyTextSize3" />
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_birthday" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" app:tv_title="@string/birthday" app:tv_title_size="@dimen/xiaomiMyTextSize3" />
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_height" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" app:tv_title="@string/height" app:tv_title_size="@dimen/xiaomiMyTextSize3" />
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_weight" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" app:tv_title="@string/weight" app:tv_title_size="@dimen/xiaomiMyTextSize3" />
+            <RelativeLayout android:id="@id/layout_rl_qrcode" android:background="@drawable/setting_item_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight">
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_qrcode" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" app:tv_title="@string/two_dimension_code" app:tv_title_size="@dimen/xiaomiMyTextSize3" />
+                <ImageView android:background="@drawable/title_qr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="41.659973dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

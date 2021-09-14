@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/layout_statusbar" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:layout_constraintStart_toStartOf="parent" custom_setting:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/layout_statusbar_seat" />
+    </android.support.constraint.ConstraintLayout>
+    <RelativeLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="@dimen/fragment_title_height" android:layout_below="@id/layout_statusbar">
+        <ImageButton android:id="@id/iv_title_menu" android:background="@drawable/btn_user_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.659973dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/iv_red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.659973dip" android:layout_marginRight="12.659973dip" android:src="@drawable/indicator" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/color_tile_content" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:maxEms="10" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/pg_progressf" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:progressDrawable="@drawable/progressbar_bg" android:layout_below="@id/title" style="?android:progressBarStyleHorizontal" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/swipe_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/pg_progressf">
+        <com.xiaoxun.xun.views.MyWebView android:id="@id/webcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <View android:background="@color/color_9" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

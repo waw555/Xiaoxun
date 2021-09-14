@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ksad_aggregate_web_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ksad_aggregate_web_titlebar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/ksad_aggregate_web_navi_back" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:src="@drawable/ksad_navi_back_selector" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ksad_aggregate_web_ad_icon" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="10.0dip" android:layout_marginRight="16.0dip" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.kwad.sdk.core.page.widget.webview.KsAdWebView android:id="@id/ksad_aggregate_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

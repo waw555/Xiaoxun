@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/video_call_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_call_wait" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_videocall_control">
+        <FrameLayout android:id="@id/watch_head" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true">
+            <ImageButton android:layout_gravity="center" android:background="@drawable/avatar_bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:id="@id/iv_watch_head" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/head_2" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/white" android:id="@id/tv_videocall_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/videocall_request_ing" android:layout_below="@id/watch_head" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_call_ing" android:background="@drawable/video_call_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/dimen17" android:layout_above="@id/tv_videocall_time">
+        <RelativeLayout android:id="@id/layout_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/remote_video_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+            <FrameLayout android:id="@id/local_video_view" android:layout_width="@dimen/localview_width" android:layout_height="@dimen/localview_width" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_videocall_location" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_video_view" android:layout_alignParentBottom="true">
+            <FrameLayout android:id="@id/layout_videocall_map" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+            <FrameLayout android:id="@id/layout_videocall_mask" android:background="@color/color_hint" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" />
+            <ImageView android:id="@id/iv_videocall_location" android:background="@drawable/icon_videocall_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dip" />
+            <TextView android:textSize="@dimen/textsize_dimen18" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/tv_videocall_location" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:singleLine="true" android:layout_alignParentBottom="true" android:marqueeRepeatLimit="marquee_forever" android:layout_toEndOf="@id/iv_videocall_location" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_videocall_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen17" android:layout_above="@id/layout_videocall_control" />
+    <android.support.constraint.ConstraintLayout android:orientation="horizontal" android:id="@id/layout_videocall_control" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dimen46" android:layout_alignParentBottom="true" app:layout_constraintHorizontal_chainStyle="spread">
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_switch_watch_camera" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/layout_audio_mute" app:layout_constraintStart_toStartOf="parent">
+            <ImageView android:id="@id/btn_switch_watch_camera" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_switch_watch_camera_selecter" android:scaleType="centerInside" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/videocall_switch_watch_camera" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_audio_mute" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/layout_end_call" app:layout_constraintStart_toEndOf="@id/layout_switch_watch_camera">
+            <ImageView android:id="@id/btn_audio_mute" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_audiomute_on_selecter" android:scaleType="centerInside" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/watch_volume_silence" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_end_call" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/layout_answer" app:layout_constraintStart_toEndOf="@id/layout_audio_mute">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_hangup_selecter" android:scaleType="centerInside" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/videocall_cancel" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_answer" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/layout_switch_local_camera" app:layout_constraintStart_toEndOf="@id/layout_end_call">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_answer_selecter" android:scaleType="centerInside" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/videocall_accept" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_switch_local_camera" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toStartOf="@id/layout_video_record" app:layout_constraintStart_toEndOf="@id/layout_answer">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_switch_local_camera_selecter" android:scaleType="centerInside" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/videocall_switch_local_camera" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_video_record" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/layout_switch_local_camera">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/btn_switch_local_camera_selecter" android:scaleType="centerInside" />
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_video_record" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:text="@string/videocall_video_record_start" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

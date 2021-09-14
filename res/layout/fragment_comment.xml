@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" app:guidance_text_color="@color/txt_grey" app:guidance_view_bg_color="@color/transparent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:load_text="加载更多" app:progress_bar_color="@color/bg_color_orange" app:refresh_text="下拉刷新">
+        <android.support.v7.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout>
+</LinearLayout>

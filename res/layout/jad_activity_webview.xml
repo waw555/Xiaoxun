@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jad_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@color/jad_white" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/jad_toolbar_back" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/jad_back_close" android:scaleType="center" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:ellipsize="end" android:gravity="center" android:id="@id/jad_toolbar_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" />
+        <View android:layout_width="48.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:background="@color/jad_common_half_alpha" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.jd.ad.sdk.widget.LollipopFixedWebView android:id="@id/jad_webView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

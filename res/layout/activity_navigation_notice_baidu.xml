@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/navigation_notice_title" layout="@layout/activity_title" />
+    <com.baidu.mapapi.map.MapView android:id="@id/map_baidu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottomtitle" android:layout_below="@id/navigation_notice_title" />
+    <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="185.0dip" android:layout_below="@id/navigation_notice_title" android:layout_marginEnd="13.0dip" android:layout_alignParentEnd="true">
+        <include android:id="@id/layout_zoom" layout="@layout/layout_map_zoom" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/bottomtitle" android:background="@drawable/bottom_navigation_bar" android:layout_width="fill_parent" android:layout_height="79.66dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="79.0dip">
+            <ImageView android:id="@id/iv_navigation_notice_head" android:background="@drawable/location_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="19.329987dip" android:layout_marginBottom="19.329987dip" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="23.329987dip" android:layout_toRightOf="@id/iv_navigation_notice_head" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/color_7" android:id="@id/tv_bottom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:id="@id/tv_bottom_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_5" android:id="@id/tv_bottom_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

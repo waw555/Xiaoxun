@@ -1,0 +1,100 @@
+.class Lcom/xiaoxun/xun/e/b/a$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnLongClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaoxun/xun/e/b/a;->g(Lcom/xiaoxun/xun/NoticeManage/message/system/bean/SystemMessage;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/xiaoxun/xun/NoticeManage/message/system/bean/SystemMessage;
+
+.field final synthetic b:Lcom/xiaoxun/xun/e/b/a;
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaoxun/xun/e/b/a;Lcom/xiaoxun/xun/NoticeManage/message/system/bean/SystemMessage;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/xiaoxun/xun/e/b/a$b;->b:Lcom/xiaoxun/xun/e/b/a;
+
+    iput-object p2, p0, Lcom/xiaoxun/xun/e/b/a$b;->a:Lcom/xiaoxun/xun/NoticeManage/message/system/bean/SystemMessage;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onLongClick(Landroid/view/View;)Z
+    .locals 7
+
+    .line 1
+    iget-object p1, p0, Lcom/xiaoxun/xun/e/b/a$b;->b:Lcom/xiaoxun/xun/e/b/a;
+
+    new-instance v6, Lcom/xiaoxun/xun/activitys/e;
+
+    iget-object v0, p0, Lcom/xiaoxun/xun/e/b/a$b;->b:Lcom/xiaoxun/xun/e/b/a;
+
+    invoke-static {v0}, Lcom/xiaoxun/xun/e/b/a;->c(Lcom/xiaoxun/xun/e/b/a;)Landroid/app/Activity;
+
+    move-result-object v1
+
+    new-instance v2, Lcom/xiaoxun/xun/e/b/a$b$a;
+
+    invoke-direct {v2, p0}, Lcom/xiaoxun/xun/e/b/a$b$a;-><init>(Lcom/xiaoxun/xun/e/b/a$b;)V
+
+    new-instance v3, Lcom/xiaoxun/xun/e/b/a$b$b;
+
+    invoke-direct {v3, p0}, Lcom/xiaoxun/xun/e/b/a$b$b;-><init>(Lcom/xiaoxun/xun/e/b/a$b;)V
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v0, v6
+
+    invoke-direct/range {v0 .. v5}, Lcom/xiaoxun/xun/activitys/e;-><init>(Landroid/app/Activity;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
+
+    invoke-static {p1, v6}, Lcom/xiaoxun/xun/e/b/a;->e(Lcom/xiaoxun/xun/e/b/a;Lcom/xiaoxun/xun/activitys/e;)Lcom/xiaoxun/xun/activitys/e;
+
+    .line 2
+    iget-object p1, p0, Lcom/xiaoxun/xun/e/b/a$b;->b:Lcom/xiaoxun/xun/e/b/a;
+
+    invoke-static {p1}, Lcom/xiaoxun/xun/e/b/a;->d(Lcom/xiaoxun/xun/e/b/a;)Lcom/xiaoxun/xun/activitys/e;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/xiaoxun/xun/e/b/a$b;->b:Lcom/xiaoxun/xun/e/b/a;
+
+    invoke-static {v0}, Lcom/xiaoxun/xun/e/b/a;->c(Lcom/xiaoxun/xun/e/b/a;)Landroid/app/Activity;
+
+    move-result-object v0
+
+    const v1, 0x7f0a0b33
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    const/16 v1, 0x11
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p1, v0, v1, v2, v2}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
+
+    return v2
+.end method

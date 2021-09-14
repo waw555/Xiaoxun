@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_watch_item" android:background="@drawable/shape_corner_notice" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <RelativeLayout android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ImageView android:id="@id/iv_watch_head" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <ImageView android:id="@id/iv_red_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/point" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textColor="@color/true_black" android:id="@id/watch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

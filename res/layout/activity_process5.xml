@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_process4" android:background="@drawable/process_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+            <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_finish_guide_process5_title0" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/process5_bg" />
+            <TextView android:textColor="@color/bind_finish_guide_words_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/bind_finish_guide_process4_content" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ly_btm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true">
+                <Button android:textSize="17.0sp" android:textColor="@color/bind_finish_guide_words_color" android:id="@id/btn_pre" android:background="@drawable/btn_guide_process_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/last_step" android:layout_marginEnd="15.0dip" />
+                <Button android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/btn_next" android:background="@drawable/btn_guide_process_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_finish_guide_process4_btn" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

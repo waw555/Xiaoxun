@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/fragment_title_height">
+        <ImageButton android:id="@id/iv_alipaytitle_back" android:background="@drawable/btn_select_alipay_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="13.299988dip" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_alipay_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/alipay_aaaaaa" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

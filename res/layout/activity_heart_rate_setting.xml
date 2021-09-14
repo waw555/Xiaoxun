@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/title">
+        <ImageView android:background="@color/color_content_hint" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+            <TextView android:textSize="15.0sp" android:textColor="@color/txt_coupon_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/heart_rate_setting_enable_all_day" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+            <ToggleButton android:id="@id/all_day_switch" android:background="@drawable/switch_toggle_selector" android:layout_width="40.0dip" android:layout_height="24.0dip" android:checked="false" android:textOn="@null" android:textOff="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/color_low_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="15.0dip" android:text="@string/heart_rate_setting_all_day_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

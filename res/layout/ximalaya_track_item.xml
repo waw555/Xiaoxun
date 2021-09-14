@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_track_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="69.0dip" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/iv_track" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/track_default" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.699982dip" android:layout_marginRight="13.699982dip" android:layout_toLeftOf="@id/btn_download_to_watch" android:layout_toRightOf="@id/iv_track" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:textColor="@color/color_7" android:id="@id/tv_track_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="专辑名称" android:layout_toLeftOf="@id/iv_downloading" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_13" android:id="@id/tv_track_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="25'45''" android:layout_below="@id/tv_track_name" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_13" android:id="@id/tv_track_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="1024k" android:layout_toRightOf="@id/tv_track_duration" android:layout_alignBaseline="@id/tv_track_duration" />
+            <Button android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/white" android:id="@id/iv_downloading" android:background="@drawable/watch_file_downloading_bg" android:visibility="gone" android:layout_width="60.659973dip" android:layout_height="30.0dip" android:text="下载中" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <Button android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_13" android:id="@id/btn_download_to_watch" android:background="@drawable/btn_system_update_selector" android:layout_width="60.659973dip" android:layout_height="30.0dip" android:text="下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <CheckBox android:layout_gravity="center_vertical" android:id="@id/select_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

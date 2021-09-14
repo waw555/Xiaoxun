@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_title" layout="@layout/activity_title" />
+    <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:id="@id/tv_function_tips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginTop="18.0dip" android:layout_marginRight="23.329987dip" android:layout_marginBottom="8.0dip" android:text="@string/bind_app_manager_tips" android:layout_below="@id/layout_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_app_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginBottom="18.0dip" android:layout_above="@id/btn_next_step" android:layout_below="@id/tv_function_tips" />
+    <Button android:enabled="true" android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:id="@id/btn_next_step" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="21.299988dip" android:text="@string/security_finish_next" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:onClick="onComplete" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+</RelativeLayout>

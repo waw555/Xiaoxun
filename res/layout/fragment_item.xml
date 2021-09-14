@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textAppearance="?textAppearanceListItem" android:textSize="15.0sp" android:ellipsize="end" android:id="@id/content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen16" android:maxLines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/tv_arrow" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/tv_arrow" android:background="@drawable/list_btn_xiayibu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/divide_line" android:background="@color/txt_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

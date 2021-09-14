@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/send_time" android:layout_width="311.32812dip" android:layout_height="wrap_content" android:layout_marginTop="18.659973dip" android:layout_marginBottom="10.329987dip">
+        <ImageView android:background="@color/chat_item_text" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toLeftOf="@id/chat_send_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/m_a_spliter_line" android:id="@id/chat_send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:text="nihao" android:layout_centerInParent="true" />
+        <ImageView android:background="@color/chat_item_text" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/chat_send_time" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.329987dip" android:layout_marginRight="70.0dip">
+        <ImageView android:id="@id/left_head" android:layout_width="38.659973dip" android:layout_height="38.659973dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.659973dip" android:src="@drawable/head_1" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_5" android:id="@id/chat_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.659973dip" android:text="" android:layout_toRightOf="@id/left_head" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.659973dip" android:layout_marginTop="6.659973dip" android:layout_toRightOf="@id/left_head" android:layout_below="@id/chat_nickname">
+            <ImageView android:id="@id/iv_left_image_content" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/iv_left_image_play" android:background="@drawable/video_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/tv_video_time" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/iv_left_image_content" android:layout_alignEnd="@id/iv_left_image_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/interval_view" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

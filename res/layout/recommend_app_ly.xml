@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bg_ly" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/content" android:background="@drawable/shape_corner" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="宝宝学习必备软件" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_content_hint" android:layout_gravity="center_horizontal" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="98%的家长都给宝宝安装一下学习软件，98%\n的家长都给宝宝安装一下学习软件" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <Button android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/btn_install" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="28.0dip" android:text="@string/app_recommend_install" />
+        </LinearLayout>
+        <Button android:id="@id/close" android:background="@drawable/new_close" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="50.0dip" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

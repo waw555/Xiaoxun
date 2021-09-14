@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title2" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_wifi_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title" custom_setting:tv_title="@string/wifi_name" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_wifi_pwd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_wifi_name" custom_setting:tv_title="@string/wifi_password" />
+    <RelativeLayout android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/layout_wifi_pwd">
+        <ImageView android:id="@id/iv_warnning" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_warning_yellow" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/txt_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen13" android:layout_marginBottom="@dimen/dimen13" android:text="@string/manual_add_wifi_desc" android:layout_marginStart="@dimen/dimen7" android:layout_toEndOf="@id/iv_warnning" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title2" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/layout_member_avatar" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_avatar" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_avatar_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                <FrameLayout android:layout_width="33.329987dip" android:layout_height="33.329987dip" android:layout_centerVertical="true" android:layout_marginEnd="18.329987dip" android:layout_toStartOf="@id/iv_avatar_next">
+                    <ImageButton android:layout_gravity="center" android:background="@drawable/avatar_bottom_2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageView android:layout_gravity="center" android:id="@id/iv_member_avatar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/relation_custom" />
+                </FrameLayout>
+            </RelativeLayout>
+            <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_group_nickname" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_nickname" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_nickname_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/tv_group_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerVertical="true" android:layout_marginEnd="18.329987dip" android:layout_toStartOf="@id/iv_nickname_next" />
+            </RelativeLayout>
+            <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/layout_phone_number" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/family_member_list">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_num" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_phone_number_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/tv_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.329987dip" android:text="" android:layout_toLeftOf="@id/iv_phone_number_next" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layout_phone_subnumber" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/family_member_list">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/phone_subnum" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/iv_phone_subnumber_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/tv_phone_subnumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.329987dip" android:text="" android:layout_toLeftOf="@id/iv_phone_subnumber_next" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/family_member_list_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginTop="19.329987dip" android:layout_marginRight="23.329987dip" android:layout_marginBottom="10.0dip" android:text="@string/edit_member_tips" />
+            <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/next_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="86.66dip" android:layout_alignParentBottom="true">
+        <Button android:enabled="true" android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:id="@id/btn_next_step" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="39.329987dip" android:layout_marginBottom="21.299988dip" android:text="@string/security_zone_next" android:layout_centerInParent="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

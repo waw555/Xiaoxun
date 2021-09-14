@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="4.0dip" android:text="京东百货大促销" android:singleLine="true" />
+    <FrameLayout android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_below="@id/desc">
+        <com.fighter.loader.view.VerticalRoundCornImageView android:id="@id/main_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/default_1_78x1" android:scaleType="fitXY" android:adjustViewBounds="true" app:cornerRadius="8.0dip" app:roundedCorners="all" />
+        <FrameLayout android:id="@id/video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/desc" />
+    </FrameLayout>
+    <com.fighter.loader.view.AdSourceView android:id="@id/ad_flag_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/content" android:layout_alignParentRight="true" />
+    <com.fighter.loader.view.BannerMisTouchCloseView android:id="@id/close" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reaper_ad_close_white15" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

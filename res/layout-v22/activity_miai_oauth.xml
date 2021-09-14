@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <ImageView android:id="@id/iv_head_image" android:background="@drawable/user_center_light" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="32.0dip" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/txt_loc_type_black" android:id="@id/tv_mi_oauth_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/miai_function_unbind_state" android:layout_below="@id/iv_head_image" android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerView_miai_fct" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="33.0dip" android:layout_below="@id/tv_mi_oauth_state" />
+    <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:id="@id/btn_miai_unbind" android:background="@drawable/btn_security_next_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginBottom="23.299988dip" android:text="@string/miai_function_unbind" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+    <RelativeLayout android:id="@id/layout_miai_bind" android:background="@color/line_grey" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.CardView android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66.0dip" android:layout_marginRight="66.0dip" android:layout_centerVertical="true" android:layout_marginHorizontal="66.0dip" app:cardCornerRadius="5.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/app_color2" android:id="@id/tv_bind_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="22.0dip" android:text="@string/miai_function_bind_desc" android:layout_marginHorizontal="22.0dip" />
+                <Button android:textSize="@dimen/xiaomiMyTextSize10" android:textColor="@color/white" android:id="@id/btn_miai_bind" android:background="@drawable/bg_miai_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="14.0dip" android:text="@string/miai_function_bind" android:layout_below="@id/tv_bind_desc" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:id="@id/ksad_splash_v_plus" android:background="@drawable/ksad_draw_float_white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/ksad_splash_texture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center" android:id="@id/ksad_splash_frame" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/ksad_splash_close_btn" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/ksad_splash_vplus_close" android:scaleType="centerInside" />
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

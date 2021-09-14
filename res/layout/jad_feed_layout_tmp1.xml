@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dip" android:textColor="#ff222222" android:gravity="center" android:id="@id/jad_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:text="" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/jad_close" android:layout_width="20.0dip" android:layout_height="16.0dip" android:layout_marginRight="0.0dip" android:src="@drawable/jad_ic_close" android:scaleType="fitXY" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/jad_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <include android:layout_gravity="end|bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/jad_ad1" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+        <ImageView android:id="@id/jad_logo" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/jad_jzt_ic" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0dip" android:textColor="#ff7b7b7b" android:gravity="center" android:id="@id/jad_src" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/jad_ad_txt" android:layout_toRightOf="@id/jad_logo" />
+        <TextView android:textSize="6.0dip" android:textColor="#ff3c93cd" android:gravity="center" android:id="@id/jad_download" android:background="@drawable/jad_border_download_btn" android:layout_width="30.0dip" android:layout_height="10.0dip" android:text="@string/jad_download_now" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

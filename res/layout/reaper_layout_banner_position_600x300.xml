@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/main_image_600x300" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/default_1_78x1" android:scaleType="fitXY" />
+    <FrameLayout android:id="@id/video_view_600x300" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/icon_600x300" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+    <com.fighter.loader.view.BannerMisTouchCloseView android:layout_gravity="center|right|top" android:id="@id/close" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/reaper_ad_close_white15" android:layout_marginEnd="5.0dip" />
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.fighter.loader.view.AdSourceView android:id="@id/ad_flag_source_600x300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <RelativeLayout android:orientation="horizontal" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_below="@id/ad_flag_source_600x300">
+            <TextView android:gravity="center_vertical" android:id="@id/ad_creative_button_600x300" android:visibility="visible" android:layout_marginRight="11.0dip" android:text="立即下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="11.0dip" android:layout_alignParentEnd="true" style="@style/CreativeBtn_White_Border" />
+            <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/desc_600x300" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="京东百货大促销京东" android:maxLines="1" android:layout_toLeftOf="@id/ad_creative_button_600x300" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

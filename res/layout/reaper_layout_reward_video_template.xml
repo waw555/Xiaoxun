@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/reaper_reward_video_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        <ImageView android:id="@id/reaper_reward_video_image1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <ImageView android:id="@id/reaper_reward_video_image2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <ImageView android:id="@id/reaper_reward_video_image3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+        <FrameLayout android:id="@id/reaper_reward_video_video_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/reaper_reward_video_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/reaper_ad_reward_video_close" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center|right|top" android:orientation="horizontal" android:id="@id/reaper_reward_video_gift_layout" android:background="@drawable/reaper_reward_video_template_gift_background" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:visibility="visible" android:layout_width="18.0dip" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/reaper_ad_reward_video_gift" android:scaleType="fitXY" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/reaper_ad_reward_video_gift_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="151s后可领取奖励" android:maxLines="1" android:singleLine="true" android:textDirection="locale" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:background="@drawable/reaper_reward_video_template_background" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/reaper_reward_video_download_btn" android:background="@drawable/reaper_reward_video_template_btn_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="20.0dip" android:text="立即下载" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_above="@id/reaper_reward_video_download_btn">
+            <com.fighter.loader.view.RoundCornImageView android:id="@id/reaper_reward_video_icon" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="8.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginEnd="8.0dip" app:cornerRadius="4.0dip" app:roundedCorners="all" />
+            <RelativeLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/reaper_reward_video_title" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="22.0dip" android:text="标题" android:maxLines="1" android:singleLine="true" android:layout_alignParentTop="true" android:textDirection="locale" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/reaper_reward_video_desc" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="18.0dip" android:text="描述" android:maxLines="1" android:singleLine="true" android:layout_below="@id/reaper_reward_video_title" android:textDirection="locale" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.fighter.loader.view.AdSourceView android:layout_gravity="bottom|center|right" android:id="@id/reaper_reward_video_ad_source" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</FrameLayout>

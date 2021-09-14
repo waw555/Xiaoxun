@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_emoji" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="58.0dip" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_emoji_cry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cry" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_nose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nose" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_basketball" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/basketball" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_snot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snot" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_naughty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/naughty" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_smile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/smile" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_flower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flower" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_laugh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/laugh" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_emoji_moon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/moon" android:layout_weight="1.0" />
+</LinearLayout>

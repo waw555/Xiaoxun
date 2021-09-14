@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0dip" android:textColor="#ff222222" android:id="@id/jad_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="12.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/jad_close" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/jad_close" android:layout_width="20.0dip" android:layout_height="16.0dip" android:src="@drawable/jad_ic_close" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/jad_image" android:background="@color/jad_color_accent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <ImageView android:id="@id/jad_ad" android:layout_width="37.0dip" android:layout_height="18.0dip" android:src="@drawable/jad_ic_ad" android:layout_alignTop="@id/jad_image" android:layout_alignParentRight="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:gravity="center|left" android:id="@id/jad_src" android:background="#55000000" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/jad_ad_txt" android:layout_alignBottom="@id/jad_image" />
+    </RelativeLayout>
+</LinearLayout>

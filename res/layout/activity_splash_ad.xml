@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/splashAd" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <RelativeLayout android:id="@id/clost_time_layer" android:layout_width="80.0dip" android:layout_height="40.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="11.439972sp" android:textColor="@color/white" android:gravity="center" android:id="@id/closeTimer" android:background="@drawable/countdown_button_0" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="@string/adview_cancle_focus" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

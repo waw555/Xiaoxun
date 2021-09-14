@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/titleh" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="65.0dip" />
+    <ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/caleander_pop_up" android:outAnimation="@anim/calendar_pop_down" android:layout_below="@id/titleh">
+        <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <ImageButton android:id="@id/btnPreMonth" android:background="@drawable/left_small_arrow_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="33.0dip" android:layout_toLeftOf="@id/tvCurrentMonth" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/btnNextMonth" android:background="@drawable/right_small_arrow_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_toRightOf="@id/tvCurrentMonth" android:layout_centerVertical="true" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff323232" android:id="@id/tvCurrentMonth" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11月" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewFlipper>
+</RelativeLayout>

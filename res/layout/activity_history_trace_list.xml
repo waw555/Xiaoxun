@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xiaomi_bg_grey" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/history_trace_title" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:id="@id/iv_title_back_layout" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="13.329987dip" android:layout_alignParentLeft="true">
+                <ImageButton android:layout_gravity="center" android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_title_layout" android:visibility="visible" android:clickable="true" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/title_white_color" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/calendar_sign" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true">
+                <ImageButton android:layout_gravity="center" android:id="@id/sortbtn" android:background="@drawable/btn_sort_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/history_trace_title">
+        <ListView android:id="@id/trace_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+    </RelativeLayout>
+</RelativeLayout>

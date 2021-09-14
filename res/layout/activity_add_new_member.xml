@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/group_member" />
+    <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:id="@id/tv_add_member_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.299988dip" android:layout_marginTop="10.0dip" android:layout_marginRight="23.299988dip" android:layout_marginBottom="5.0dip" android:text="@string/group_member_info" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+    <RelativeLayout android:id="@id/layout_scan_code" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="49.659973dip" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip">
+        <ImageView android:id="@id/iv_scan_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/code" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.659973dip" android:text="@string/scan_code_invite_member" android:layout_toRightOf="@id/iv_scan_code" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+    <RelativeLayout android:id="@id/layout_wechat" android:background="@drawable/setting_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.659973dip" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip">
+        <ImageView android:id="@id/iv_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wechat" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:id="@id/tv_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.659973dip" android:text="@string/wechat_invite_member" android:layout_toRightOf="@id/iv_wechat" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/cover_wechat" android:background="#b2ffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+    <RelativeLayout android:id="@id/layout_sms" android:background="@drawable/setting_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="49.659973dip" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip">
+        <ImageView android:id="@id/iv_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/messages" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:id="@id/tv_sms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.659973dip" android:text="@string/sms_invite_member" android:layout_toRightOf="@id/iv_sms" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:id="@id/cover_sms" android:background="#b2ffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+    <LinearLayout android:orientation="vertical" android:id="@id/add_call_member_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/call_member" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.299988dip" android:layout_marginTop="10.0dip" android:layout_marginRight="23.299988dip" android:layout_marginBottom="5.0dip" android:text="@string/call_member_info" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+        <RelativeLayout android:id="@id/layout_add_call_member" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="49.659973dip" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip">
+            <ImageView android:id="@id/iv_add_call_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_call_member" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:id="@id/tv_add_call_member" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.659973dip" android:text="@string/add_new_member" android:layout_toRightOf="@id/iv_add_call_member" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:id="@id/cover_add_call_member" android:background="#b2ffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_add_friend" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/watch_friend" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="23.299988dip" android:layout_marginTop="10.0dip" android:layout_marginRight="23.299988dip" android:layout_marginBottom="5.0dip" android:text="@string/watch_friend_info" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+        <RelativeLayout android:id="@id/layout_add_watch_friend" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="49.659973dip" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip">
+            <ImageView android:id="@id/iv_add_watch_friend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_watch_friend" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.659973dip" android:text="@string/add_watch_friend" android:layout_toRightOf="@id/iv_add_watch_friend" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            <View android:id="@id/cover_add_watch_friend" android:background="#b2ffffff" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginRight="23.299988dip" android:src="@color/line_grey" />
+    </LinearLayout>
+</LinearLayout>

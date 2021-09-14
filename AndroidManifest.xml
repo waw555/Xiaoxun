@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" package="com.xiaoxun.xun" platformBuildVersionCode="29" platformBuildVersionName="10">
+    <permission android:name="com.xiaoxun.xun.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaoxun.xun.permission.MIPUSH_RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="com.xiaomi.permission.AUTH_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <permission android:name="com.xiaoxun.xun.permission.PROCESS_PUSH_MSG" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.xiaoxun.xun.permission.PUSH_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.xiaoxun.xun.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.xiaoxun.xun.permission.PROCESS_PUSH_MSG"/>
+    <uses-permission android:name="com.xiaoxun.xun.permission.PUSH_PROVIDER"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="com.xiaomi.passport.permission.PASSPORT_UI_CONTROLLER_SERVICE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="freemme.permission.msa"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <permission android:name="com.xiaoxun.xun.openadsdk.permission.TT_PANGOLIN" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaoxun.xun.openadsdk.permission.TT_PANGOLIN"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <permission android:name="com.xiaoxun.xun.permission.KW_SDK_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xiaoxun.xun.permission.KW_SDK_BROADCAST"/>
+    <instrumentation android:name="android.app.Instrumentation" android:targetPackage="com.xiaoxun.xun" android:targetProcesses="com.xiaoxun.xun,com.xiaoxun.xun:jakiro,com.xiaoxun.xun:sven,com.xiaoxun.xun:slark,com.xiaoxun.xun:ogremagi,com.xiaoxun.xun:bristleback,com.xiaoxun.xun:undying,com.xiaoxun.xun:warlock,com.xiaoxun.xun:earthshaker,com.xiaoxun.xun:bloodseeker,com.xiaoxun.xun:windranger,com.xiaoxun.xun:tusk"/>
+    <uses-permission android:name="qiku.permission.HIDE_NOTIFICATION"/>
+    <permission android:name="com.xiaoxun.xun.reaper.permission.READ_DATA" android:protectionLevel="normal"/>
+    <permission android:name="com.xiaoxun.xun.reaper.permission.WRITE_DATA" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:allowBackup="false" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.xiaoxun.xun.ImibabyApp" android:networkSecurityConfig="@xml/network_config" android:persistent="true" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/FullBleedTheme" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.pay.activity.PayResultActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/WelcomeActivityTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1105920880"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.XunAdSplashActivity" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="xiaoxun"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.xiaoxun.xun.wxapi.WXEntryActivity"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.xiaoxun.xun.wxapi.WXPayEntryActivity"/>
+        <service android:enabled="true" android:exported="true" android:name="com.imibaby.client.ImibabyNFCService">
+            <intent-filter>
+                <action android:name="com.imibaby.client.platform.action.TRANSIT_OPEN_SERVICE"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="BaiduMobAd_APP_ID" android:value="b4a2e68e"/>
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="7jMdwjbN06GnFozXp2ELMEiTtQxwdTNd"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="245d60d16a89d959dcd1b7dd34f2b936"/>
+        <meta-data android:name="com.vivo.push.api_key" android:value="d2cccb66-d6da-435d-8637-bc54f4e657f4"/>
+        <meta-data android:name="com.vivo.push.app_id" android:value="10411"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="10873853"/>
+        <meta-data android:name="app_key" android:value="7373cd8d10ce6ca6de202f4e42fb2e34"/>
+        <meta-data android:name="pack_id" android:value="com.xiaoxun.xun"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="4nGV5BGFFEF5ooenfuiuBZ228eHkoGvT"/>
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="Baidu_Market"/>
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false"/>
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true"/>
+        <provider android:authorities="com.xiaoxun.xun.xun.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.xiaoxun.xun.provider.XunFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xun_file_paths"/>
+        </provider>
+        <provider android:authorities="com.xiaoxun.xun.platform.provider" android:exported="false" android:name="com.miui.tsmclient.database.TSMProvider"/>
+        <provider android:authorities="com.xiaoxun.xun.platform.provider.public" android:exported="false" android:name="com.miui.tsmclient.database.TSMPublicProvider"/>
+        <provider android:authorities="com.xiaoxun.xun.bd.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.baidu.mobads.sdk.api.BdFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/bd_file_paths"/>
+        </provider>
+        <provider android:authorities="com.xiaoxun.xun.gdt.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.qq.e.comm.GDTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gdt_file_path"/>
+        </provider>
+        <provider android:authorities="com.xiaoxun.xun.TTFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.bytedance.sdk.openadsdk.TTFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/bytedance_file_paths"/>
+        </provider>
+        <provider android:authorities="com.xiaoxun.xun.TTMultiProvider" android:exported="false" android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"/>
+        <provider android:authorities="com.xiaoxun.xun.sg_fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sogou.feedads.api.fileprovider.SGFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/sg_sdk_provider_paths"/>
+        </provider>
+        <activity android:name="com.xiaoxun.xun.activitys.AliPayMoneyManageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="imibabyappzfb"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.pay.activity.OrderActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.pay.activity.CashierActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.guideProcess.Process5Activity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.guideProcess.Process4Activity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.guideProcess.Process3Activity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.guideProcess.Process2Activity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.guideProcess.Process1Activity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.guideProcess.GuideProcessActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.HeartRate.HeartRateSettingActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.HeartRate.HeartRateMainActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchManage.activitys.WatchEmergencyAlarmActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.BehaviorManager.activitys.CloudTaskDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.BehaviorManager.activitys.LocalTaskDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.BehaviorManager.activitys.NewTaskActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.BehaviorManager.activitys.BehaviorManagerActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:name="com.vivo.push.sdk.LinkProxyClientActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.xiaomi.assemble.control.DistributeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.MESSAGER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.tencent.connect.common.AssistActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.GuideActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.BindResultActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.ErrorPromptActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.BindNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.FirstSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.WatchFirstSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.MipcaActivityCapture" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.zbar.CaptureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.FamilyMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.DeviceQrActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.VolumeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SilenceModeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SelectTimeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SleepTimeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.OperationMode" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.PowersaveSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchWifiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchWifiActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchWifiListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchWifiSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchWifiAddActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WhitePhoneListRelationshipSet" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WhitePhoneListOtherRelationshipSet" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.FirstSetOtherRelationshipSet" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SilenceVolumeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SecurityZoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SecurityZoneSettings" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.HistoryTraceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.HistoryTraceBaiduActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AlarmClockActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.FunctionControlActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.DeviceAutoAnswerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AlarmClockAddActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AlarmClockBellActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.Alipaytest" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.OffLineMapMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.OffLineMapBaiduMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.DeviceDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.SetDeviceNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="orientation" android:name="com.xiaomi.account.openauth.AuthorizeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.openauth.action.AUTH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SosActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SosBaiduActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.ToWhereActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.xiaoxun.xun.activitys.SosStartActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/SosStartActivityTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SearchOfflineCityMapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.xiaoxun.xun.activitys.SystemUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.mediatek.hotknot.action.MESSAGE_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/com.mtk.btnotification"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.BlankActivity" android:screenOrientation="portrait" android:theme="@style/myDialog" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.DevOptActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AIPersonalizeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.VideoCallChangerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.PaySuccessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.test.TestPointActivityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.BindInputImsiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.SimManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.test.TestLocPolicyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.gallary.GalleryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.gallary.PreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SimBillActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.HelpWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.EngStudyWebActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/title_activity_selecter_call_back_number" android:name="com.xiaoxun.xun.activitys.SelecterCallBackNumber"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AutoCallBackSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.StepsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.StepsSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.StepsTargetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.xiaoxun.xun.activitys.ShareStepsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_test_history_trace" android:name="com.xiaoxun.test.TestHistoryTraceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/title_activity_test_history_trace_eid" android:name="com.xiaoxun.test.TestHistoryTraceEidActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.xiaoxun.xun.activitys.DetailBillActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.xiaoxun.xun.activitys.RechargeRecActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.CallLogActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.HistoryTraceListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AddCallMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.MapSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.APNConfigActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppAboutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.NoLoginMainActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.MainActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.NoticeManage.activitys.SecurityWarnningActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.xiaoxun.xun.activitys.SplashAdActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.AdWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.StoreActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WatchDetailFirstSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AddNewFriendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SearchWatchListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.XimalayaAlbumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.XimalayaTrackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.XimalayaPlayerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.WatchTrackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.WatchTrackDeleChooseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.GroupMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.PrivateMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.test.DrawPathActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.stepsRankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.ShareFamilyRanksActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.RanksAreasActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.XimalayaSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.XimalayaTagAlbumActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.SpamMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.SpamSmsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AddNewMemberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.StoryWifiOnlyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.NoticeListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.NoticeTypeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.NoticeManage.activitys.SecurityWarnningBaiduActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SecurityZoneSettingBaidu" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.VideoDisplayActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WechatNoticeBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WechatBindManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.ImageDisplayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.ImagesDisplayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.FlowStatiticsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.FlowStatiticsSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.MiAIOauthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.MiAIOauthFctActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.NoticeManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.AlipayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:label="@string/app_name" android:name="com.xiaoxun.xun.activitys.AlipayBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppUsageFlowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.VideoCallActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.VideoCallActivity2" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AliMSBindActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.DeviceRepairActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.RepairCommitActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.RepairQueryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.RepairTrackDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.dialBg.DialBgActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.dialBg.CropPreviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.OnlineMusicActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.OnLineMediaPlayerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.RectifyLocationAMapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.NavigationNoticeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.NavigationNoticeBaiduActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.LoginActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.NavigationAuthorityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppManagerTwoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppStoreActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppStoreSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.VideoRecordActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.BindPhoneNumberActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.MiAIServiceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.BindFunctionControlActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.BindAppManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppScoreActivity" android:screenOrientation="portrait" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppDurationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppManageDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.netdisk.activity.BaiduNetdiskActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.netdisk.activity.BaiduNetdiskImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.netdisk.activity.BaiduNetdiskVideoActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AddGroupMemberActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportStepsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportRankActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportRunningActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportChallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportChallDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AgreementAndPrivacyActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.activitys.SportSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.AppDetailNewActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NoticeManage.activitys.SystemMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.BindHelpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.OrderResultActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.DefaultCardDetailActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.CardDetailActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.RechargeOrderActivity" android:screenOrientation="behind" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:launchMode="singleTask" android:name="com.xiaoxun.xun.NFC.TransitCard.OpenCardRechargeActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.TransCardListActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.TransitCardMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.CardListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.FetchCardsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.HomeWiFiSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.FlowStatiticsActivity2" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.netdisk.activity.XiaomiNetdiskActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.netdisk.activity.XiaomiNetdiskImageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.netdisk.activity.XiaomiNetdiskVideoActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleClassSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleWeekSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleTimeSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleSchoolSetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.ScheduleCard.activitys.ScheduleNoticeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.CollisionSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AppPopUpAlertActivity" android:screenOrientation="portrait" android:theme="@style/Translucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.LocationTypeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.XunScoreActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.XunScoreGmallActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xiaoxun.xun.OfflineMap.Activitys.SearchCityActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.xiaoxun.xun.OfflineMap.Activitys.OfflineMapActivity" android:screenOrientation="behind" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.DoorCard.DoorCardIssueActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="doorcard" android:scheme="imibaby"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.DoorCard.DoorCardIssueResultActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.DoorCard.DoorCardInfoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.CardManagerActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.DoorCard.DoorCardIssueTipsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.helpv2.UserHelpActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchAppStore.activitys.WAppStoreActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchAppStore.activitys.WAppDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchAppStore.activitys.WAppCategoryRankActivity" android:screenOrientation="portrait" android:theme="@style/AppCompatTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchAppStore.activitys.WAppClassifyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchAppStore.activitys.TestInterfacesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.chartStatSummary.activitys.WatchTempMeasureActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.chartStatSummary.activitys.WatchPowerStatActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.SedentaryActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.NFC.TransitCard.PayCounterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.LowPowerDisableActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.WRemoteLossActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.xiaoxun.xun.webcenter.activitys.MultFunWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.WatchManage.activitys.RefuseClassDisturbActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.adroi.union.AppActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.adroi.union.RewardVideoActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.adroi.union.LandscapeRewardVideoActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.baidu.mobads.AppActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.xiaoxun.xun.activitys.QrcodeWechatGroupActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.xiaoxun.xun.activitys.GuardActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.xiaoxun.xun.activitys.ThreeDimensionalLocationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.xiaoxun.xun.activitys.SchoolGuardianActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.login.activity.LoginPasswordActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.LoginVerifyCodeActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.ForgetPasswordActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.InputPasswordActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.BindAccountLoginActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.BindAccountNoticeActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.ResetPasswordActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.CountryCodeListActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.UnbindAllWatchActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.BindAccountSuccessActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.AccountSettingActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.InputOldPasswordActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.AccountPhoneCheckActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.login.activity.AccountPhoneModifyActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.xiaoxun.xun.activitys.CallWhiteListActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.NoWatchTipsActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.AddMemberWatchListActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.MiAIWeeklyActivity" android:screenOrientation="portrait" android:theme="@style/NewLoginActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.xiaoxun.xun.activitys.InPutUrlActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTask" android:name="com.xiaoxun.xun.activitys.NotificationStatisticsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <receiver android:name="com.xiaomi.assemble.control.FTOSPushMessageReceiver">
+            <intent-filter>
+                <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ximalaya.ting.android.opensdk.player.receive.PlayerReceiver">
+            <intent-filter>
+                <action android:name="com.ximalaya.ting.android.ACTION_CONTROL_START_PAUSE"/>
+                <action android:name="com.ximalaya.ting.android.ACTION_CONTROL_PLAY_PRE"/>
+                <action android:name="com.ximalaya.ting.android.ACTION_CONTROL_PLAY_NEXT"/>
+                <action android:name="com.ximalaya.ting.android.ACTION_CLOSE"/>
+                <action android:name="com.ximalaya.ting.android.ACTION_CONTROL_RELEASE_SERVICE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ximalaya.ting.android.opensdk.player.receive.WireControlReceiver"/>
+        <receiver android:name="com.xiaoxun.xun.AppRegister" android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.xiaoxun.xun.receivers.MiPushMessageReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaoxun.xun.receivers.NotificationRecevier">
+            <intent-filter>
+                <action android:name="action.notification.clear"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":deamon">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xiaoxun.xun.receivers.XunBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.adroi.union.AdroiReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.vivo.push.sdk.service.CommandClientService"/>
+        <service android:name="com.xiaomi.assemble.control.COSPushMessageService" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.xiaomi.assemble.control.COSAppPushMessageService" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            <intent-filter>
+                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.ximalaya.ting.android.opensdk.player.service.XmPlayerService" android:process=":deamon"/>
+        <service android:exported="false" android:name="com.xiaomi.assemble.control.HmsPushService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":deamon"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaoxun.xun.services.NetService"/>
+        <service android:label="@string/app_name" android:name="com.xiaoxun.xun.services.NotificationCollectorService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaoxun.xun.services.VoiceFloatingService"/>
+        <service android:label="@string/app_name" android:name="com.redbend.client.ClientService"/>
+        <service android:label="@string/app_name" android:name="com.redbend.client.BasicService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaoxun.xun.services.OfflineMapService"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":deamon"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":deamon"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaoxun.xun.services.OnlineMusicService"/>
+        <service android:name="com.adroi.union.ADroiService"/>
+        <activity android:name="com.xiaoxun.xun.xunscore.activity.XunScoreAppsActivity"/>
+        <receiver android:directBootAware="true" android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:permission="com.xiaoxun.xun.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="true" android:name="com.huawei.hms.support.api.push.PushReceiver" android:permission="com.xiaoxun.xun.permission.PROCESS_PUSH_MSG">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:enabled="true" android:exported="true" android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.xiaoxun.xun.huawei.push.provider" android:exported="true" android:name="com.huawei.hms.support.api.push.PushProvider" android:permission="com.xiaoxun.xun.permission.PUSH_PROVIDER" android:readPermission="com.xiaoxun.xun.permission.PUSH_PROVIDER" android:writePermission="com.xiaoxun.xun.permission.PUSH_WRITE_PROVIDER"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:4.0.3.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:name="com.miui.tsmclient.sesdk.CardOpenService">
+            <intent-filter>
+                <action android:name="com.xiaoxun.xun.platform.action.TRANSIT_OPEN_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:exported="false" android:label="@string/passport_login_title" android:name="com.xiaomi.passport.ui.LoginActivity" android:theme="@style/Passport.Theme.Main" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_WELCOME"/>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.xiaomi.passport.ui.QuickLoginActivity" android:theme="@style/Passport.Theme.Light.Dialog.NoTitle" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_QUICK_LOGIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/passport_account_identity_title" android:name="com.xiaomi.passport.ui.NotificationActivity" android:screenOrientation="portrait" android:theme="@style/Passport.Theme.Main" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:exported="false" android:name="com.xiaomi.passport.ui.RegisterAccountActivity" android:theme="@style/Passport.Theme.Main" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_REG"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:exported="false" android:name="com.xiaomi.passport.ui.AreaCodePickerActivity" android:theme="@style/Passport.Theme.Main">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_AREA_CODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:exported="false" android:name="com.xiaomi.passport.ui.AccountUnactivatedActivity" android:taskAffinity="com.xiaomi.passport.ui.AccountUnactivatedActivity" android:theme="@style/Passport.Theme.Main">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.XIAOMI_ACCOUNT_UNACTIVATED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.xiaomi.passport.ui.LicenseActivity" android:theme="@style/Passport.Theme.Main">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.VIEW_LICENSE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.xiaomi.passport.LocalFeatures.GetStsUrlActivity" android:theme="@style/Passport.Theme.Light.Dialog.NoTitle" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.xiaomi.account.action.XIAOMI_STS_URL"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.xiaomi.passport.LocalFeatures.GetStsUrlNotificationActivity" android:screenOrientation="portrait" android:theme="@style/Passport.Theme.Main" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="false" android:name="com.xiaomi.passport.MiPassportUIControllerService">
+            <intent-filter>
+                <action android:name="com.xiaomi.account.action.UI_CONTROLLER_SERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:exported="false" android:name="com.xiaomi.passport.ui.LoginQRCodeScanResultActivity" android:screenOrientation="portrait" android:theme="@style/Passport.Theme.Main" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|mcc|mnc|orientation|screenSize" android:exported="false" android:label="@string/passport_account_set_password_title" android:name="com.xiaomi.passport.v2.ui.SetPasswordActivity" android:screenOrientation="portrait" android:theme="@style/Passport.Theme.Main" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.xiaomi.passport.accountmanager.MiAuthenticatorService">
+            <intent-filter>
+                <action android:name="com.xiaomi.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="com.xiaomi.accounts.AccountAuthenticator" android:resource="@xml/passport_account_authenticator"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.xiaomi.passport.sns.SNSLoginActivity" android:theme="@style/Passport.Theme.Main"/>
+        <activity android:name="com.xiaomi.accountsdk.diagnosis.ui.PassportDiagnosisActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.tencent.ep.shanhuad.adpublic.adbuilder.RewardVedioPage" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:multiprocess="true" android:name="com.qq.e.comm.DownloadService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.ADActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.PortraitADActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.LandscapeADActivity" android:screenOrientation="sensorLandscape"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.RewardvideoPortraitADActivity" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.qq.e.ads.RewardvideoLandscapeADActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar">
+            <meta-data android:name="android.notch_support" android:value="true"/>
+        </activity>
+        <activity android:multiprocess="true" android:name="com.qq.e.ads.DialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:launchMode="singleTop" android:name="com.sogou.feedads.adpage.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.sogou.feedads.api.activity.FeedVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.sogou.feedads.api.activity.RewardVideoAdActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:name="com.sogou.feedads.adpage.MessengerService"/>
+        <activity android:exported="false" android:name="com.jd.ad.sdk.activity.JadWebviewActivity" android:theme="@style/JadWebTheme"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-lite" android:value="ads-lite:13.4.35.300"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.bytedance.embedapplog.collector.Collector"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.adapter.activity.TTStandardOrientationActivity" android:screenOrientation="portrait" android:theme="@style/tt_full_screen" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.adapter.activity.TTStandardDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.adapter.activity.TTStandardActivity" android:theme="@style/tt_full_screen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTMiddlePageActivity" android:screenOrientation="portrait" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTPlayableWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTVideoScrollWebPageActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.dislike.TTDislikeWebViewActivity" android:theme="@style/tt_landing_page" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTRewardVideoActivity" android:theme="@style/tt_full_screen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTRewardExpressVideoActivity" android:theme="@style/tt_full_screen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTFullScreenVideoActivity" android:theme="@style/tt_full_screen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="standard" android:name="com.bytedance.sdk.openadsdk.core.activity.base.TTFullScreenExpressVideoActivity" android:theme="@style/tt_full_screen"/>
+        <service android:name="com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService"/>
+        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppPrivacyPolicyActivity"/>
+        <activity android:name="com.ss.android.downloadlib.addownload.compliance.AppDetailInfoActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.TTDelegateActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.ss.android.downloadlib.activity.JumpKllkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:name="com.ss.android.downloadlib.core.download.DownloadReceiver"/>
+        <service android:name="com.ss.android.socialbase.appdownloader.DownloadHandlerService"/>
+        <activity android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:launchMode="singleTask" android:name="com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:enabled="true" android:exported="false" android:name="com.ss.android.socialbase.appdownloader.RetryJobSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService" android:process=":downloader">
+            <intent-filter>
+                <action android:name="com.ss.android.socialbase.downloader.remote"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ss.android.socialbase.downloader.notification.DownloadNotificationService"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.DownloadService"/>
+        <service android:name="com.ss.android.socialbase.downloader.impls.DownloadHandleService"/>
+        <service android:name="com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.AdWebViewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.KsFullScreenVideoActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.KsFullScreenLandScapeVideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.KsRewardVideoActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.KSRewardLandScapeVideoActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.FeedDownloadActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$KsTrendsActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$ProfileVideoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$TubeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$EpisodeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity1" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity2" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity3" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity4" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity5" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity6" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity7" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity8" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity9" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivity10" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop1" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleTop2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance1" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$FragmentActivitySingleInstance2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleInstance" android:name="com.kwad.sdk.api.proxy.app.BaseFragmentActivity$DeveloperConfigActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"/>
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SharedMainProcessService"/>
+        <service android:name="com.kwad.sdk.api.proxy.app.FileDownloadService$SeparateProcessService"/>
+        <service android:exported="false" android:name="com.kwad.sdk.api.proxy.app.DownloadService"/>
+        <service android:exported="false" android:name="com.kwad.sdk.api.proxy.app.ServiceProxyRemote" android:process=":remote"/>
+        <provider android:authorities="com.xiaoxun.xun.adFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.kwad.sdk.api.proxy.app.AdSdkFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ksad_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.baidu.mobads.sdk.api.AppActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.baidu.mobads.sdk.api.MobRewardVideoActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.baidu.mobads.sdk.api.BdShellActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.anyun.immo.hero.IoSoul"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Io" android:initOrder="999999999" android:name="com.anyun.immo.hero.Io"/>
+        <service android:name="com.anyun.immo.hero.JakiroSoul" android:process="@string/jakiro"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Jakiro" android:initOrder="999999999" android:name="com.anyun.immo.hero.Jakiro" android:process="@string/jakiro"/>
+        <service android:name="com.anyun.immo.hero.SvenSoul" android:process="@string/sven"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Sven" android:initOrder="999999999" android:name="com.anyun.immo.hero.Sven" android:process="@string/sven"/>
+        <service android:name="com.anyun.immo.hero.SlarkSoul" android:process="@string/slark"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Slark" android:initOrder="999999999" android:name="com.anyun.immo.hero.Slark" android:process="@string/slark"/>
+        <service android:name="com.anyun.immo.hero.OgreMagiSoul" android:process="@string/ogre_magi"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.OgreMagi" android:initOrder="999999999" android:name="com.anyun.immo.hero.OgreMagi" android:process="@string/ogre_magi"/>
+        <service android:name="com.anyun.immo.hero.BristlebackSoul" android:process="@string/bristleback"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Bristleback" android:initOrder="999999999" android:name="com.anyun.immo.hero.Bristleback" android:process="@string/bristleback"/>
+        <service android:name="com.anyun.immo.hero.UndyingSoul" android:process="@string/undying"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Undying" android:initOrder="999999999" android:name="com.anyun.immo.hero.Undying" android:process="@string/undying"/>
+        <service android:name="com.anyun.immo.hero.WarlockSoul" android:process="@string/warlock"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Warlock" android:initOrder="999999999" android:name="com.anyun.immo.hero.Warlock" android:process="@string/warlock"/>
+        <service android:name="com.anyun.immo.hero.EarthshakerSoul" android:process="@string/earthshaker"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Earthshaker" android:initOrder="999999999" android:name="com.anyun.immo.hero.Earthshaker" android:process="@string/earthshaker"/>
+        <service android:name="com.anyun.immo.hero.BloodseekerSoul" android:process="@string/bloodseeker"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Bloodseeker" android:initOrder="999999999" android:name="com.anyun.immo.hero.Bloodseeker" android:process="@string/bloodseeker"/>
+        <service android:name="com.anyun.immo.hero.WindrangerSoul" android:process="@string/windranger"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Windranger" android:initOrder="999999999" android:name="com.anyun.immo.hero.Windranger" android:process="@string/windranger"/>
+        <service android:name="com.anyun.immo.hero.TuskSoul" android:process="@string/tusk"/>
+        <provider android:authorities="com.xiaoxun.xun.Immo.Tusk" android:initOrder="999999999" android:name="com.anyun.immo.hero.Tusk" android:process="@string/tusk"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.fighter.activities.ReaperWebViewActivity" android:screenOrientation="portrait" android:taskAffinity="com.xiaoxun.xun.fighter.reaper.task" android:theme="@style/Theme.DeviceDefault.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.fighter.activities.ReaperDialogActivity" android:screenOrientation="portrait" android:taskAffinity="com.xiaoxun.xun.fighter.reaper.task" android:theme="@style/Theme.FloatActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.fighter.activities.details.AppDetailsActivity" android:screenOrientation="portrait" android:taskAffinity="com.xiaoxun.xun.fighter.reaper.task" android:theme="@style/Theme.DeviceDefault.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.fighter.activities.details.AppDetailsOtherActivity" android:screenOrientation="portrait" android:taskAffinity="com.xiaoxun.xun.fighter.reaper.task" android:theme="@style/Theme.DeviceDefault.Light"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.floatwindow.ReaperFloatWindowActivity" android:taskAffinity="extendOut.Float" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.floatwindow.ui.JimFloatWindowActivity" android:taskAffinity="Jim.FloatWindow.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.floatwindow.ui.LilyFloatWindowActivity" android:taskAffinity="Lily.FloatWindow.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.floatwindow.ui.LucyFloatWindowActivity" android:taskAffinity="Lucy.FloatWindow.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.floatwindow.ui.TonyFloatWindowActivity" android:taskAffinity="Tony.FloatWindow.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.floatwindow.ui.TracyFloatWindowActivity" android:taskAffinity="Tracy.FloatWindow.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.desktopinsert.ReaperDesktopInsertActivity" android:taskAffinity="extend.OutDesktop" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.desktopinsert.ui.JimDesktopInsertActivity" android:taskAffinity="Jim.DesktopInsert.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.desktopinsert.ui.LilyDesktopInsertActivity" android:taskAffinity="Lily.DesktopInsert.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.desktopinsert.ui.LucyDesktopInsertActivity" android:taskAffinity="Lucy.DesktopInsert.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.desktopinsert.ui.TonyDesktopInsertActivity" android:taskAffinity="Tony.DesktopInsert.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.desktopinsert.ui.TracyDesktopInsertActivity" android:taskAffinity="Tracy.DesktopInsert.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.smartlock.ReaperLockerActivity" android:taskAffinity="extendOut.Lock" android:theme="@style/Reaper_Lock_Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.smartlock.ui.JimLockerActivity" android:taskAffinity="Jim.Locker.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.smartlock.ui.LilyLockerActivity" android:taskAffinity="Lily.Locker.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.smartlock.ui.LucyLockerActivity" android:taskAffinity="Lucy.Locker.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.smartlock.ui.TonyLockerActivity" android:taskAffinity="Tony.Locker.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.fighter.extendfunction.smartlock.ui.TracyLockerActivity" android:taskAffinity="Tracy.Locker.Activity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.fighter.activities.ReaperRewardVideoTemplateActivity" android:theme="@style/Theme.FloatActivity"/>
+        <provider android:authorities="com.xiaoxun.xun.reaper.RuntimeContentProvider" android:enabled="true" android:exported="true" android:name="com.fighter.config.db.runtime.RuntimeContentProvider" android:readPermission="com.xiaoxun.xun.reaper.permission.READ_DATA" android:writePermission="com.xiaoxun.xun.reaper.permission.WRITE_DATA">
+            <intent-filter>
+                <action android:name="com.fighter.runtime.RUNTIME_CONTENT_PROVIDER"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.xiaoxun.xun.ReaperFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.fighter.provider.ReaperFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/reaper_provider_paths"/>
+        </provider>
+        <service android:enabled="true" android:exported="false" android:name="com.fighter.service.AppDetailService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.fighter.cache.downloader.ReaperDownloadNotifyService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.fighter.extendfunction.notification.ReaperNotificationAdActivity" android:screenOrientation="portrait" android:taskAffinity="com.xiaoxun.xun.fighter.reaper.task" android:theme="@style/Theme.DeviceDefault.Light"/>
+        <receiver android:exported="false" android:name="com.fighter.extendfunction.notification.ReaperNotifyAlarmReceiver">
+            <intent-filter>
+                <action android:name="reaper.action.STATUS_BAR_NOTIFICATION"/>
+                <action android:name="reaper.action.FLOAT_WINDOW"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.xiaoxun.xun.com.liulishuo.okdownload" android:exported="false" android:name="com.liulishuo.okdownload.OkDownloadProvider"/>
+        <service android:exported="false" android:name="com.qihoo360.qos.QosService" android:process=":qos">
+            <intent-filter>
+                <action android:name="com.qihoo360.qos.QosService"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.xiaoxun.xun.aaidinitprovider" android:exported="false" android:name="com.huawei.hms.aaid.InitProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:4.0.1.301"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:4.0.2.300"/>
+        <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:name="com.huawei.hms.activity.BridgeActivity" android:theme="@android:style/Theme.Translucent">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.huawei.hms.activity.EnableServiceActivity"/>
+        <provider android:authorities="com.xiaoxun.xun.hms.update.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.hms.update.provider.UpdateProvider"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-banner" android:value="ads-banner:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-template" android:value="ads-template:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-native" android:value="ads-native:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-interstitial" android:value="ads-interstitial:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-reward" android:value="ads-reward:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-lang" android:value="ads-lang:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-splash" android:value="ads-splash:13.4.35.300"/>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-instream" android:value="ads-instream:13.4.35.300"/>
+        <provider android:authorities="com.xiaoxun.xun.AGCInitializeProvider" android:exported="false" android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"/>
+        <service android:exported="false" android:name="com.huawei.agconnect.core.ServiceDiscovery"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity" android:theme="@style/upsdkDlDialog">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity" android:theme="@style/upsdkDlDialog">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+        </activity>
+        <meta-data android:name="com.huawei.hms.client.service.name:ads-base" android:value="ads-base:13.4.35.300"/>
+        <activity android:exported="true" android:name="com.huawei.openalliance.ad.activity.PPSLauncherActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.xiaoxun.xun" android:scheme="hwpps"/>
+            </intent-filter>
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:exported="false" android:name="com.huawei.openalliance.ad.activity.PPSBridgeActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:exported="false" android:name="com.huawei.openalliance.ad.activity.PPSNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.huawei.openalliance.ad.activity.AgProtocolActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar"/>
+        </activity>
+    </application>
+</manifest>

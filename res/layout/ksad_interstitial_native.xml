@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.widget.KSFrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kwad.sdk.widget.KSFrameLayout android:layout_gravity="top" android:id="@id/ksad_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/ksad_video_first_frame_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.kwad.sdk.widget.KSFrameLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/ksad_interstitial_play" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/ksad_interstitial_play" />
+    <FrameLayout android:id="@id/ksad_interstitial_playing" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/ksad_interstitial_mute" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/ksad_splash_mute" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/ksad_interstitial_count_down" android:background="@drawable/ksad_splash_preload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" />
+    </FrameLayout>
+    <com.kwad.sdk.widget.KsLogoView android:layout_gravity="bottom|center|left" android:id="@id/ksad_ad_interstitial_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginBottom="58.0dip" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ksad_interstitial_play_end" android:background="#cc000000" android:paddingBottom="52.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ksad_interstitial_logo" android:layout_width="48.0dip" android:layout_height="48.0dip" android:src="@drawable/ksad_sdk_logo" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffc5c5c5" android:layout_gravity="center_horizontal" android:id="@id/ksad_interstitial_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" />
+        <com.kwad.sdk.core.page.widget.TextProgressBar android:id="@id/ksad_app_download_btn" android:layout_width="61.0dip" android:layout_height="24.0dip" android:layout_marginTop="18.0dip" android:indeterminateOnly="false" android:progressDrawable="@drawable/ksad_video_actionbar_app_progress" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/ksad_interstitial_close" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/ksad_page_close" />
+    <include android:layout_gravity="bottom" android:id="@id/ksad_ad_download_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="52.0dip" layout="@layout/ksad_interstitial_download" />
+</com.kwad.sdk.widget.KSFrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/shape_bolder" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+        <ImageView android:id="@id/list_card_img" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/shape_rectangle_with_radius" android:scaleType="centerCrop" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/balance" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="余额" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/exchange_rec" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/album_default" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                <TextView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="交易记录" android:layout_below="@id/exchange_rec" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/recharge" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/album_default" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                <TextView android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="充值" android:layout_below="@id/recharge" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button android:textSize="20.0sp" android:id="@id/default_card" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="设为默认卡" />
+    </LinearLayout>
+</LinearLayout>

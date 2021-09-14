@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/skip_parent_view" android:background="@drawable/reaper_splash_skip_tiny_background" android:visibility="invisible" android:layout_width="@dimen/skip_view_tiny_width" android:layout_height="@dimen/skip_view_tiny_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/skip_view_tiny_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/count_down_number_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="" android:includeFontPadding="false" />
+    <View android:layout_gravity="center" android:id="@id/gap_view" android:background="#ffffffff" android:layout_width="1.0dip" android:layout_height="@dimen/skip_view_tiny_split_height" android:layout_marginLeft="@dimen/skip_view_tiny_split_margin" android:layout_marginRight="@dimen/skip_view_tiny_split_margin" />
+    <TextView android:textSize="@dimen/skip_view_tiny_text_size" android:textColor="#ffffffff" android:gravity="center" android:id="@id/id_skip_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/skip_text" android:includeFontPadding="false" />
+</LinearLayout>

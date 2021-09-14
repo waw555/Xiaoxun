@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title3" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rank_family_layer" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="300.0dip">
+                <ImageView android:background="@drawable/paihang" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="@dimen/dimen20" android:layout_marginEnd="@dimen/dimen20" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180.0dip" android:layout_centerHorizontal="true" />
+                <RelativeLayout android:layout_width="73.0dip" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="100.0dip">
+                    <ImageView android:id="@id/head_imge_no2" android:background="@drawable/rank_other_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/rank_two_no" android:background="@drawable/rank_no_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:layout_below="@id/head_imge_no2" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:ellipsize="end" android:id="@id/nickname_no2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_relation_text" android:maxLines="1" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="73.0dip" android:layout_height="wrap_content" android:layout_marginTop="110.0dip" android:layout_marginEnd="40.0dip" android:layout_alignParentEnd="true">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:layout_below="@id/head_imge_no3" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:ellipsize="end" android:id="@id/nickname_no3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_relation_text" android:maxLines="1" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/head_imge_no3" android:background="@drawable/rank_other_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/rank_three_no" android:background="@drawable/rank_no_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true">
+                    <ImageView android:background="@drawable/huangguan" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/head_imge_no1" android:background="@drawable/rank_head_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:id="@id/nickname_no1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp10" android:text="@string/wechat_notice_bind_nickname" />
+                </LinearLayout>
+                <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/rank_steps_no1" android:paddingBottom="50.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_no_data_default" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/rank_steps_no2" android:paddingBottom="40.0dip" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="@string/steps_no_data_default" android:layout_alignParentBottom="true" android:layout_marginStart="25.0dip" />
+                <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/rank_steps_no3" android:paddingBottom="25.0dip" android:layout_width="90.0dip" android:layout_height="wrap_content" android:text="@string/steps_no_data_default" android:layout_alignParentBottom="true" android:layout_marginEnd="30.0dip" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+                <RelativeLayout android:id="@id/rank_cursteps_layer" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <ImageView android:layout_width="7.0dip" android:layout_height="14.0dip" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/title_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baby_day_steps" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+                <RelativeLayout android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_steps" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/title_grey" android:id="@id/baby_rank_step" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_no_getstep_default" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+                <RelativeLayout android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_kilo" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/title_grey" android:id="@id/baby_rank_kilo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_no_getsport_default" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+                <RelativeLayout android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_consume" android:layout_centerVertical="true" />
+                    <TextView android:textColor="@color/title_grey" android:id="@id/baby_rank_calo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_no_getcalo_default" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/rank_hissteps_layer" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/title_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/baby_count_ranks" android:layout_centerVertical="true" />
+                    <ImageView android:layout_width="7.0dip" android:layout_height="14.0dip" android:src="@drawable/btn_next_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+                <RelativeLayout android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/title_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_country" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/rank_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_get_no_ranks" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+                <RelativeLayout android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="44.0dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/title_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_area" android:layout_centerVertical="true" />
+                    <TextView android:id="@id/rank_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_get_no_ranks" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

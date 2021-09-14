@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/iv_classify_rank_num" android:background="@drawable/watch_app_classify_1" android:layout_width="24.0dip" android:layout_height="29.0dip" android:layout_marginStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/watch_app_item" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toRightOf="@id/iv_classify_rank_num" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/watch_app_item" />
+    <View android:layout_width="fill_parent" android:layout_height="20.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

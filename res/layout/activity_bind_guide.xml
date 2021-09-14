@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/welcome_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/layer_root" android:background="@color/welcome_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/xiaomiMyTextBigTitle" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_bind_title" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_bind_code" android:background="@drawable/btn_bind_code_selector" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="75.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextBigTitle" android:textColor="@color/white" android:id="@id/tv_scan_code_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/bind_code" android:layout_below="@id/iv_bind_code" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_white_50" android:id="@id/tv_scan_code_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/bind_code_detail" android:layout_below="@id/tv_scan_code_title" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_bind_num" android:background="@drawable/btn_bind_num_selector" android:layout_width="140.0dip" android:layout_height="140.0dip" android:layout_marginTop="60.0dip" android:layout_below="@id/tv_scan_code_info" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextBigTitle" android:textColor="@color/white" android:id="@id/tv_bind_num_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/bind_number" android:layout_below="@id/iv_bind_num" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_white_50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/bind_num_detail" android:layout_below="@id/tv_bind_num_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_watch_app" android:layout_width="fill_parent" android:layout_height="@dimen/app_item_height" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+        <ImageView android:id="@id/iv_app_icon" android:layout_width="@dimen/app_icon_side_length" android:layout_height="@dimen/app_icon_side_length" android:src="@drawable/default_app_icon" android:layout_centerVertical="true" android:contentDescription="@string/blank_str" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/app_item_margin_start" android:layout_marginEnd="@dimen/dimen5" android:layout_toStartOf="@id/btn_download_app" android:layout_toEndOf="@id/iv_app_icon">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:ellipsize="end" android:id="@id/tv_app_dura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_manage_useage_no" android:maxLines="2" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_has_clock" android:background="@drawable/noclock" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" android:layout_marginEnd="6.0dip" android:layout_toStartOf="@id/btn_close_onoff" />
+        <ImageButton android:id="@id/btn_close_onoff" android:background="@drawable/switch_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/btn_next_setting" android:layout_alignParentEnd="true" />
+        <ImageButton android:id="@id/btn_next_setting" android:background="@drawable/next" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

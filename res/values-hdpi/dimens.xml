@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="MyTextSize1">20.0sp</dimen>
+    <dimen name="MyTextSize2">14.0sp</dimen>
+    <dimen name="MyTextSize3">12.0sp</dimen>
+    <dimen name="SettingItemLeft">48.0dip</dimen>
+    <dimen name="DoubleLineItemHeight">64.0dip</dimen>
+    <dimen name="SingleItemHeight">50.0dip</dimen>
+    <dimen name="TitleItemHeight">36.0dip</dimen>
+    <dimen name="divideleftandright">13.329987dip</dimen>
+    <dimen name="divideleftandtop">23.329987dip</dimen>
+    <dimen name="warningItembottom">12.0dip</dimen>
+    <dimen name="warningItemtop">12.0dip</dimen>
+</resources>

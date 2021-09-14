@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/silence_time_title" layout="@layout/activity_title2" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/silence_time_title">
+        <RelativeLayout android:gravity="center" android:id="@id/silence_week_view" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/DoubleLineItemHeight">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="23.329987dip" android:layout_toStartOf="@id/silence_view_next">
+                <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/silence_week" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/silence_week_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/silence_week_click_select" />
+            </LinearLayout>
+            <ImageView android:id="@id/silence_view_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_marginEnd="23.329987dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/silence_start_time_view" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/DoubleLineItemHeight">
+            <ImageView android:id="@id/iv_select_start" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/day_select" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="23.329987dip" android:layout_toStartOf="@id/silence_start_time_next">
+                <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/black" android:id="@id/silence_startime_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_time" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/silence_startime_title_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_time" />
+            </LinearLayout>
+            <ImageView android:id="@id/silence_start_time_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_marginEnd="23.329987dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/silence_end_time_view" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/DoubleLineItemHeight">
+            <ImageView android:id="@id/iv_select_end" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/day_select" android:layout_centerVertical="true" android:layout_marginStart="4.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="23.329987dip" android:layout_toStartOf="@id/silence_end_time_next">
+                <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/black" android:id="@id/silence_endtime_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/end_time" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/silence_endtime_title_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/end_time" />
+            </LinearLayout>
+            <ImageView android:id="@id/silence_end_time_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_marginEnd="23.329987dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+    </LinearLayout>
+</RelativeLayout>

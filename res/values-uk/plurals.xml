@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hiad_dismiss_dilaog">
+        <item quantity="other">Вікно закриється через %1$s секунди.</item>
+        <item quantity="one">Вікно закриється через %1$s секунду.</item>
+        <item quantity="few">Вікно закриється через %1$s секунди.</item>
+        <item quantity="many">Вікно закриється через %1$s секунд.</item>
+    </plurals>
+    <plurals name="hiad_no_prompt_in_days">
+        <item quantity="other">Запам’ятати вибір на %1$s днів</item>
+        <item quantity="one">Запам’ятати вибір на %1$s день</item>
+        <item quantity="few">Запам’ятати вибір на %1$s дні</item>
+        <item quantity="many">Запам’ятати вибір на %1$s дн.</item>
+    </plurals>
+    <plurals name="hiad_reward_countdown">
+        <item quantity="other">%1$d секунди</item>
+        <item quantity="one">%1$d секунда</item>
+        <item quantity="few">%1$d секунди</item>
+        <item quantity="many">%1$d секунд</item>
+    </plurals>
+</resources>

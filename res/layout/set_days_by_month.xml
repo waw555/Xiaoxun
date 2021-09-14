@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/device_alarm_reset" />
+            <View android:background="@color/txt_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/btn_day_1" android:background="@color/welcome_bg_color" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="1" />
+                    <Button android:id="@id/btn_day_2" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="2" />
+                    <Button android:id="@id/btn_day_3" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="3" />
+                    <Button android:id="@id/btn_day_4" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="4" />
+                    <Button android:id="@id/btn_day_5" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="5" />
+                    <Button android:id="@id/btn_day_6" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="6" />
+                    <Button android:id="@id/btn_day_7" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="7" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                    <Button android:id="@id/btn_day_8" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="8" />
+                    <Button android:id="@id/btn_day_9" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="9" />
+                    <Button android:id="@id/btn_day_10" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="10" />
+                    <Button android:id="@id/btn_day_11" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="11" />
+                    <Button android:id="@id/btn_day_12" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="12" />
+                    <Button android:id="@id/btn_day_13" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="13" />
+                    <Button android:id="@id/btn_day_14" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="14" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                    <Button android:id="@id/btn_day_15" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="15" />
+                    <Button android:id="@id/btn_day_16" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="16" />
+                    <Button android:id="@id/btn_day_17" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="17" />
+                    <Button android:id="@id/btn_day_18" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="18" />
+                    <Button android:id="@id/btn_day_19" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="19" />
+                    <Button android:id="@id/btn_day_20" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="20" />
+                    <Button android:id="@id/btn_day_21" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="21" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                    <Button android:id="@id/btn_day_22" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="22" />
+                    <Button android:id="@id/btn_day_23" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="23" />
+                    <Button android:id="@id/btn_day_24" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="24" />
+                    <Button android:id="@id/btn_day_25" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="25" />
+                    <Button android:id="@id/btn_day_26" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="26" />
+                    <Button android:id="@id/btn_day_27" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="27" />
+                    <Button android:id="@id/btn_day_28" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="28" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip">
+                    <Button android:id="@id/btn_day_29" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="29" />
+                    <Button android:id="@id/btn_day_30" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="30" />
+                    <Button android:id="@id/btn_day_31" android:background="@color/passport_text_color_alpha_white_90per" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" android:text="31" />
+                    <Button android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" />
+                    <Button android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" />
+                    <Button android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" />
+                    <Button android:background="@color/transparent" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="2.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/txt_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="23.329987dip" android:layout_marginTop="23.329987dip" android:layout_marginRight="23.329987dip" android:layout_marginBottom="23.329987dip">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/cancel_btn" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/confirm_btn" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

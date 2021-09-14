@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_marker_title" android:background="@drawable/marker_info_window" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:translationX="17.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff999999" android:id="@id/marker_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/marker_image_3d" android:background="@drawable/watch_location_3d_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-23.0dip" android:layout_below="@id/marker_image" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/marker_image" android:background="@drawable/watch_location_select_03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/layout_marker_title" android:layout_centerHorizontal="true" android:translationX="17.0dip" />
+</RelativeLayout>

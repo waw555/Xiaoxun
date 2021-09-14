@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:background="@color/color_13" android:layout_width="144.0dip" android:layout_height="92.0dip">
+        <ImageView android:id="@id/iv_cry" android:layout_width="39.0dip" android:layout_height="39.0dip" android:src="@drawable/cry" app:layout_constraintBottom_toTopOf="@id/tv_low_volume_tips" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/tv_low_volume_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low_volume_tips" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_cry" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

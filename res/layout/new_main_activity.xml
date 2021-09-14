@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_new_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xiaoxun.xun.views.NoScrollView android:id="@id/main_page" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/lv_tab" android:layout_alignParentTop="true" />
+    <View android:layout_gravity="center_horizontal" android:background="@color/m_a_watch_nice_name_c" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/lv_tab" />
+    <com.xiaoxun.xun.views.HorizontalListView android:id="@id/lv_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

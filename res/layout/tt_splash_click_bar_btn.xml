@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tt_splash_click_bar_btn" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tt_splash_click_bar_body" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/tt_splash_text_area" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tt_splash_top_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_splash_click_bar_text" android:singleLine="true" android:layout_above="@id/tt_splash_click_bar_text" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/tt_splash_top_img" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="-16.0dip" android:src="@drawable/tt_splash_rock" android:layout_above="@id/tt_splash_click_bar_text" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:id="@id/tt_splash_click_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_splash_click_bar_text" android:singleLine="true" android:shadowColor="#4d000000" android:shadowDx="0.0" android:shadowDy="0.5" android:shadowRadius="2.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

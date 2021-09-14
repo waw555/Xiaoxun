@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/no_data_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/sketch" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="144.0dip" android:src="@drawable/albumdial" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:id="@id/intro_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dial_bg_txt" android:layout_below="@id/sketch" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dial_bg_intro_inf_txt" android:layout_below="@id/intro_name" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/list_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn_ly" android:layout_below="@id/title">
+        <com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout android:id="@id/fresh_ly" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guidance_text_color="@color/txt_grey" app:guidance_view_bg_color="@color/transparent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:load_text="@string/dial_bg_load_more_txt" app:progress_bar_color="@color/bg_color_orange" app:refresh_text="@string/dial_bg_refresh_txt">
+            <android.support.v7.widget.RecyclerView android:id="@id/dial_bg_list" android:background="@color/dial_bg_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/btn_ly" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="15.0sp" android:id="@id/add_new" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/dial_bg_btn_txt" android:layout_centerInParent="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

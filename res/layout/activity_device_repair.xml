@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_track_commit" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:iv_icon="@drawable/repair_commit" custom_setting:tv_title="@string/repair_track_commit" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_track_query" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:iv_icon="@drawable/repair_query" custom_setting:tv_title="@string/repair_track_query" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_track_policy" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:iv_icon="@drawable/repair_policy" custom_setting:tv_title="@string/repair_track_policy" />
+</LinearLayout>

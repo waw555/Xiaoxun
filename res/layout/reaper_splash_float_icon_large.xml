@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/skip_parent_view" android:background="@drawable/reaper_splash_float_icon_background" android:layout_width="wrap_content" android:layout_height="@dimen/reaper_splash_float_large_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/custom_float_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/reaper_splash_float_large_icon_size" android:layout_margin="@dimen/reaper_splash_float_margin" android:scaleType="center" />
+    <ImageView android:id="@id/float_icon" android:layout_width="@dimen/reaper_splash_float_large_icon_size" android:layout_height="@dimen/reaper_splash_float_large_icon_size" android:layout_margin="@dimen/reaper_splash_float_margin" android:adjustViewBounds="true" />
+    <TextView android:textSize="@dimen/reaper_splash_float_large_text_size" android:textColor="@android:color/white" android:id="@id/app_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/reaper_splash_float_large_text_height" android:layout_marginRight="@dimen/reaper_splash_float_margin" android:layout_marginEnd="@dimen/reaper_splash_float_margin" />
+</LinearLayout>

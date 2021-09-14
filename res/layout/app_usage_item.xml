@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <ImageView android:id="@id/iv_app_icon" android:background="@drawable/watch_app_other" android:layout_width="41.0dip" android:layout_height="41.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff000000" android:id="@id/iv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_app_icon" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff666666" android:id="@id/iv_app_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

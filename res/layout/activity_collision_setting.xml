@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <RelativeLayout android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:clickable="true" android:layout_width="fill_parent" android:layout_height="49.659973dip">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alarm_open" android:layout_centerVertical="true" android:layout_toEndOf="@id/setting_icon" />
+            <ImageButton android:id="@id/btn_open" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/switch_on" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/time_recyclerview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/iv_add" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/btn_alarm_add_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_add" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/cover" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+</RelativeLayout>

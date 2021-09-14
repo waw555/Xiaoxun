@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:id="@id/video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_end_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <RelativeLayout android:id="@id/rl_prepare_play" android:background="@android:color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_prepare_play" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/icon_video_start" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_video_controller" android:background="@android:color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_playing" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/icon_video_pause" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/iv_voice" android:padding="10.0dip" android:layout_width="35.0dip" android:layout_height="35.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/tv_already_play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            <SeekBar android:id="@id/seekbar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:maxHeight="1.0dip" android:minHeight="1.0dip" android:layout_weight="1.0" style="@style/CustomSeekbarStyle" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/tv_total_play_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_play_end" android:background="@android:color/transparent" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:background="@color/t80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_end_card" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.sogou.feedads.common.CircleImageView android:id="@id/riv_ad" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitXY" />
+            <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:id="@id/tv_ad_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" />
+            <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_btn" android:background="@drawable/shape_bg_feed_video_btn" android:layout_width="90.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/ll_restart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/icon_video_restart" android:scaleType="fitXY" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="重播" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

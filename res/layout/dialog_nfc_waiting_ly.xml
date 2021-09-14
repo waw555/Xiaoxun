@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/waitingView" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/exclamation" android:background="@drawable/exclamation_mark_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginTop="3.0dip" />
+            <ProgressBar android:id="@id/loadingBar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="23.329987dip" android:indeterminateDrawable="@drawable/normal_load" android:indeterminateDuration="800" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/waitingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repair_get_data" android:layout_marginStart="12.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+</RelativeLayout>

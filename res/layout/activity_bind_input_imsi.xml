@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.659973dip" android:layout_marginTop="28.659973dip" android:layout_marginRight="22.659973dip">
+            <ImageView android:background="@drawable/step_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.659973dip" android:text="@string/bind_get_imsi_title" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.659973dip" android:layout_marginTop="21.659973dip" android:layout_marginRight="44.659973dip" android:text="@string/bind_get_imsi_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.659973dip" android:layout_marginRight="44.659973dip" android:text="@string/support_device" android:layout_alignParentRight="true" />
+        <RelativeLayout android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:background="@drawable/watch_icon_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="222.29999dip" android:layout_marginTop="25.299988dip" android:text="@string/short_press_8" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.659973dip" android:layout_marginTop="48.0dip" android:layout_marginRight="22.659973dip">
+            <ImageView android:background="@drawable/step_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.659973dip" android:text="@string/bind_input_imsi_title" android:layout_alignParentRight="true" />
+        </LinearLayout>
+        <EditText android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/black" android:textColorHint="@color/txt_grey" android:gravity="center|left" android:id="@id/edit_imsi" android:background="@drawable/inputbox_whitenum" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="23.329987dip" android:layout_marginTop="24.0dip" android:layout_marginRight="23.329987dip" android:singleLine="true" android:maxLength="12" android:inputType="numberDecimal" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:id="@id/btn_next_step" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="23.329987dip" android:text="@string/confirm" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+</RelativeLayout>

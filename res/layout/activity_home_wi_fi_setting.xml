@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_title2" />
+    <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:background="@drawable/list_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingTop="10.0dip" android:paddingRight="@dimen/divideleftandright" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/select_wifi_des" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_wifi_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="41.0dip" android:layout_marginBottom="23.329987dip">
+        <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/iv_refresh_wifi_list" android:background="@drawable/btn_security_next_selector" android:layout_width="fill_parent" android:layout_height="41.0dip" android:text="@string/refresh_wifi_list" android:layout_centerHorizontal="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+        <ProgressBar android:id="@id/anim_refresh_wifi" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:indeterminateDrawable="@drawable/animation_wifi_loading" android:indeterminateDuration="1000" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

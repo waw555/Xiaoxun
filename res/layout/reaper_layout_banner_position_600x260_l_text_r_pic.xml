@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="11.0sp" android:textColor="#b35f5f5f" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/desc_600x260" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="京东百货大促销京东" android:maxLines="4" android:layout_toLeftOf="@id/close" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <TextView android:gravity="center_vertical" android:id="@id/ad_creative_button_600x260" android:visibility="visible" android:layout_marginBottom="26.0dip" android:text="立即下载" android:layout_above="@id/ad_flag_source_600x260" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" style="@style/CreativeBtn_Blue_Border" />
+            <com.fighter.loader.view.AdSourceView android:id="@id/ad_flag_source_600x260" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_centerVertical="true" />
+            <com.fighter.loader.view.BannerMisTouchCloseView android:id="@id/close" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/reaper_ad_close_re15" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="7.0">
+        <TextView android:textSize="15.0sp" android:textColor="#ff020202" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/title_600x260" android:layout_width="fill_parent" android:layout_height="38.0dip" android:text="京东百货大促销京东" android:maxLines="1" android:layout_alignParentBottom="true" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/title_600x260">
+            <ImageView android:id="@id/main_image_600x260" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/default_1_78x1" android:scaleType="fitXY" />
+            <FrameLayout android:id="@id/video_view_600x260" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center|left|top" android:id="@id/icon_600x260" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

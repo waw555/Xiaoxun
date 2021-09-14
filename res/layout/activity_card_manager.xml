@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/card_manager_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_ly" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/issue_list_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_ly">
+        <android.support.v7.widget.RecyclerView android:id="@id/cards" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

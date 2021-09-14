@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/detail_head_layout_linearlayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_title" layout="@layout/activity_title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingRight="15.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/detail_head_app_icon_imageview" android:focusable="false" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginRight="21.0dip" android:src="@drawable/icon_default_bg" android:scaleType="fitCenter" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="74.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/register_grey" android:ellipsize="end" android:id="@id/detail_head_app_name_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                <RatingBar android:layout_gravity="center_vertical" android:id="@id/detail_head_app_stars_ratingbar" android:layout_width="wrap_content" android:layout_height="12.0dip" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/ratingbar_list" android:progressDrawable="@drawable/ratingbar_list" android:numStars="5" android:rating="0.0" android:stepSize="0.1" android:isIndicator="true" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/app_score_color" android:layout_gravity="center_vertical" android:id="@id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/register_grey" android:gravity="bottom" android:id="@id/detail_head_download_count_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:lineSpacingMultiplier="1.1" />
+        </LinearLayout>
+        <com.xiaoxun.xun.views.cornertextview.BorderTextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_download_app" android:padding="2.0dip" android:layout_width="69.0dip" android:layout_height="23.0dip" app:contentPressedColor="#ffcfccc7" app:cornerRadius="4.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_tab1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/bg_color_orange" android:id="@id/layout_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/introduction" />
+            <View android:id="@id/layout_line1" android:background="@color/bg_color_orange" android:visibility="invisible" android:layout_width="79.0dip" android:layout_height="2.0dip" android:layout_marginTop="6.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_tab2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/tab_color" android:id="@id/layout_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/introduction" />
+            <View android:id="@id/layout_line2" android:background="@color/bg_color_orange" android:visibility="invisible" android:layout_width="79.0dip" android:layout_height="2.0dip" android:layout_marginTop="6.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/layout_tab3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/tab_color" android:id="@id/layout_tv3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score" />
+            <View android:id="@id/layout_line3" android:background="@color/bg_color_orange" android:visibility="invisible" android:layout_width="79.0dip" android:layout_height="2.0dip" android:layout_marginTop="6.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffd7d5d5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="14.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <com.xiaoxun.xun.views.NoScrollView android:id="@id/viewpager" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

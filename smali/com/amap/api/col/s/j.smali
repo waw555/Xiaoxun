@@ -1,0 +1,196 @@
+.class public final Lcom/amap/api/col/s/j;
+.super Lcom/amap/api/col/s/b0;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/amap/api/col/s/b0<",
+        "Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;",
+        "Lcom/amap/api/services/route/RideRouteResult;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lcom/amap/api/col/s/b0;-><init>(Landroid/content/Context;Ljava/lang/Object;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final i()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Lcom/amap/api/col/s/b3;->c()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "/direction/bicycling?"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected final synthetic o(Ljava/lang/String;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/amap/api/services/core/AMapException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p1}, Lcom/amap/api/col/s/j3;->E(Ljava/lang/String;)Lcom/amap/api/services/route/RideRouteResult;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method protected final u()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuffer;
+
+    invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
+
+    const-string v1, "key="
+
+    .line 2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    iget-object v1, p0, Lcom/amap/api/col/s/a;->g:Landroid/content/Context;
+
+    invoke-static {v1}, Lcom/amap/api/col/s/j0;->i(Landroid/content/Context;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const-string v1, "&origin="
+
+    .line 3
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    iget-object v1, p0, Lcom/amap/api/col/s/a;->e:Ljava/lang/Object;
+
+    check-cast v1, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;
+
+    .line 4
+    invoke-virtual {v1}, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;->getFromAndTo()Lcom/amap/api/services/route/RouteSearch$FromAndTo;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/amap/api/services/route/RouteSearch$FromAndTo;->getFrom()Lcom/amap/api/services/core/LatLonPoint;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/amap/api/col/s/c3;->c(Lcom/amap/api/services/core/LatLonPoint;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const-string v1, "&destination="
+
+    .line 6
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    iget-object v1, p0, Lcom/amap/api/col/s/a;->e:Ljava/lang/Object;
+
+    check-cast v1, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;
+
+    .line 7
+    invoke-virtual {v1}, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;->getFromAndTo()Lcom/amap/api/services/route/RouteSearch$FromAndTo;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Lcom/amap/api/services/route/RouteSearch$FromAndTo;->getTo()Lcom/amap/api/services/core/LatLonPoint;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lcom/amap/api/col/s/c3;->c(Lcom/amap/api/services/core/LatLonPoint;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const-string v1, "&output=json"
+
+    .line 9
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    const-string v1, "&geometry=false"
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    .line 11
+    iget-object v1, p0, Lcom/amap/api/col/s/a;->e:Ljava/lang/Object;
+
+    check-cast v1, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;
+
+    invoke-virtual {v1}, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;->getExtensions()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const-string v1, "&extensions="
+
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    iget-object v1, p0, Lcom/amap/api/col/s/a;->e:Ljava/lang/Object;
+
+    check-cast v1, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;
+
+    invoke-virtual {v1}, Lcom/amap/api/services/route/RouteSearch$RideRouteQuery;->getExtensions()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "&extensions=base"
+
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+
+    .line 14
+    :goto_0
+    invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

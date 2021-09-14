@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/layer_root" android:background="@color/welcome_ff5a02" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_welcom_xun" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <ImageView android:id="@id/iv_login_botom" android:background="@drawable/bg_login_bottom" android:clickable="false" android:layout_width="fill_parent" android:layout_height="91.0dip" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/iv_loginback" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/btn_title_back_selector" android:layout_marginStart="10.0dip" />
+    <RelativeLayout android:id="@id/layer_login_sel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/layout_agreement_privacy">
+        <Button android:textSize="@dimen/MyTextSize2" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_xiaomi_login" android:background="@drawable/btn_dialgo_welcome_button" android:layout_width="267.29688dip" android:layout_height="39.299988dip" android:text="@string/login_right_now" android:layout_above="@id/layer_separate" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_last_used_mi" android:background="@drawable/last_used" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="22.669983dip" android:layout_marginBottom="31.669983dip" android:layout_alignBottom="@id/btn_xiaomi_login" android:layout_marginStart="233.29999dip" android:layout_alignStart="@id/btn_xiaomi_login" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layer_separate" android:layout_width="wrap_content" android:layout_height="25.299988dip" android:layout_above="@id/rout_other_login" android:layout_centerHorizontal="true">
+            <LinearLayout android:background="@color/divider_welcome" android:layout_width="232.69998dip" android:layout_height="1.0px" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/rout_other_login" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignStart="@id/btn_xiaomi_login">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/btn_wexin_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/weixin_login" />
+                <ImageView android:id="@id/iv_last_used_wx" android:background="@drawable/last_used" android:visibility="invisible" android:layout_width="51.0dip" android:layout_height="22.669983dip" android:layout_marginBottom="25.0dip" android:layout_alignBottom="@id/btn_wexin_login" android:layout_marginStart="24.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/btn_qq_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/qq_login" />
+                <ImageView android:id="@id/iv_last_used_qq" android:background="@drawable/last_used" android:visibility="invisible" android:layout_width="51.0dip" android:layout_height="22.669983dip" android:layout_marginBottom="25.0dip" android:layout_alignBottom="@id/btn_qq_login" android:layout_marginStart="24.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/btn_alipay_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/alipay_login" />
+                <ImageView android:id="@id/iv_last_used_alipay" android:background="@drawable/last_used" android:visibility="invisible" android:layout_width="51.0dip" android:layout_height="22.669983dip" android:layout_marginBottom="25.0dip" android:layout_alignBottom="@id/btn_alipay_login" android:layout_marginStart="24.0dip" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_agreement_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/btn_agreement_privacy" android:background="@drawable/icon_agreement_privacy_unagree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/textsize14" android:textColor="@color/color_2" android:id="@id/tv_agreement_privacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_prompt_login_desc" android:layout_centerVertical="true" android:layout_toEndOf="@id/btn_agreement_privacy" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:id="@id/inf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/ali_ms_bind_inf" android:layout_alignParentTop="true" />
+        <android.support.v7.widget.RecyclerView android:id="@id/ali_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/inf" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/layout_watch_app" android:background="@drawable/setting_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="3.5dip" android:paddingEnd="3.5dip">
+        <ImageView android:id="@id/iv_app_icon" android:layout_width="189.0dip" android:layout_height="189.0dip" android:layout_centerVertical="true" android:contentDescription="@string/blank_str" />
+    </RelativeLayout>
+</RelativeLayout>

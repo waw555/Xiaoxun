@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/send_time" android:layout_width="311.32812dip" android:layout_height="wrap_content" android:layout_marginTop="18.659973dip" android:layout_marginBottom="10.329987dip">
+        <ImageView android:background="@color/chat_item_text" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toLeftOf="@id/chat_send_time" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/m_a_spliter_line" android:id="@id/chat_send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:text="nihao" android:layout_centerInParent="true" />
+        <ImageView android:background="@color/chat_item_text" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_toRightOf="@id/chat_send_time" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.329987dip" android:layout_marginRight="70.0dip">
+        <ImageView android:id="@id/left_head" android:layout_width="38.659973dip" android:layout_height="38.659973dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="6.659973dip" android:src="@drawable/head_1" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize8" android:textColor="@color/color_5" android:id="@id/chat_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.659973dip" android:text="" android:layout_toRightOf="@id/left_head" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ly_left_pay_content" android:visibility="visible" android:layout_width="253.0dip" android:layout_height="wrap_content" android:layout_below="@id/chat_nickname" android:layout_centerVertical="true" android:layout_marginStart="8.659973dip" android:layout_toEndOf="@id/left_head">
+            <ImageView android:background="@color/app_color4" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/txt_coupon_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="表盘购买" android:layout_marginStart="11.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_2_title" android:id="@id/tv_pay_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/pay_message_content" android:layout_marginStart="11.0dip" android:layout_marginEnd="6.0dip" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/color_content_hint" android:id="@id/tv_pay_time_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="订单超时" android:layout_marginStart="11.0dip" android:layout_marginEnd="6.0dip" />
+            <ImageView android:background="@color/color_content_hint" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="11.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginStart="11.0dip" android:layout_marginEnd="6.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/click_check_more" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_grey" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/interval_view" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

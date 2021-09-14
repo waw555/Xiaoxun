@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="#cc000000" android:id="@id/title_text" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_app_alert_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#cc515151" android:id="@id/message_text" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="准备下载" android:layout_below="@id/title_text" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/message_text">
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/darker_gray" android:gravity="center" android:id="@id/cancel_text" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff5ca5f5" android:gravity="center" android:id="@id/ok_text" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

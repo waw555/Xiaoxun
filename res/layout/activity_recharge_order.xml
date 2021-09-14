@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/title_include" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="@dimen/fragment_title_height">
+            <ImageButton android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="13.299988dip" />
+            <android.support.design.widget.TabLayout android:id="@id/title_tab" android:layout_width="180.0dip" android:layout_height="35.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+</RelativeLayout>

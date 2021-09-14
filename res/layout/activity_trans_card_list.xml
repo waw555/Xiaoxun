@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/cards_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_below="@id/title" />
+    <RelativeLayout android:id="@id/device_unlink_ly" android:background="@android:color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <ImageView android:id="@id/unlink_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="200.0dip" android:src="@drawable/nfc_card_blank" android:layout_centerHorizontal="true" />
+        <Button android:textSize="24.0sp" android:id="@id/btn_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/connect" android:layout_below="@id/unlink_img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

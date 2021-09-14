@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/true_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_title" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/activity_title" />
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="20.0dip" app:layout_constraintBottom_toTopOf="@id/iv_download" app:layout_constraintTop_toBottomOf="@id/layout_title" />
+    <ImageView android:id="@id/iv_download" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/netdisk_download" android:onClick="onDownload" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

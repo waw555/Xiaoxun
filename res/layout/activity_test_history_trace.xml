@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/xiaomi_bg_grey" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/history_trace_title" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:id="@id/iv_title_back_layout" android:clickable="true" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginLeft="13.329987dip" android:layout_alignParentLeft="true">
+                <ImageButton android:layout_gravity="center" android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_title_layout" android:clickable="true" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/title_white_color" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="今天" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/calendar_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.amap.api.maps.MapView android:id="@id/amap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttomtitle" android:layout_below="@id/history_trace_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/history_trace_title" android:layout_alignParentRight="true">
+        <ImageButton android:id="@id/his_dis_filter" android:background="@drawable/btn_disfilter_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+        <ImageButton android:id="@id/his_angle_filter" android:background="@drawable/btn_angfilter_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginBottom="28.0dip" android:layout_above="@id/buttomtitle">
+        <include android:id="@id/layout_zoom" layout="@layout/layout_map_zoom" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/buttomtitle" android:background="@drawable/bottom_navigation_bar" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/iv_buttomimg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.329987dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/nomalBottomText" android:paddingRight="60.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.329987dip" android:layout_marginTop="18.659973dip" android:layout_marginRight="24.0dip" android:layout_toRightOf="@id/iv_buttomimg">
+            <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/dark_grey" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/iv_buttomtitle_err" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trace_bottom_data_getting" android:singleLine="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize2" android:textColor="@color/dark_grey" android:gravity="center|left" android:id="@id/iv_buttomtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.6600001dip" android:text="@string/trace_bottom_data_getting" android:singleLine="false" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/txt_grey" android:id="@id/iv_buttomtips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.3299866dip" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/txt_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.3299866dip" android:layout_marginBottom="5.0dip" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/MyTextSize2" android:textColor="@color/dark_grey" android:id="@id/refreshbutton" android:background="@drawable/btn_trace_retry_selector" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="23.329987dip" android:text="重试" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/iv_play_button" android:background="@drawable/btn_play_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="22.329987dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/guide_control" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/guideht" android:background="@drawable/guideht" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="57.0dip" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

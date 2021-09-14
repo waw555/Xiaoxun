@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/reaper_dialog_translucent_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_normal_margin_left_right" android:layout_marginRight="@dimen/dialog_normal_margin_left_right" android:layout_marginBottom="@dimen/dialog_normal_margin_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/dialog_normal_title_text_size" android:textColor="@color/dialog_normal_title" android:ellipsize="end" android:gravity="center" android:id="@id/dialog_normal_title" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_normal_title_height" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginRight="@dimen/layout_margin" android:maxLines="1" style="@style/TitleTextStyle" />
+    <View android:background="@color/dividing" android:layout_width="fill_parent" android:layout_height="@dimen/dividing_height" />
+    <TextView android:textSize="@dimen/dialog_normal_content_text_size" android:textColor="@color/dialog_normal_content" android:id="@id/dialog_normal_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/layout_margin" android:layout_marginTop="@dimen/dialog_normal_content_margin_top_bottom" android:layout_marginRight="@dimen/layout_margin" android:layout_marginBottom="@dimen/dialog_normal_content_margin_top_bottom" />
+    <View android:background="@color/dividing" android:layout_width="fill_parent" android:layout_height="@dimen/dividing_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_normal_button_height">
+        <Button android:textSize="@dimen/dialog_normal_button_text_size" android:textColor="@color/dialog_normal_cancel" android:id="@id/dialog_normal_cancel" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@color/dividing" android:layout_width="@dimen/dividing_height" android:layout_height="@dimen/dialog_normal_dividing_height" />
+        <Button android:textSize="@dimen/dialog_normal_button_text_size" android:textColor="@color/dialog_normal_ok" android:id="@id/dialog_normal_confirm" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

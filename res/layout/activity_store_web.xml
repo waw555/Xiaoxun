@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/pg_progres_store" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0dip" android:progressDrawable="@drawable/progressbar_bg" style="?android:progressBarStyleHorizontal" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_feedback" android:layout_below="@id/pg_progres_store">
+        <com.xiaoxun.xun.views.MyWebView android:id="@id/webcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout android:id="@id/layout_feedback" android:background="@color/bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_resolve" android:layout_centerVertical="true" android:layout_marginStart="@dimen/divideleftandright" />
+        <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/dark_grey" android:id="@id/btn_feedback" android:background="@drawable/btn_confirm_feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/helpweb_feedback" android:layout_centerVertical="true" android:layout_marginEnd="8.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

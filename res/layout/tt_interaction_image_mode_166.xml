@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/tt_live_full_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/tt_full_live_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/tt_live_ad_icon" android:background="@drawable/tt_live_ad_status_icon" android:layout_width="45.0dip" android:layout_height="16.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="52.0dip" android:layout_alignTop="@id/tt_full_live_video_container" />
+    <TextView android:id="@id/tt_ad_logo" android:background="@drawable/tt_ad_logo_new" android:layout_width="36.0dip" android:layout_height="14.0dip" android:layout_marginLeft="16.0dip" android:layout_marginBottom="16.0dip" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/tt_full_live_video_btn_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="196.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tt_live_video_btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tt_live_full_reward_btn" android:drawableLeft="@drawable/tt_live_ad_loading_btn_status" android:drawablePadding="8.0dip" android:layout_centerHorizontal="true" />
+        <ImageView android:background="#33ffffff" android:layout_width="61.0dip" android:layout_height="1.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/tt_live_video_btn_tv" android:layout_centerVertical="true" />
+        <ImageView android:background="#33ffffff" android:layout_width="61.0dip" android:layout_height="1.0dip" android:layout_marginLeft="12.0dip" android:layout_toRightOf="@id/tt_live_video_btn_tv" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/true_black" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:text="title" />
+            <View android:background="@color/line_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="23.329987dip" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:layout_gravity="center" android:id="@id/content" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:text="content" />
+            <RelativeLayout android:background="@drawable/input_box" android:layout_width="fill_parent" android:layout_height="34.329987dip" android:layout_marginLeft="23.329987dip" android:layout_marginTop="6.659973dip" android:layout_marginRight="23.329987dip">
+                <EditText android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/input" android:background="@color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="34.329987dip" android:singleLine="true" />
+                <ImageButton android:id="@id/delete_keyword" android:background="@drawable/delete_keyword" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.659973dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:layout_marginBottom="23.0dip" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip">
+                <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/cancel_btn" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/cancel" android:layout_weight="1.0" />
+                <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/confirm_btn" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/confirm" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

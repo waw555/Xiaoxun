@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="45.329987dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="45.329987dip">
+        <ImageView android:id="@id/iv_selectimg1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:src="@drawable/day_select" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/iv_selecttext1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/device_alarm_reset_1" />
+    </LinearLayout>
+</RelativeLayout>

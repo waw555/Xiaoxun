@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_title" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/light_title" android:background="@color/xiaomi_bg_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="3.0dip" android:text="@string/watch_light" />
+        <com.xiaoxun.xun.views.CustomConfigSeekbar android:id="@id/myCustomConfigSeekBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.329987dip" android:layout_marginRight="10.329987dip" />
+        <ImageView android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginTop="10.0dip" android:layout_marginRight="23.329987dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="3.0dip" android:text="@string/watch_volume" />
+        <com.xiaoxun.xun.views.CustomConfigSeekbar android:id="@id/myCustomSeekBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.329987dip" android:layout_marginRight="10.329987dip" />
+    </LinearLayout>
+    <ImageView android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+    <RelativeLayout android:gravity="center" android:id="@id/watch_notice_view" android:background="@drawable/setting_item_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/DoubleLineItemHeight">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_notice_method" android:singleLine="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_notice_method_detail2" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/txt_grey" android:id="@id/volume_result_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.329987dip" android:singleLine="true" android:layout_toLeftOf="@id/next_img" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/next_img" android:background="@drawable/btn_next_selector" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+</LinearLayout>

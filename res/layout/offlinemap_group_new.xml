@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.329987dip" android:layout_marginRight="23.329987dip" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@android:color/black" android:id="@id/group_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:text="@string/map_country" android:layout_toRightOf="@id/group_image" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/group_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.659973dip" android:src="@drawable/drop_down_0" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="#33000000" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_marginLeft="23.329987dip" android:layout_marginTop="50.0dip" android:layout_marginRight="23.329987dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

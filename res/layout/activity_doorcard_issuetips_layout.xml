@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/card_manager_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_ly" layout="@layout/activity_title" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:src="@drawable/issue_doorcard_img" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nfc_card_doorcard_issued_tips" android:layout_below="@id/img" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

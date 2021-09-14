@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_guide_process" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/process_start_ly" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bind_finish_process_1_bg" android:scaleType="fitXY" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/bind_finish_guide_words_color" android:gravity="center" android:id="@id/tv_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/bind_finish_guide_process_intro" android:layout_above="@id/btn_next" android:layout_centerHorizontal="true" />
+    <Button android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/btn_next" android:background="@drawable/schedule_next_to" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:text="@string/bind_finish_guide_process_btn_start" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

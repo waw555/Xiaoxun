@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="63.659973dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:id="@id/tv_call_log_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tv_call_log_name">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:id="@id/tv_call_log_number" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.659973dip" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:id="@id/tv_call_log_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tv_call_log_number" />
+                <ImageView android:id="@id/iv_call_log_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.659973dip" android:src="@drawable/call_in_0" android:layout_toRightOf="@id/tv_call_log_time" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:id="@id/tv_call_log_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

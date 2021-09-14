@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/layout_feedback_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_function_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.329987dip" android:layout_alignParentStart="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_7" android:gravity="center_vertical" android:id="@id/tv_function_name" android:layout_width="wrap_content" android:layout_height="49.329987dip" android:layout_toRightOf="@id/iv_function_icon" android:layout_centerVertical="true" />
+    <CheckBox android:id="@id/check_function" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" style="@style/CustomCheckBoxTheme" />
+</RelativeLayout>

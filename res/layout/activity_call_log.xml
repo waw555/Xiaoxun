@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <ListView android:id="@id/call_log_list" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" android:layout_below="@id/title" />
+    <RelativeLayout android:id="@id/layout_no_call_log" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_no_call_log" android:background="@drawable/no_call_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.659973dip" android:text="@string/no_call_log" android:layout_below="@id/iv_no_call_log" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_refresh" android:background="@drawable/bottom_navigation_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="95.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/MyTextSize2" android:textColor="@color/dark_grey" android:id="@id/btn_refresh" android:background="@drawable/btn_trace_retry_selector" android:layout_width="70.0dip" android:layout_height="30.0dip" android:layout_marginRight="23.329987dip" android:text="@string/retry" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/dark_grey" android:gravity="center|left" android:id="@id/iv_buttomtitle_err" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" android:text="@string/network_err" android:maxLines="1" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

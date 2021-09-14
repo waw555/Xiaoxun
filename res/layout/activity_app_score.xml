@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="280.66406dip" android:layout_height="wrap_content" android:layout_marginStart="7.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/app_score_background" android:layout_width="266.66406dip" android:layout_height="325.66406dip">
+        <TextView android:textSize="20.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="72.66998dip" android:text="@string/app_score_tips" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <Button android:background="@drawable/btn_tucao_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:onClick="badScore" android:layout_marginStart="14.0dip" />
+        <Button android:background="@drawable/btn_opinion_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:onClick="goodScore" android:layout_marginEnd="14.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/app_score_close" android:onClick="close" android:layout_alignParentEnd="true" />
+</RelativeLayout>

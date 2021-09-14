@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_wifi_title" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginStart="@dimen/divideleftandright" android:layout_marginEnd="@dimen/divideleftandright">
+        <ImageView android:id="@id/iv_warning" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/icon_warning_red" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/txt_grey" android:id="@id/tv_wifi_title" android:background="@drawable/list_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="2.0dip" android:layout_toEndOf="@id/iv_warning" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_wifi_item" android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginStart="@dimen/divideleftandright" android:layout_marginEnd="@dimen/divideleftandright">
+        <ImageView android:id="@id/iv_device_wifi_strength" android:layout_width="wrap_content" android:layout_height="49.0dip" android:src="@drawable/watch_wifi_2" android:layout_centerVertical="true" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/iv_device_wifi_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/watch_wifi_lock" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_device_wifi_strength" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:id="@id/tv_device_wifi_name" android:background="@drawable/list_item_selector" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xiaomi" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_device_wifi_free" android:layout_alignParentStart="true" />
+        <ImageView android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/jad_splash_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:contentDescription="@string/jad_sdk_name" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/jad_splash_click_area_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="start" android:layout_width="26.5dip" android:layout_height="12.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="51.5dip" android:src="@drawable/jad_logo_default" android:scaleType="fitCenter" android:layout_marginStart="16.0dip" />
+    <com.jd.ad.sdk.core.express.splash.JadRectangleSkipView android:textSize="11.0sp" android:textColor="@color/jad_white" android:gravity="center" android:layout_gravity="end|center|top" android:id="@id/jad_splash_skip_btn" android:background="@drawable/jad_btn_skip_background" android:layout_width="57.0dip" android:layout_height="24.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="15.0dip" android:text="" android:shadowRadius="3.0" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layout_title" layout="@layout/activity_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="14.0dip" android:layout_above="@id/btn_download_app" android:layout_below="@id/layout_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/MyTextSize1" android:textColor="@color/dark_grey" android:layout_gravity="center" android:id="@id/tv_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_icon_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+            <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/txt_grey" android:autoLink="all" android:id="@id/tv_app_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+            <TextView android:textSize="@dimen/xiaomiMyTextBigTitle" android:textColor="@color/black" android:id="@id/tv_app_features_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/app_newversion_functions" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+            <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/txt_grey" android:autoLink="all" android:id="@id/tv_app_functions" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+            <TextView android:textSize="@dimen/xiaomiMyTextBigTitle" android:textColor="@color/black" android:id="@id/tv_app_others_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/app_newversion_others" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+            <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/txt_grey" android:id="@id/tv_app_others" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:textSize="@dimen/xiaomiMyTextSize1" android:id="@id/btn_download_app" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="39.329987dip" android:layout_marginBottom="15.0dip" android:text="@string/install" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+</RelativeLayout>

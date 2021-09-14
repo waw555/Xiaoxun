@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/bg_ly" android:background="@drawable/wechat_group_xiaoxun_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/tips_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wechat_group_qrcode_tips_ly_margin_top">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tips_title_ly" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wechat_group_gonggao" />
+                <TextView android:textSize="17.0sp" android:textColor="@color/txt_coupon_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wechat_group_qrcode_tips_mitu_title" android:layout_marginStart="6.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/color_tile_content" android:gravity="center" android:id="@id/scan_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/wechat_group_qrcode_margin" android:text="@string/wechat_group_qrcode_xiaoxun_scan_tips" />
+        </LinearLayout>
+        <ImageView android:id="@id/qrcode" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginTop="@dimen/wechat_group_qrcode_margin" android:layout_below="@id/tips_ly" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/save_and_goto_wechat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/wechat_group_qrcode_margin_bottom" android:src="@drawable/wechat_group_qrcode_btn" android:layout_below="@id/qrcode" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

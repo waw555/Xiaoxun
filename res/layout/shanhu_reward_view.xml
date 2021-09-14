@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff111111" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn_ad_close" android:background="@drawable/shanhu_volume_bg" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" android:text="X" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btn_area" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/iv_volume" android:background="@drawable/shanhu_volume_bg" android:padding="3.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:drawable="@drawable/shanhu_dis_volume_on" />
+        <TextView android:textSize="15.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_time" android:background="@drawable/shanhu_volume_bg" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="15.0dip" />
+    </LinearLayout>
+    <com.tencent.ep.shanhuad.adpublic.view.BottomBanner android:id="@id/banner_bottom" android:background="@drawable/shanhu_vedio_corner_bg" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:paddingRight="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/btn" android:background="@drawable/shanhu_vedio_btn_bg" android:layout_width="80.0dip" android:layout_height="35.0dip" android:text="下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn" android:layout_toRightOf="@id/icon">
+            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="bottom" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="13.0sp" android:textColor="#ff000000" android:gravity="top" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.tencent.ep.shanhuad.adpublic.view.BottomBanner>
+</RelativeLayout>

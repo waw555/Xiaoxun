@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@color/dark_grey" android:id="@id/city_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11111" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/city_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.659973dip" android:text="11111" android:layout_below="@id/city_name" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/download_state_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.329987dip" android:text="@string/map_status_installed" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/download_btn" android:background="@drawable/small_download_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.329987dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/color_8" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.299988dip" android:layout_marginTop="56.659973dip" android:layout_marginRight="23.299988dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

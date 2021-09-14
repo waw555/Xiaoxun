@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:guidance_text_color="@color/txt_grey" app:guidance_view_bg_color="@color/transparent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:load_text="加载更多" app:progress_bar_color="@color/bg_color_orange" app:refresh_text="下拉刷新">
+        <android.support.v7.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+    </com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout>
+    <com.xiaoxun.xun.views.cornertextview.BorderTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_app_state" android:padding="2.0dip" android:layout_width="320.0dip" android:layout_height="44.0dip" android:layout_marginBottom="16.0dip" android:text="安装（2M）" app:contentBackColor="@color/bg_color_orange" app:cornerRadius="20.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:strokeWidth="1.0dip" />
+</android.support.constraint.ConstraintLayout>

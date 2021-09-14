@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/silence_time_title" layout="@layout/activity_title" />
+    <ScrollView android:id="@id/scrollview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="70.0dip" android:layout_below="@id/silence_time_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="77.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/setting_watch_silence" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:id="@id/message_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_silence_message_detail_old" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/view_division" android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_smart_holiday" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.3299866dip" android:layout_marginBottom="6.3299866dip" android:paddingStart="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_holiday_title" />
+                <ImageButton android:id="@id/btn_smart_holiday" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/switch_off" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:paddingEnd="@dimen/divideleftandright" android:layout_alignParentEnd="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:id="@id/tv_atuo_update_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smart_holiday_hint" android:layout_below="@id/btn_smart_holiday" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/btn_smart_holiday" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.329987dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/divideleftandright">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_lesson_morning" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" />
+            <RelativeLayout android:gravity="center" android:id="@id/morning_class_time" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/color_12" android:id="@id/start_end_time_morning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/divideleftandright" />
+                <TextView android:textColor="@color/black" android:id="@id/vertical_line_1" android:background="@color/txt_grey" android:layout_width="1.0px" android:layout_height="28.0dip" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/start_end_time_morning" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/vertical_line_1">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_12" android:id="@id/week1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/txt_grey" android:id="@id/status1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageButton android:id="@id/switch_morninig" android:background="#00000000" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/divideleftandright" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" />
+            <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.329987dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/divideleftandright">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_lesson_afternoon" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" />
+            <RelativeLayout android:gravity="center" android:id="@id/afternoon_class_time" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/color_12" android:id="@id/start_end_time_afternoon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="@dimen/divideleftandright" />
+                <TextView android:textColor="@color/black" android:id="@id/vertical_line2" android:background="@color/txt_grey" android:layout_width="1.0px" android:layout_height="28.0dip" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/start_end_time_afternoon" />
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/vertical_line2">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_12" android:id="@id/week2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/txt_grey" android:id="@id/status2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageButton android:id="@id/switch_afternoon" android:background="#00000000" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/divideleftandright" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="23.329987dip" android:layout_marginEnd="23.329987dip" />
+            <RelativeLayout android:gravity="center" android:id="@id/self_set" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.329987dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="23.329987dip">
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_lesson_custom" />
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/self_set_divide" android:background="@color/divider_color" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/silence_time_recyclerview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:id="@id/self_set_divide_bottom" android:background="@color/divider_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/buttom_add_view" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/iv_silence_add" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/btn_alarm_add_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/string_add" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/cover" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/silence_time_title" />
+</RelativeLayout>

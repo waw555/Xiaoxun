@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="118.0dip" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="118.0dip" android:layout_height="80.0dip" app:cardCornerRadius="8.0dip" app:cardElevation="0.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <android.support.constraint.ConstraintLayout android:background="@color/color_5" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/white" android:id="@id/tv_xunscore_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/xunscore_send_message_success" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="@dimen/textsize_dimen26" android:textColor="@color/white" android:id="@id/tv_xunscore_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" app:layout_constraintEnd_toStartOf="@id/tv_xunscore_goal" app:layout_constraintHorizontal_chainStyle="packed" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_xunscore_name" />
+            <TextView android:textSize="@dimen/textsize_dimen24" android:textColor="@color/score_task_goal" android:id="@id/tv_xunscore_goal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" app:layout_constraintEnd_toStartOf="@id/iv_xunscore_goal" app:layout_constraintStart_toEndOf="@id/tv_xunscore_add" app:layout_constraintTop_toBottomOf="@id/tv_xunscore_name" />
+            <ImageView android:id="@id/iv_xunscore_goal" android:background="@drawable/xunscore_task_goal2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="3.0dip" app:layout_constraintBottom_toBottomOf="@id/tv_xunscore_goal" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tv_xunscore_goal" app:layout_constraintTop_toTopOf="@id/tv_xunscore_goal" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

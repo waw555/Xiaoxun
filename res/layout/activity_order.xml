@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" app:layout_constraintTop_toBottomOf="@id/title">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_head" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="34.0dip" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/pay_order_dial_content" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_commodity" android:layout_width="220.0dip" android:layout_height="220.0dip" android:layout_marginTop="35.0dip" />
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="￥10.00" />
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/pay_order_left_time" android:layout_gravity="center_horizontal" android:id="@id/tv_left_pay_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/btn_go_cashier" android:background="@drawable/btn_dialgo_one_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/pay_order_go_cashier" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

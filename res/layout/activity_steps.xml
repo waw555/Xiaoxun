@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <LinearLayout android:id="@id/iv_title_back_layout" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_marginStart="13.329987dip" android:layout_alignParentStart="true">
+                <ImageButton android:layout_gravity="center" android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/tv_title_layout" android:layout_width="180.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textStyle="bold" android:textColor="@color/color_tile_content" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/calendar_sign" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_alignParentEnd="true">
+                <ImageButton android:id="@id/setting_button" android:background="@drawable/btn_steps_setting_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/round_progressbar_view" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="310.32812dip" android:layout_below="@id/title">
+        <com.xiaoxun.xun.views.RoundProgressBar android:id="@id/round_progressbar_value" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="25.0dip" android:layout_centerHorizontal="true" android_custom:max="100" android_custom:roundColor="#fff8f8fa" android_custom:roundProgressColor="#ffff5a00" android_custom:roundWidth="8.0dip" android_custom:textIsDisplayable="false" />
+        <View android:id="@id/divsion" android:background="@color/color_tile_content" android:visibility="visible" android:layout_width="1.0px" android:layout_height="18.0dip" android:layout_marginTop="16.699982dip" android:layout_below="@id/round_progressbar_value" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.659973sp" android:textColor="@color/color_tile_content" android:id="@id/steps_Count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_calc_meter_default" android:layout_alignTop="@id/divsion" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/divsion" />
+        <TextView android:textSize="14.659973sp" android:textColor="@color/color_tile_content" android:id="@id/steps_calories" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_calc_kilo_default" android:layout_alignTop="@id/divsion" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/divsion" />
+        <RelativeLayout android:id="@id/watch_offon_rela" android:layout_width="180.0dip" android:layout_height="180.0dip" android:layout_marginTop="25.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textSize="24.329987sp" android:textColor="#ffff5a00" android:id="@id/watch_status" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/steps_open_onoff_title" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="43.329987sp" android:textColor="#ffff5a00" android:id="@id/steps_value" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="78.32999dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_tile_content" android:id="@id/steps_percent" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="105.32999dip" android:text="@string/steps_unit_steps" android:layout_marginStart="3.0dip" android:layout_toEndOf="@id/steps_value" />
+        <TextView android:textSize="18.659973sp" android:textColor="@color/color_tile_content" android:id="@id/steps_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/steps_target_old_default" android:layout_below="@id/steps_value" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="8.659973sp" android:textColor="@color/white" android:id="@id/steps_update_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.659973dip" android:text="" android:layout_below="@id/steps_tag" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/synchrodata_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.659973dip" android:layout_below="@id/steps_tag" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/divsion" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/button_share" android:background="@drawable/share2" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="36.0dip" android:layout_toEndOf="@id/button_update" />
+            <ImageView android:id="@id/button_update" android:background="@drawable/update" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/seven_average_rela" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginTop="15.329987dip" android:layout_below="@id/round_progressbar_view">
+        <TextView android:textSize="12.659973dip" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/week_average_title" android:layout_centerVertical="true" android:layout_marginStart="23.299988dip" />
+        <TextView android:textSize="12.659973dip" android:textColor="@color/black" android:id="@id/seven_average_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_seven_plan_default" android:layout_centerVertical="true" android:layout_marginEnd="23.299988dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/chart2" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="32.0dip" android:layout_marginBottom="20.0dip" android:layout_below="@id/seven_average_rela" android:layout_marginStart="23.299988dip" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/result" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <EditText android:id="@id/cplc" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginTop="20.0dip" />
+    <EditText android:id="@id/addr" android:layout_width="300.0dip" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:layout_below="@id/cplc" />
+    <Button android:textSize="20.0sp" android:id="@id/set_ip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="set ip" android:layout_toRightOf="@id/addr" android:layout_below="@id/cplc" />
+    <Button android:textSize="26.0sp" android:id="@id/sync_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sync" android:layout_centerInParent="true" />
+    <Button android:textSize="26.0sp" android:id="@id/get_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="卡列表" android:layout_below="@id/sync_card" android:layout_centerHorizontal="true" />
+    <Button android:textSize="26.0sp" android:id="@id/issued_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="开自定义白卡" android:layout_below="@id/get_list" android:layout_centerHorizontal="true" />
+    <Button android:textSize="26.0sp" android:id="@id/fetch_cards" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="已开卡" android:layout_below="@id/issued_card" android:layout_centerHorizontal="true" />
+    <Button android:textSize="26.0sp" android:id="@id/get_hotspot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="清除数据" android:layout_below="@id/fetch_cards" android:layout_centerHorizontal="true" />
+    <Button android:textSize="26.0sp" android:id="@id/send_e2e" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取当前设备CPLC" android:layout_below="@id/get_hotspot" android:layout_centerHorizontal="true" />
+    <Button android:textSize="26.0sp" android:id="@id/send_e2e_interrupt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="远程连接测试跳出" android:layout_below="@id/send_e2e" android:layout_centerHorizontal="true" />
+    <CheckBox android:textSize="26.0sp" android:id="@id/mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="指令集传输" android:layout_below="@id/send_e2e_interrupt" android:layout_centerHorizontal="true" />
+    <WebView android:id="@id/test_web" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" />
+</RelativeLayout>

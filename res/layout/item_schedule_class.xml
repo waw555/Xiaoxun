@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/schedule_time_text_color" android:id="@id/tv_class_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="数学" android:layout_marginStart="24.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/bg_color_orange" android:gravity="center" android:id="@id/tv_delete" android:background="@drawable/rectangle_orag_back" android:layout_width="55.0dip" android:layout_height="25.0dip" android:text="@string/files_delete_title" android:layout_marginEnd="14.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#ffd6d6d6" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="14.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/layout_view" android:layout_width="fill_parent" android:layout_height="64.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/iv_head" android:layout_width="39.0dip" android:layout_height="39.0dip" android:src="@drawable/relation_custom" app:layout_constraintBottom_toBottomOf="@id/layout_view" app:layout_constraintStart_toStartOf="@id/layout_view" app:layout_constraintTop_toTopOf="@id/layout_view" />
+    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:id="@id/tv_watch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginStart="@dimen/activity_horizontal_margin" app:layout_constraintBottom_toBottomOf="@id/layout_view" app:layout_constraintStart_toEndOf="@id/iv_head" app:layout_constraintTop_toTopOf="@id/layout_view" />
+    <Button android:textColor="@color/bg_color_orange" android:gravity="center" android:id="@id/btn_unbind" android:background="@drawable/btn_unbind_watch_selector" android:layout_width="64.0dip" android:layout_height="32.0dip" android:text="@string/unbind_watch" app:layout_constraintBottom_toBottomOf="@id/layout_view" app:layout_constraintEnd_toEndOf="@id/layout_view" app:layout_constraintTop_toTopOf="@id/layout_view" />
+</android.support.constraint.ConstraintLayout>

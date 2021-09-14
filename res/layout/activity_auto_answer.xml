@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/activity_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/autoanswer_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" />
+</LinearLayout>

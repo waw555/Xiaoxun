@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@drawable/textview_bolder_corner" android:layout_width="fill_parent" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_head" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginLeft="13.329987dip" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_toRightOf="@id/iv_head" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:textColor="@color/txt_loc_dark_black" android:id="@id/device_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小宝贝" />
+        <TextView android:textColor="@color/txt_loc_dark_black" android:id="@id/extern_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nfc_doorcard_device_unsupport_nfc" android:layout_toRightOf="@id/device_name" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <CheckBox android:id="@id/select_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.329987dip" android:button="@drawable/door_card_checkbox" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

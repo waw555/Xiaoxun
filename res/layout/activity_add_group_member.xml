@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_title" layout="@layout/layout_title_and_back" />
+    <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/alipay_666666" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="@string/add_number_des" android:paddingStart="14.0dip" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/group_member_recyclerview" android:background="@color/white" android:paddingBottom="15.329987dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:paddingStart="14.0dip" android:paddingEnd="14.0dip" />
+    <RelativeLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/alipay_666666" android:gravity="center_vertical" android:id="@id/tv_delete_all_message" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/delete_all_message" android:paddingStart="14.0dip" />
+    </RelativeLayout>
+</LinearLayout>

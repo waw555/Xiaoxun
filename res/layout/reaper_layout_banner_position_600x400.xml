@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/main_image_600x400" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/default_1_78x1" android:scaleType="fitXY" />
+        <FrameLayout android:id="@id/video_view_600x400" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/icon_600x400" android:visibility="visible" android:layout_width="15.0dip" android:layout_height="15.0dip" />
+        <com.fighter.loader.view.BannerMisTouchCloseView android:layout_gravity="center|right|top" android:id="@id/close" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/reaper_ad_close_white15" android:layout_marginEnd="5.0dip" />
+        <com.fighter.loader.view.AdSourceView android:layout_gravity="bottom|center|right" android:id="@id/ad_flag_source_600x400" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="38.0dip">
+        <TextView android:gravity="center_vertical" android:id="@id/ad_creative_button_600x400" android:visibility="visible" android:layout_marginRight="7.0dip" android:text="立即下载" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="7.0dip" android:layout_alignParentEnd="true" style="@style/CreativeBtn_Blue_Border" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff020202" android:ellipsize="end" android:id="@id/desc_600x400" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="10.0dip" android:text="京东百货大促销京东" android:maxLines="1" android:layout_toLeftOf="@id/ad_creative_button_600x400" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" />
+    </RelativeLayout>
+</LinearLayout>

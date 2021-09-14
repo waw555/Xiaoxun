@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tt_live_finish_root" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <com.bytedance.sdk.openadsdk.widget.RoundImageView android:id="@id/tt_live_finish_avatar" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tt_live_finish_studio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/tt_live_finish_avatar" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/tt_live_finish_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/tt_live_finish" android:layout_below="@id/tt_live_finish_studio" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

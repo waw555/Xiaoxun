@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/device_setting_layout" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="64.0dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+        <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/color_12" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/black" android:id="@id/vertical_line" android:background="@color/txt_grey" android:layout_width="1.0px" android:layout_height="28.0dip" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/time" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/vertical_line">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_12" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/txt_grey" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.659973dip" />
+        </LinearLayout>
+        <ImageButton android:id="@id/button_img" android:background="#00000000" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" android:layout_below="@id/device_setting_layout" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright" />
+</RelativeLayout>

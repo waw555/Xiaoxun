@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/id_splash_image" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/image_empty" android:scaleType="fitXY" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/id_video_layout" android:background="@color/image_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <VideoView android:layout_gravity="center" android:id="@id/id_video_player" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center|left|top" android:id="@id/id_mute_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reaper_ic_qs_mute_mode" />
+    </FrameLayout>
+    <com.fighter.loader.view.AdSourceView android:layout_gravity="bottom|center|right" android:id="@id/layout_ad_source_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:layout_marginEnd="2.0dip" />
+</FrameLayout>

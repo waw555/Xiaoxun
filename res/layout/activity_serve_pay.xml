@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <com.telecom.websdk.NormalWebView android:id="@id/alipaywebview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+    <RelativeLayout android:id="@id/progressLay" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <ProgressBar android:id="@id/round_progressbar_1" android:layout_width="31.299988dip" android:layout_height="31.299988dip" android:indeterminateDrawable="@drawable/normal_load" android:indeterminateDuration="2000" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

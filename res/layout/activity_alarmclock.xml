@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/alarmclock_title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/noclock" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:background="@drawable/noclock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/txt_grey" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_alarm_clock" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layer_notice_volume" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttom_view" android:layout_below="@id/alarmclock_title">
+        <android.support.v7.widget.RecyclerView android:id="@id/alarm_time_recyclerview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <View android:id="@id/divide_under_listview" android:background="@color/divider_color" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginRight="23.329987dip" android:layout_below="@id/layer_notice_volume" />
+    <RelativeLayout android:id="@id/buttom_view" android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:gravity="center" android:id="@id/iv_alarm_add_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/string_add" android:drawableTop="@drawable/btn_alarm_add_selector" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/cover" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/alarmclock_title" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/activity_title" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_device_operationmode" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/operation_mode_setting" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_app_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/app_uses_info" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_devices_sleepmode" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/setting_watch_sleep" />
+    <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_device_offline" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/offline_mode_setting" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/setting_watch_intelligent_powersaving" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.329987dip" android:layout_marginBottom="11.329987dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intelligent_power_saving" android:layout_marginStart="8.659973dip" />
+        <ImageButton android:id="@id/btn_watch_intelligent_powersaving" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/switch_on" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/intelligent_powersaving_describe" android:layout_below="@id/btn_watch_intelligent_powersaving" android:layout_marginStart="8.659973dip" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/btn_watch_intelligent_powersaving" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="@dimen/divideleftandright" android:layout_marginEnd="@dimen/divideleftandright" />
+</LinearLayout>

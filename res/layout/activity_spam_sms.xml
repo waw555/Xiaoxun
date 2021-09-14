@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="45.299988dip">
+        <ImageButton android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spam_sms" android:layout_centerInParent="true" android:layout_centerVertical="true" android:layout_marginStart="13.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_spam_sms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.329987dip" android:layout_marginStart="@dimen/SettingItemLeft" android:layout_marginEnd="@dimen/SettingItemLeft">
+        <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/color_7" android:id="@id/tv_spam_sms_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_5" android:id="@id/tv_spam_sms_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_spam_sms_title" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:id="@id/tv_spam_sms_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

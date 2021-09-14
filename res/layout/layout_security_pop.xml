@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/map_pop" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_security_distance" />
+    <TextView android:textSize="10.0sp" android:id="@id/tv_security_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200" />
+    <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m" />
+</LinearLayout>

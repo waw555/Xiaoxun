@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout android:id="@id/swipeRefreshLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" app:guidance_text_color="@color/txt_grey" app:guidance_view_bg_color="@color/transparent" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:load_text="加载更多" app:progress_bar_color="@color/bg_color_orange" app:refresh_text="下拉刷新">
+        <android.support.v7.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" />
+    </com.xiaoxun.xun.gallary.swiplayout.SHSwipeRefreshLayout>
+    <RelativeLayout android:id="@id/no_data" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/view_1" android:background="@drawable/no_status" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_10" android:id="@id/no_data_string" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.659973dip" android:text="@string/no_status" android:layout_below="@id/view_1" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/setting_item_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:clickable="true" android:layout_width="fill_parent" android:layout_height="49.659973dip">
+        <ImageView android:id="@id/setting_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/health_steps" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_7" android:id="@id/setting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/health_steps" android:layout_centerVertical="true" android:layout_marginStart="8.659973dip" android:layout_toEndOf="@id/setting_icon" />
+        <ImageView android:id="@id/iv_red_point" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/indicator" android:layout_centerVertical="true" android:layout_marginStart="13.329987dip" android:layout_toEndOf="@id/setting_text" />
+        <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <TextView android:textColor="@color/txt_grey" android:gravity="end" android:id="@id/setting_state" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/performance_mode_setting" android:maxLines="1" android:layout_centerVertical="true" android:layout_marginStart="8.659973dip" android:layout_marginEnd="@dimen/watchSettingState" android:layout_toStartOf="@id/iv_arrow" android:layout_toEndOf="@id/setting_text" />
+    </RelativeLayout>
+    <ImageView android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/line_grey" />
+</LinearLayout>

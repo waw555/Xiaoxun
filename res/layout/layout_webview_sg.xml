@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_adpage" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <ImageView android:id="@id/iv_sgad_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/sg_back" />
+        <ImageView android:id="@id/iv_web_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/icon_web_close" android:layout_toRightOf="@id/iv_sgad_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff808080" android:gravity="center" android:id="@id/tv_sgad_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="150.0dip" android:maxLines="1" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/pb_sgad_progress" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

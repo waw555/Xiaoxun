@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/device_unlink_ly" android:padding="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title">
+        <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/nfc_device_unlink_info" android:layout_centerVertical="true" />
+        <Button android:id="@id/btn_link" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/connect" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/open_card_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_above="@id/bottom_ly" android:layout_below="@id/device_unlink_ly">
+        <ImageView android:layout_gravity="center" android:id="@id/card_img" android:layout_width="306.0dip" android:layout_height="196.0dip" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="14.0dip" android:layout_marginEnd="14.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="选择金额:" />
+                <android.support.v7.widget.RecyclerView android:id="@id/recharge_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+                <RelativeLayout android:id="@id/issue_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/txt_coupon_color" android:id="@id/sever_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务费" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="13.0sp" android:id="@id/issueFee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$16" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="@color/txt_coupon_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总金额" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="13.0sp" android:id="@id/total_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="$66" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <TextView android:textSize="10.0sp" android:textColor="@color/app_score_color" android:id="@id/fee_notice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/nfc_card_fee_notice" />
+                <RelativeLayout android:id="@id/coupon_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/txt_coupon_color" android:id="@id/coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nfc_coupon_txt" android:layout_alignParentLeft="true" />
+                    <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <TextView android:textSize="13.0sp" android:textColor="@color/txt_coupon_color" android:id="@id/coupon_fee" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/capcha_ly" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <TextView android:textColor="@color/nfc_transit_capcha_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nfc_card_transit_capcha_phonenum_tips" />
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                        <EditText android:textSize="16.0sp" android:textColorHint="@color/color_content_hint" android:id="@id/et_phonenum" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/enter_your_mobile_phone_number" />
+                        <ImageButton android:id="@id/delete_keyword" android:background="@drawable/delete_keyword" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.659973dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        <ImageView android:background="@color/color_content_hint" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="4.0dip" android:layout_below="@id/et_phonenum" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/capcha_get_ly" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="16.0sp" android:textColor="@color/txt_coupon_color" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nfc_card_transit_capcha_label" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/devide_line" android:background="@color/color_content_hint" android:layout_width="1.0px" android:layout_height="15.0dip" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/label" />
+                        <EditText android:textSize="16.0sp" android:textColorHint="@color/color_content_hint" android:id="@id/et_capcha" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/nfc_card_transit_captcha_input_empty" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/devide_line" />
+                        <Button android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/btn_get_capcha" android:background="@drawable/btn_capcha_no_input_bg" android:layout_width="70.0dip" android:layout_height="28.0dip" android:text="@string/nfc_card_transit_capcha_phonenum_send_capcha" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                        <ImageButton android:id="@id/delete_capcha" android:background="@drawable/delete_keyword" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.659973dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/btn_get_capcha" />
+                        <ImageView android:background="@color/color_content_hint" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="6.0dip" android:layout_below="@id/btn_get_capcha" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bottom_ly" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/sever_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/nfc_checkbox_selector" />
+                <TextView android:textSize="12.0sp" android:id="@id/server_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我同意《服务条款》" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <CheckBox android:id="@id/xm_sever_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/nfc_checkbox_selector" />
+                <TextView android:textSize="12.0sp" android:id="@id/xm_server_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我同意《服务条款》" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@id/btn_pay" android:background="@drawable/brn_nfc_pay_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/grey_ly" android:background="@color/color_2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/device_unlink_ly" />
+</RelativeLayout>

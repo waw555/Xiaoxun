@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/top_view" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="180.0dip" android:layout_height="100.0dip" android:layout_marginLeft="20.0dip">
+            <Spinner android:layout_gravity="center" android:id="@id/test_content" android:layout_width="100.0dip" android:layout_height="40.0dip" />
+            <RelativeLayout android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="wrap_content">
+                <EditText android:textSize="14.0sp" android:id="@id/test_delaytime" android:layout_width="60.0dip" android:layout_height="40.0dip" />
+                <CheckBox android:textSize="12.0sp" android:id="@id/test_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:text="定时" android:layout_below="@id/test_delaytime" />
+                <CheckBox android:textSize="12.0sp" android:id="@id/show_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:checked="false" android:text="定位所有手表" android:layout_below="@id/test_mode" />
+            </RelativeLayout>
+        </LinearLayout>
+        <Button android:textSize="10.0sp" android:layout_gravity="center" android:id="@id/test_begin" android:layout_width="70.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="开始测试" />
+        <Button android:textSize="10.0sp" android:layout_gravity="center" android:id="@id/test_end" android:layout_width="70.0dip" android:layout_height="40.0dip" android:text="结束测试" />
+    </LinearLayout>
+    <com.amap.api.maps.MapView android:id="@id/amap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom_view" android:layout_below="@id/top_view" />
+    <LinearLayout android:orientation="vertical" android:id="@id/bottom_view" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+        <TextView android:scrollbarStyle="outsideOverlay" android:textSize="10.0sp" android:textColor="#ffff00ff" android:id="@id/point_content_watch" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="手表点信息" android:scrollbarFadeDuration="500" />
+        <TextView android:scrollbarStyle="outsideOverlay" android:textSize="10.0sp" android:id="@id/point_content_service" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:text="服务器点信息" android:scrollbarFadeDuration="500" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_9" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/titleh" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_select" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/titleh" android:animateLayoutChanges="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="11.0sp" android:textColor="#4f000000" android:background="#fff5f5f5" android:paddingTop="@dimen/dimen7" android:paddingBottom="@dimen/dimen7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/filter_notice_promp" android:paddingStart="@dimen/divideleftandright" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_all_notice" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/all_notice_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_firend_circle" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈动态" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/firend_circle_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_location" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/location_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/location_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_battery" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/battery_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/battery_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_step" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/steps_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/step_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_family_member" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/family_member_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_short_msg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sms_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/short_msg_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_download_msg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/download_msg_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_system_msg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_notice" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/system_msg_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_schedule_msg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/schedule_notice_title" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/schedule_msg_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_collision_msg" android:clickable="false" android:layout_width="fill_parent" android:layout_height="46.659973dip" android:paddingStart="@dimen/divideleftandright" android:paddingEnd="@dimen/divideleftandright">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pengzhuang_prompt" android:layout_centerVertical="true" android:layout_toEndOf="@id/function_icon" />
+                <CheckBox android:id="@id/collision_msg_onoff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" style="@style/CustomCheckboxTheme" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_dismiss" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

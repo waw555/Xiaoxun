@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <TextView android:textSize="14.0dip" android:id="@id/tv_useage_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/app_flow_hint" android:layout_below="@id/title" />
+    <View android:id="@id/division_line" android:background="@color/txt_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/tv_useage_time" />
+    <ListView android:id="@id/app_usage_view" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:stretchMode="columnWidth" android:layout_above="@id/tv_update_time" android:layout_below="@id/tv_useage_time" />
+    <TextView android:textSize="14.0dip" android:id="@id/tv_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_no_use" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:background="@drawable/watch_app_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        <TextView android:textSize="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_uses_disable" />
+    </LinearLayout>
+</RelativeLayout>

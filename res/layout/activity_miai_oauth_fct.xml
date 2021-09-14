@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/layout_function_control" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_below="@id/title" android:paddingStart="@dimen/SettingItemLeft" android:paddingEnd="@dimen/SettingItemLeft">
+        <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/color_tile_content" android:id="@id/tv_function_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/miai_account_oauth" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_function_onoff" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <View android:background="@color/divider_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/alipay_666666" android:id="@id/tv_function_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/miai_account_oauth" android:layout_below="@id/layout_function_control" android:layout_centerVertical="true" android:paddingStart="@dimen/SettingItemLeft" android:paddingEnd="@dimen/SettingItemLeft" />
+    <TextView android:textSize="@dimen/xiaomiMyTextNickname" android:textColor="@color/true_black" android:id="@id/tv_function_aq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/miai_account_oauth" android:layout_below="@id/tv_function_desc" android:layout_centerVertical="true" android:paddingStart="@dimen/SettingItemLeft" android:paddingEnd="@dimen/SettingItemLeft" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_function_aqlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/tv_function_aq" />
+</RelativeLayout>

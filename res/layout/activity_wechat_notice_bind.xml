@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="@color/divider" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:textColor="@color/txt_grey" android:id="@id/intrduce" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/wechat_notice_bind_intrduce" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/qrcode_ly" android:layout_width="290.0dip" android:layout_height="290.0dip" android:layout_marginTop="40.0dip" android:layout_below="@id/intrduce" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/img" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <RelativeLayout android:id="@id/to_wechatmini" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="60.0dip" android:layout_below="@id/qrcode_ly">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:gravity="center_vertical" android:id="@id/to_wechatmini_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wechat_notice_bind_save" android:layout_centerVertical="true" android:layout_marginStart="23.0dip" android:layout_alignParentStart="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:src="@color/divider" android:layout_below="@id/to_wechatmini_content" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/share_to_gallery" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_below="@id/to_wechatmini">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:gravity="center_vertical" android:id="@id/share_to_gallery_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wechat_notice_bind_share" android:layout_centerVertical="true" android:layout_marginStart="23.0dip" android:layout_alignParentStart="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next" android:layout_centerVertical="true" android:layout_marginEnd="20.0dip" android:layout_alignParentEnd="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:src="@color/divider" android:layout_below="@id/share_to_gallery_content" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/manager" android:background="@drawable/setting_item_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="30.0dip" android:layout_below="@id/share_to_gallery">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:gravity="center_vertical" android:id="@id/manager_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wechat_notice_bind_manager" android:layout_centerVertical="true" android:layout_marginStart="23.0dip" android:layout_alignParentStart="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:src="@color/divider" android:layout_below="@id/manager_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

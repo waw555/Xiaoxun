@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.299988dip">
+        <ImageView android:id="@id/iv_title_back" android:background="@drawable/nav_btn_fanhui_nor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip" android:layout_marginVertical="11.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ff313131" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/xunscore_app_dwn" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <com.qq.e.ads.nativ.widget.NativeAdContainer android:id="@id/native_ad_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </com.qq.e.ads.nativ.widget.NativeAdContainer>
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:android_custom="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <RelativeLayout android:id="@id/round_progressbar_view" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="252.63dip" android:layout_below="@id/title">
+            <com.xiaoxun.xun.views.RoundProgressBar android:id="@id/round_progressbar_value" android:layout_width="171.29999dip" android:layout_height="171.29999dip" android:layout_marginTop="15.329987dip" android:layout_centerHorizontal="true" android_custom:max="100" android_custom:roundColor="#7fffffff" android_custom:roundProgressColor="#ffffffff" android_custom:roundWidth="4.0dip" android_custom:textIsDisplayable="false" />
+            <RelativeLayout android:id="@id/value_layout" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="54.0dip" android:layout_centerHorizontal="true">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                    <TextView android:textColor="@color/white" android:id="@id/balance_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize0" android:textColor="@color/white" android:id="@id/yuan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/yuan" android:layout_toRightOf="@id/balance_value" android:layout_alignBottom="@id/balance_value" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="10.659973sp" android:textColor="@color/white" android:id="@id/watch_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="卡余额" android:layout_below="@id/value_layout" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize11" android:textColor="@color/color_2" android:id="@id/giftrecharge" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_below="@id/watch_status" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/white" android:id="@id/simno" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="38.659973dip" android:text="@string/sim_card_number" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="80.32999dip" android:layout_marginLeft="23.329987dip" android:layout_marginTop="20.0dip" android:layout_marginRight="23.329987dip">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize12" android:id="@id/callerid_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/callerid_line_title" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:layout_width="252.0dip" android:layout_height="wrap_content" android:text="@string/callerid_inf" android:layout_below="@id/callerid_title" />
+            <ImageButton android:id="@id/button_img" android:background="@drawable/switch_off" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View android:layout_gravity="center_horizontal" android:background="@color/line_grey" android:layout_width="320.0dip" android:layout_height="1.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="23.329987dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/xiaomiMyTextSize12" android:id="@id/historybill" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="历史账单" android:layout_weight="1.0" />
+        <Button android:textSize="@dimen/xiaomiMyTextSize12" android:id="@id/recharge" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_recharge_tips_title" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

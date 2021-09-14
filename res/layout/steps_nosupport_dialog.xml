@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/true_black" android:layout_gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="title" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:layout_gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="30.0dip" android:text="content" />
+            <RelativeLayout android:id="@id/tip_selector" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="10.0dip">
+                <ImageView android:id="@id/selector_view" android:background="@drawable/choice_0" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/true_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/steps_no_title" android:layout_toRightOf="@id/selector_view" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/two_btns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:layout_marginBottom="23.329987dip">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/one_btn" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/donothing_text" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

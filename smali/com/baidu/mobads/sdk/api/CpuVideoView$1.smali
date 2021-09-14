@@ -1,0 +1,148 @@
+.class Lcom/baidu/mobads/sdk/api/CpuVideoView$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# instance fields
+.field final synthetic this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+
+# direct methods
+.method constructor <init>(Lcom/baidu/mobads/sdk/api/CpuVideoView;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    iget-object p1, p1, Lcom/baidu/mobads/sdk/api/CpuVideoView;->mVideoView:Lcom/baidu/mobads/sdk/api/FeedPortraitVideoView;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1}, Lcom/baidu/mobads/sdk/api/FeedPortraitVideoView;->isPlaying()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    iget-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    const/4 v0, 0x2
+
+    iput v0, p1, Lcom/baidu/mobads/sdk/api/CpuVideoView;->mStatusByUserOrSys:I
+
+    .line 3
+    invoke-static {p1}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->access$000(Lcom/baidu/mobads/sdk/api/CpuVideoView;)Landroid/widget/ImageView;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    const-string v1, "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"
+
+    invoke-virtual {v0, v1}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->string2bitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    .line 4
+    iget-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    invoke-virtual {p1}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->pause()V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    iget-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    iget v0, p1, Lcom/baidu/mobads/sdk/api/CpuVideoView;->mStatusByUserOrSys:I
+
+    const/4 v1, 0x3
+
+    const/4 v2, 0x1
+
+    if-ne v0, v1, :cond_1
+
+    .line 6
+    iput v2, p1, Lcom/baidu/mobads/sdk/api/CpuVideoView;->mStatusByUserOrSys:I
+
+    .line 7
+    invoke-static {p1}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->access$000(Lcom/baidu/mobads/sdk/api/CpuVideoView;)Landroid/widget/ImageView;
+
+    move-result-object p1
+
+    const/16 v0, 0x8
+
+    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 8
+    iget-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    invoke-static {p1}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->access$000(Lcom/baidu/mobads/sdk/api/CpuVideoView;)Landroid/widget/ImageView;
+
+    move-result-object p1
+
+    iget-object v1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    const-string v2, "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"
+
+    invoke-virtual {v1, v2}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->string2bitmap(Ljava/lang/String;)Landroid/graphics/Bitmap;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
+
+    .line 9
+    iget-object p1, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    invoke-static {p1}, Lcom/baidu/mobads/sdk/api/CpuVideoView;->access$100(Lcom/baidu/mobads/sdk/api/CpuVideoView;)Landroid/widget/TextView;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
+
+    .line 10
+    invoke-static {}, Lcom/baidu/mobads/sdk/api/VideoViewManager;->getInstance()Lcom/baidu/mobads/sdk/api/VideoViewManager;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    invoke-virtual {p1, v0}, Lcom/baidu/mobads/sdk/api/VideoViewManager;->manageItem(Lcom/baidu/mobads/sdk/api/CpuVideoView;)V
+
+    goto :goto_0
+
+    .line 11
+    :cond_1
+    iput v2, p1, Lcom/baidu/mobads/sdk/api/CpuVideoView;->mStatusByUserOrSys:I
+
+    .line 12
+    invoke-static {}, Lcom/baidu/mobads/sdk/api/VideoViewManager;->getInstance()Lcom/baidu/mobads/sdk/api/VideoViewManager;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/baidu/mobads/sdk/api/CpuVideoView$1;->this$0:Lcom/baidu/mobads/sdk/api/CpuVideoView;
+
+    invoke-virtual {p1, v0}, Lcom/baidu/mobads/sdk/api/VideoViewManager;->manageItem(Lcom/baidu/mobads/sdk/api/CpuVideoView;)V
+
+    :goto_0
+    return-void
+.end method

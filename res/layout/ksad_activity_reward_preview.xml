@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kwad.sdk.core.view.AdBaseFrameLayout android:orientation="vertical" android:id="@id/ksad_landing_page_root" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kwad.sdk.core.page.widget.webview.KsAdWebView android:id="@id/ksad_video_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center|right|top" android:id="@id/ksad_reward_preview_skip_time" android:background="@drawable/ksad_splash_preload" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_marginRight="16.0dip" />
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/ksad_web_close_btn" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="16.0dip" android:src="@drawable/ksad_page_close" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+</com.kwad.sdk.core.view.AdBaseFrameLayout>

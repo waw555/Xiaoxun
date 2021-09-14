@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/picker_view" android:background="@drawable/time_bg" android:layout_width="wrap_content" android:layout_height="180.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+            <com.xiaoxun.xun.views.CustomerPickerView android:id="@id/start_hour_pv" android:layout_width="0.0dip" android:layout_height="180.0dip" android:layout_weight="1.0" />
+            <com.xiaoxun.xun.views.CustomerPickerView android:id="@id/start_min_pv" android:layout_width="0.0dip" android:layout_height="180.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize11" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/start_hour_pv_hour" android:layout_width="wrap_content" android:layout_height="180.0dip" android:text="@string/hour" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize11" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/start_min_pv_min" android:layout_width="wrap_content" android:layout_height="180.0dip" android:text="@string/minute" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/black" android:gravity="center" android:id="@id/tv_settime_type" android:background="@color/xiaomi_bg_grey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="61.0dip" android:text="@string/start_time" android:layout_above="@id/picker_view" />
+</RelativeLayout>

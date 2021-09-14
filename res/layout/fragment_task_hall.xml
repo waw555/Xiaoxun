@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/task_list_dataList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_task_hall_add" android:background="@drawable/behavior_hall_add" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="95.0dip" android:layout_marginEnd="15.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+    <ImageView android:id="@id/iv_task_hall_screen" android:background="@drawable/behavior_hall_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="160.0dip" android:layout_marginEnd="15.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

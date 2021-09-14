@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dialog_translucent_background" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/reaper_webview_icon_bad_net" />
+    <TextView android:textSize="@dimen/webview_error_txt_size" android:textColor="#34000000" android:gravity="center_horizontal" android:id="@id/txtReason" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_error_bad_net" android:paddingStart="@dimen/webview_error_left_right_padding" android:paddingEnd="@dimen/webview_error_left_right_padding" />
+    <TextView android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="96.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/tips_reload" style="@style/NewsItemCommonBtn" />
+</LinearLayout>

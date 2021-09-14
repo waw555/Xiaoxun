@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/newFun_cont_rel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/newFun_show_iv" android:layout_width="400.0dip" android:layout_height="400.0dip" android:src="@drawable/app_score_background" android:scaleType="centerInside" android:layout_centerInParent="true" android:onClick="pop_up_click" />
+    <ImageView android:id="@id/newFun_close_iv" android:background="@drawable/new_close" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_below="@id/newFun_show_iv" android:layout_centerHorizontal="true" android:onClick="pop_up_close" />
+</RelativeLayout>

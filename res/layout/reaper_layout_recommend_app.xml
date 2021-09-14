@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_search" android:textColor="@color/text_search" android:gravity="center_vertical" android:id="@id/text_recommend_title" android:layout_width="wrap_content" android:layout_height="@dimen/category_type_height" android:text="@string/recommend_app_details_title" android:paddingStart="@dimen/layout_margin" android:paddingEnd="@dimen/layout_margin" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_recommend_app" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

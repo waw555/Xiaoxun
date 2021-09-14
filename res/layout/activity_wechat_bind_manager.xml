@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize13" android:textColor="@color/txt_grey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/wechat_notice_bind_manager_intro" />
+        <android.support.v7.widget.RecyclerView android:id="@id/wechat_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/txt_grey" android:id="@id/no_member" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wechat_notice_bind_manager_no_one_bind" android:layout_centerInParent="true" />
+</RelativeLayout>

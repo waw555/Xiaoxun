@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="500" android:drawable="@drawable/watch_refresh_location_1" />
+    <item android:duration="500" android:drawable="@drawable/watch_refresh_location_2" />
+    <item android:duration="500" android:drawable="@drawable/watch_refresh_location_3" />
+    <item android:duration="500" android:drawable="@drawable/watch_refresh_location_4" />
+</animation-list>

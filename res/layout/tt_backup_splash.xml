@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/tt_splash_ad_backup_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0sp" android:typeface="normal" android:textStyle="bold" android:textColor="#ff895434" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="79.0dip" android:text="@string/tt_splash_backup_ad_title" />
+    <TextView android:textSize="15.0sp" android:textColor="#ff895434" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tt_splash_backup_desc" android:layout_width="218.0dip" android:layout_height="wrap_content" android:layout_marginTop="31.0dip" android:text="秋季名宿大促，下载注册领高达1600元红包" android:singleLine="false" android:inputType="textMultiLine" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/tt_splash_backup_img" android:layout_width="fill_parent" android:layout_height="219.0dip" android:layout_marginTop="29.0dip" android:scaleType="fitXY" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <FrameLayout android:id="@id/tt_splash_backup_video_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="185.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <Button android:textStyle="bold" android:textColor="@color/tt_white" android:layout_gravity="center_horizontal" android:id="@id/tt_splash_backup_text" android:background="@drawable/tt_splash_ad_backup_btn_bg" android:layout_width="145.0dip" android:layout_height="43.0dip" android:layout_marginTop="37.0dip" android:text="@string/tt_splash_backup_ad_btn" />
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_3" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="79.32999dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/watch_head" android:background="@drawable/animation_1" android:layout_width="186.0dip" android:layout_height="186.0dip" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize10" android:textColor="@color/m_a_watch_nice_name_c" android:id="@id/nicename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/watch_head" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/m_a_watch_nice_name_c" android:id="@id/sos_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.659973dip" android:layout_below="@id/nicename" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="23.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/nothing" android:background="@drawable/btn_sos_left_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/m_a_watch_nice_name_c" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donothing_text" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/donow" android:background="@drawable/btn_sos_right_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/m_a_watch_nice_name_c" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/donow_text" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

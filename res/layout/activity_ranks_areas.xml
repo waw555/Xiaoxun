@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.299988dip">
+        <ImageButton android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="13.299988dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ly_title" android:layout_width="wrap_content" android:layout_height="32.329987dip" android:layout_marginTop="9.659973dip" android:layout_marginBottom="9.0dip" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@color/bg_color_orange" android:gravity="center" android:id="@id/tv_ranks_area" android:background="@drawable/switch_right_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_area" />
+            <TextView android:textColor="@color/color_tile_content" android:gravity="center" android:id="@id/tv_ranks_country" android:background="@drawable/msgtitle_lablayout_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ranks_country" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.telecom.websdk.NormalWebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

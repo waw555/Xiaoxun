@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_blank1" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+    <ViewFlipper android:id="@id/flipper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/main_title_popup" android:outAnimation="@anim/calendar_pop_down" android:layout_below="@id/title_blank1">
+        <LinearLayout android:orientation="vertical" android:id="@id/watch_list" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/view2" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ViewFlipper>
+</RelativeLayout>

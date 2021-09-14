@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="88.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <android.support.v7.widget.CardView android:id="@id/layout_watch_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip" app:cardBackgroundColor="@color/color_6" app:cardCornerRadius="23.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="73.0dip">
+                <ImageView android:id="@id/iv_watch_head" android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/default_head" android:layout_marginStart="16.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <TextView android:textSize="@dimen/textsize_dimen18" android:textColor="@color/black" android:id="@id/tv_watch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wechat_notice_bind_nickname" android:layout_marginStart="9.5dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_watch_head" app:layout_constraintTop_toTopOf="parent" />
+                <ImageView android:background="@drawable/next_to2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

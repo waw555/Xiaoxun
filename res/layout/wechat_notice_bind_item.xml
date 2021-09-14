@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/item_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:textColor="@color/color_black_14" android:layout_gravity="center_vertical" android:id="@id/wechat_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="wechat" android:layout_alignParentStart="true" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/wechat_switch" android:background="@drawable/switch_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="5.0dip" android:src="@color/line_grey" android:layout_below="@id/item_ly" />
+</RelativeLayout>

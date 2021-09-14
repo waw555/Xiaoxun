@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/send_time" android:visibility="gone" android:layout_width="311.32812dip" android:layout_height="wrap_content" android:layout_marginTop="18.659973dip" android:layout_marginBottom="10.329987dip">
+        <ImageView android:background="@color/chat_item_text" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" android:layout_toStartOf="@id/chat_send_time" />
+        <TextView android:textColor="@color/m_a_spliter_line" android:id="@id/chat_send_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_centerInParent="true" />
+        <ImageView android:background="@color/chat_item_text" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_centerVertical="true" android:layout_toEndOf="@id/chat_send_time" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.659973dip" android:layout_marginEnd="8.659973dip">
+        <ImageView android:id="@id/miai_service_head" android:background="@drawable/miai_head" android:layout_width="38.0dip" android:layout_height="38.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/txt_grey" android:id="@id/tv_robot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/mi_ai_robot" android:layout_toRightOf="@id/miai_service_head" />
+        <com.xiaoxun.xun.views.HttpTextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:gravity="start|center" android:autoLink="all" android:id="@id/tv_left_chat_content" android:background="@drawable/miaiservice" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_default" android:singleLine="false" android:layout_toRightOf="@id/miai_service_head" android:layout_below="@id/tv_robot" android:layout_centerVertical="true" android:layout_marginEnd="40.0dip" />
+        <ImageView android:id="@id/miai_custom_head" android:background="@drawable/relation_0" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_alignParentEnd="true" />
+        <com.xiaoxun.xun.views.HttpTextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:gravity="start|center" android:autoLink="all" android:id="@id/tv_right_chat_content" android:background="@drawable/miaicustom" android:paddingLeft="10.0dip" android:paddingTop="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_default" android:layout_toLeftOf="@id/miai_custom_head" android:layout_marginStart="40.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/feedBack_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.659973dip" android:layout_marginEnd="8.659973dip">
+        <ImageView android:id="@id/miai_head" android:background="@drawable/miai_head" android:layout_width="38.0dip" android:layout_height="38.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/txt_grey" android:id="@id/tv_robot1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="2.0dip" android:text="@string/mi_ai_robot" android:layout_toRightOf="@id/miai_head" />
+        <RelativeLayout android:background="@drawable/miaiservice" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/miai_head" android:layout_below="@id/tv_robot1" android:layout_marginEnd="40.0dip">
+            <TextView android:textColor="@color/color_5" android:id="@id/feedBack_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/mi_ai_feedback_title" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/feedBack_tv" android:layout_centerHorizontal="true">
+                <TextView android:textColor="@color/bg_color_orange" android:id="@id/feedback_solve_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/repair_state_solved" android:layout_toRightOf="@id/feedback_solve_no" />
+                <TextView android:textColor="@color/bg_color_orange" android:id="@id/feedback_solve_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_ai_feedback_no" />
+                <TextView android:id="@id/feedback_resolve_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mi_ai_feedback_back" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/head_icon_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ic_launcher" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/interval_view" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

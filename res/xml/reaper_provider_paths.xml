@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="reaper_cache_path" path="." />
+    <external-path name="reaper_external_path" path="." />
+    <external-files-path name="reaper_external_files" path="." />
+    <external-cache-path name="reaper_external_cache" path="." />
+    <files-path name="reaper_files" path="." />
+</paths>

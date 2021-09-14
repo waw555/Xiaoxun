@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/layout_title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/activity_title" />
+    </android.support.constraint.ConstraintLayout>
+    <View android:id="@id/divider" android:background="@color/alipay_aaaaaa" android:layout_width="fill_parent" android:layout_height="0.5dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_title" />
+    <TextView android:textSize="@dimen/textsize_dimen13" android:textColor="@color/black" android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/add_new_member_action" android:layout_marginStart="15.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_watch_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_desc" />
+</android.support.constraint.ConstraintLayout>

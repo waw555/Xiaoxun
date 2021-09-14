@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/securityzoneboder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.329987dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.329987dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="150.0dip">
+            <ImageView android:id="@id/security_zone_image" android:background="@drawable/security_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="1.0px" android:scaleType="centerCrop" android:layout_above="@id/bottomline" />
+            <View android:id="@id/bottomline" android:background="#ffa3a4a5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <ImageView android:id="@id/log_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.329987dip" android:layout_marginTop="16.659973dip" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.659973dip" android:layout_marginRight="12.659973dip" android:layout_toLeftOf="@id/delete_img" android:layout_toRightOf="@id/log_img">
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/security_zone_default_home" android:singleLine="true" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/txt_grey" android:id="@id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/security_zone_default_info" android:singleLine="true" />
+            </LinearLayout>
+            <ImageButton android:id="@id/button_img" android:background="#00000000" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.329987dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/delete_img" android:background="@drawable/delete_security" android:focusable="false" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:layout_toLeftOf="@id/button_img" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/but_security_setting" android:background="@drawable/btn_security_zone_setting" android:focusable="false" android:clickable="true" android:layout_width="46.659973dip" android:layout_height="27.659973dip" android:layout_marginRight="12.659973dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.659973dip" android:id="@id/text_security_setting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.329987dip" android:text="@string/security_zone_default_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_home_wifi" android:visibility="gone" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="66.0dip">
+            <View android:background="@color/color_9" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:id="@id/icon_wifi" android:background="@drawable/icon_home_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.329987dip" android:layout_marginTop="16.659973dip" android:layout_alignParentLeft="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.659973dip" android:layout_marginRight="12.659973dip" android:layout_toLeftOf="@id/but_wifi_setting" android:layout_toRightOf="@id/icon_wifi">
+                <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/home_wifi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/home_wifi_name" android:singleLine="true" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/txt_grey" android:id="@id/home_wifi_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_wifi_des" android:singleLine="true" />
+            </LinearLayout>
+            <ImageButton android:id="@id/but_wifi_setting" android:background="@drawable/btn_security_zone_setting" android:focusable="false" android:clickable="true" android:layout_width="46.659973dip" android:layout_height="27.659973dip" android:layout_marginRight="12.659973dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.659973dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="23.329987dip" android:text="@string/security_zone_default_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/spam_message_layout" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_watch_title" android:layout_width="fill_parent" android:layout_height="45.299988dip">
+        <ImageButton android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="13.299988dip" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/spam_message" android:layout_centerInParent="true" android:layout_centerVertical="true" android:layout_marginStart="13.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/txt_grey" android:id="@id/tv_spam_sms_notice" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.329987dip" android:text="@string/spam_sms_info" android:layout_marginStart="23.329987dip" android:layout_marginEnd="23.329987dip" />
+    <ImageView android:id="@id/list_divide" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="23.329987dip" android:layout_marginTop="8.659973dip" android:layout_marginRight="23.329987dip" android:src="@color/line_grey" />
+    <android.support.v7.widget.RecyclerView android:id="@id/spam_msg_list_recyclerview" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <RelativeLayout android:layout_gravity="center" android:id="@id/layout_no_spam_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="189.32999dip">
+        <ImageView android:id="@id/view_1" android:background="@drawable/voice_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.659973dip" android:text="@string/no_spam_msg" android:layout_below="@id/view_1" />
+    </RelativeLayout>
+</LinearLayout>

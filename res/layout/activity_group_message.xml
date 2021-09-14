@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chatlayout" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layout_watch_title" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="45.299988dip">
+        <ImageButton android:id="@id/iv_title_back" android:background="@drawable/btn_title_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@id/iv_watch_head" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/small_default_head" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_tile_content" android:id="@id/tv_watch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mylocationtitle" android:layout_toRightOf="@id/iv_watch_head" android:layout_centerVertical="true" android:layout_marginStart="13.0dip" />
+            <ImageView android:id="@id/iv_insert_mode" android:background="@drawable/whisper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/tv_watch_name" />
+        </RelativeLayout>
+        <ImageButton android:id="@id/iv_add_group_member" android:background="@drawable/btn_alldevices_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="13.299988dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/xiaomiMyTextSize9" android:textColor="@color/color_message_state_text" android:gravity="center" android:id="@id/tv_watch_state" android:background="@color/color_message_state" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/network_error_prompt" android:layout_below="@id/layout_watch_title" />
+    <RelativeLayout android:id="@id/no_chat_ly" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="189.32999dip" android:layout_below="@id/tv_watch_state" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/view_1" android:background="@drawable/voice_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.659973dip" android:text="@string/no_group_chat" android:layout_below="@id/view_1" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bar_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:id="@id/tool" android:background="@drawable/bottom_navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/btn_chane_input_type" android:background="@drawable/btn_message_mode_keyboard_selector" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="@dimen/dimen16" android:layout_marginTop="@dimen/dimen34" android:layout_marginBottom="@dimen/dimen17" android:layout_centerVertical="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen20" android:layout_marginRight="@dimen/dimen20" android:layout_centerVertical="true" android:layout_toStartOf="@id/btn_more" android:layout_toEndOf="@id/btn_chane_input_type">
+                <RelativeLayout android:id="@id/chat" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/layout_emoji_btn" android:layout_centerVertical="true">
+                    <com.xiaoxun.xun.views.TimeoutButton android:id="@id/record_button" android:background="@drawable/btn_recording_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/txt_grey_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_record_string" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_text_input" android:background="@drawable/inputbox_whitenum" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/layout_emoji_btn" android:layout_centerVertical="true">
+                    <EditText android:textSize="16.0sp" android:textColor="@color/color_7" android:id="@id/edit_send_text" android:background="@null" android:paddingLeft="5.0dip" android:paddingTop="3.0dip" android:paddingRight="5.0dip" android:paddingBottom="3.0dip" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:maxLines="2" android:layout_toStartOf="@id/tv_input_number" />
+                    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_5" android:id="@id/tv_input_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="3.0dip" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layout_emoji_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                    <ImageButton android:id="@id/btn_emoji" android:background="@drawable/btn_emoji_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageButton android:id="@id/btn_send_txt" android:background="@drawable/btn_text_send_selector" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="@dimen/dimen34" android:layout_marginRight="@dimen/dimen16" android:layout_marginBottom="@dimen/dimen17" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+            <ImageButton android:id="@id/btn_more" android:background="@drawable/btn_more_function_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen34" android:layout_marginRight="@dimen/dimen16" android:layout_marginBottom="@dimen/dimen17" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <View android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        <RelativeLayout android:gravity="center" android:id="@id/layout_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+            <RelativeLayout android:id="@id/layout_tingting" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/round_progressbar_1" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminateDrawable="@drawable/record_loading" android:indeterminateDuration="2000" android:layout_centerHorizontal="true" />
+                <ImageButton android:id="@id/tingting" android:background="@drawable/btn_tingting_selector" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/color_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/tingting" android:layout_below="@id/tingting" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_takephoto" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_toEndOf="@id/layout_tingting">
+                <ProgressBar android:id="@id/round_progressbar_photo" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:indeterminateDrawable="@drawable/record_loading" android:indeterminateDuration="2000" android:layout_centerHorizontal="true" />
+                <ImageButton android:id="@id/take_photo" android:background="@drawable/btn_takephoto_selector" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/color_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/take_watch_photo" android:layout_below="@id/take_photo" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_send_photo" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_toEndOf="@id/layout_takephoto">
+                <ImageButton android:id="@id/send_photo" android:background="@drawable/btn_album_selector" android:layout_width="32.0dip" android:layout_height="32.0dip" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/color_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/send_photo" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_send_video" android:visibility="visible" android:layout_width="90.0dip" android:layout_height="wrap_content" android:layout_toEndOf="@id/layout_send_photo">
+                <ImageButton android:id="@id/send_video" android:background="@drawable/btn_camera_selector" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="0.0dip" android:scaleType="fitCenter" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/color_5" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/send_video" />
+            </LinearLayout>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_emoji" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/chat_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="1.0px" android:layout_above="@id/bar_bottom" android:layout_below="@id/tv_watch_state" />
+    <RelativeLayout android:id="@id/luying" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/view" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/view">
+            <RelativeLayout android:background="@drawable/remind_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@id/view2" android:background="@drawable/animation_chat_sending" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/white" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/recording" android:layout_below="@id/view2" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize5" android:textColor="@color/color_white_50" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.5999756dip" android:text="@string/slide_cancel" android:layout_below="@id/text1" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/color_9" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

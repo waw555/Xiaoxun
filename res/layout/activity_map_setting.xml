@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title">
+        <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_change_map" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:iv_icon="@drawable/change_map_icon" custom_setting:tv_title="@string/setting_changemap" />
+        <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_offline_map" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:iv_icon="@drawable/offline_map" custom_setting:tv_title="@string/setting_dlmap" />
+        <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_clear_cache_map" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:iv_icon="@drawable/map_cache_clear" custom_setting:tv_title="@string/clear_cache_map" />
+    </LinearLayout>
+</RelativeLayout>

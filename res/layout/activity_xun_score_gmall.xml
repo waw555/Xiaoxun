@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/layout_statusbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/layout_statusbar_seat" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_statusbar" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/activity_title" />
+    </android.support.constraint.ConstraintLayout>
+    <ProgressBar android:id="@id/pg_progres_store" android:layout_width="fill_parent" android:layout_height="3.0dip" android:progressDrawable="@drawable/progressbar_bg" android:layout_below="@id/title" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title" style="?android:progressBarStyleHorizontal" />
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/pg_progres_store">
+        <WebView android:id="@id/webcontent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.constraint.ConstraintLayout>

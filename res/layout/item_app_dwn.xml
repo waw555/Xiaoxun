@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xiaoxun.xun.xunscore.view.ImageADView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:src="#33000000" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" android:layout_toStartOf="@id/layout_dwn" android:layout_toEndOf="@id/icon">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff666666" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/title" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_dwn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <com.xiaoxun.xun.xunscore.view.XunScoreBorderTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_watch_app_install" android:padding="2.0dip" android:layout_width="56.0dip" android:layout_height="22.0dip" android:text="@string/xunscore_app_dwn_title" />
+        </RelativeLayout>
+    </RelativeLayout>
+</com.xiaoxun.xun.xunscore.view.ImageADView>

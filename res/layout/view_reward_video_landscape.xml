@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <VideoView android:id="@id/mVideoView" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/ll_end_bottom" android:background="@drawable/bg_reward_ad_bottom" android:layout_width="356.0dip" android:layout_height="67.0dip" android:layout_marginLeft="9.5dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <com.sogou.feedads.common.RoundImageView android:id="@id/riv_ad_small" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="10.5dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.5dip" android:layout_marginRight="8.5dip" android:layout_weight="1.0">
+            <TextView android:textSize="14.0dip" android:textColor="@color/c333333" android:id="@id/tv_end_bottom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/c333333" android:ellipsize="end" android:id="@id/tv_end_bottom_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+        </LinearLayout>
+        <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_end_bottom_button" android:background="@drawable/bg_reward_ad_bottom_button" android:layout_width="75.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rl_end" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_last_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <LinearLayout android:background="@color/t99000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ll_end_center" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.sogou.feedads.common.RoundImageView android:id="@id/riv_ad_big" android:layout_width="75.0dip" android:layout_height="75.0dip" android:layout_marginTop="12.0dip" />
+            <TextView android:textSize="18.0dip" android:textColor="@android:color/white" android:id="@id/tv_end_center_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="@android:color/white" android:id="@id/tv_end_center_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_end_center_button" android:background="@drawable/bg_reward_ad_center_button" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="13.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_left_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/icon_close" android:scaleType="fitXY" />
+    <TextView android:id="@id/tv_left_des" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="28.0dip" />
+    <ImageView android:id="@id/iv_voice" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="60.0dip" android:src="@drawable/sg_mute" android:layout_alignParentRight="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@android:color/white" android:gravity="center" android:id="@id/tv_time" android:background="@drawable/bg_white_oval" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/iv_right_close" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/icon_close" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/iv_logo" android:layout_width="30.0dip" android:layout_height="12.5dip" android:src="@drawable/icon_sogou" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

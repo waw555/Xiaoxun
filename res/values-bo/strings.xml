@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ad_flag_text">བརྡ་ཁྱབ།</string>
+    <string name="app_active">ཐེངས%1$sM · %2$sལ་སྒྲིག་འཇུག</string>
+    <string name="app_active_billion">ཐེངས་དུང་ཕྱུར%1$sM · %2$sལ་སྒྲིག་འཇུག</string>
+    <string name="app_active_million">ཐེངས་ཁྲི%1$sM · %2$sལ་སྒྲིག་འཇུག</string>
+    <string name="app_active_original_download_times">%1$sM · %2$s</string>
+    <string name="app_active_pkg_size">%1$sM</string>
+    <string name="app_install_success">%1$sསྒྲིག་འཇུག་ལེགས་འགྲུབ་བྱུང་།</string>
+    <string name="button_cancel">འདོར་བ།</string>
+    <string name="button_continue">མུ་མཐུད།</string>
+    <string name="button_done">འགྲུབ་ཟིན།</string>
+    <string name="button_open">ཁ་འབྱེད་པ།</string>
+    <string name="developer">གསར་སྤེལ་ཚོང་བ།</string>
+    <string name="dialog_mobile_prompt_content">མིག་སྔར་སྤོ་འགུལ་དྲ་རྒྱ་སྤྱོད་བཞིན་ཡོད།ཉེར་སྤྱོད་འདི་ནི་ཕལ་ཆེར%1$sMཡིན།མུ་མཐུད་དུ་ཕབ་ལེན་བྱེད་དགོས་སམ།</string>
+    <string name="dialog_mobile_prompt_content_no_pkg_size">མིག་སྔར་སྤོ་འགུལ་དྲ་རྒྱ་སྤྱོད་བཞིན་ཡོད།མུ་མཐུད་དུ་ཕབ་ལེན་བྱེད་དགོས་སམ།</string>
+    <string name="dialog_mobile_prompt_download">ཕབ་ལེན།</string>
+    <string name="dialog_mobile_prompt_title">ཕབ་ལེན་གསལ་འདེབས།</string>
+    <string name="download_app_alert">%1$sM डाउनलोड करने के लिए तैयार</string>
+    <string name="download_app_alert_title">प्रेरित करना</string>
+    <string name="download_status_complete">ཕབ་ལེན་བྱས་ཚར།</string>
+    <string name="download_status_downloading">ཕབ་ལེན་བྱེད་བཞིན་ཡོད།</string>
+    <string name="download_status_failed">ཕབ་ལེན་ཕམ།</string>
+    <string name="download_status_pause">ཕབ་ལེན་འཕྲལ་སྡོད།</string>
+    <string name="download_status_start">ཕབ་ལེན་འགོ་རྩོམ་པ།</string>
+    <string name="downloading_long">ཕབ་ལེན་བྱེད་བཞིན་པའི་སྒང་།</string>
+    <string name="downloading_short">ཕབ་ལེན་བྱེད་བཞིན་པའི་སྒང་།</string>
+    <string name="install">སྒྲིག་འཇུག</string>
+    <string name="installing">སྒྲིག་འཇུག་བྱེད་བཞིན་པ།</string>
+    <string name="mobile_network_download_alert">ད་ལྟwifiཁོར་ཡུག་ཁྲོད་མེད་པས་ཕབ་ལེན་ལ་བཞུར་ཚད་ཟད་གྲོན་གཏོང་དགོས།རྒྱུན་འཁྱོངས་བྱེད་དམ།</string>
+    <string name="open">ཁ་འབྱེད་པ།</string>
+    <string name="pack_up">ཡར་བསྡུ།</string>
+    <string name="paused">གནས་སྐབས་སུ་བསྡད་ཟིན།</string>
+    <string name="pending">…སྒུག་བཞིན་པ།</string>
+    <string name="re_try">བསྐྱར་བྱེད།</string>
+    <string name="recommend_app_details_title">ཉེར་སྤྱོད་འདི་སྒྲིག་འཇུག་བྱེད་མཁན་འདི་ལ་ཡང་དགའ།</string>
+    <string name="skip_text">མཆོང་བ།</string>
+    <string name="summary">ཉེར་སྤྱོད་ཞིབ་བརྗོད།</string>
+    <string name="tips_error_bad_net">གནས་སྐབས་སུ་དྲ་རྒྱར་སྦྲེལ་ཐབས་མེད་པས། རྡེབ་ནས་ཡང་བསྐྱར་ཕབ་སྣོན་བྱེད།</string>
+    <string name="tips_error_bad_request">ཕབ་སྣོན་མ་གྲུབ། རྡེབ་ནས་ཡང་བསྐྱར་ཕབ་སྣོན་བྱེད།</string>
+    <string name="tips_reload">ཡང་བསྐྱར་ཕབ་སྣོན་བྱེད།</string>
+    <string name="toast_network_exception">དྲ་རྒྱ་རྒྱུན་ལྡན་མིན།</string>
+    <string name="unfold_more">དེ་བས་མང་པོ་བཀྲམ་པ།</string>
+</resources>

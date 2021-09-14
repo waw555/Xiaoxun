@@ -1,0 +1,29 @@
+.class public Lcom/juphoon/cloud/JCCallParam$CallStatistics;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/juphoon/cloud/JCCallParam;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "CallStatistics"
+.end annotation
+
+
+# instance fields
+.field public callId:J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

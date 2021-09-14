@@ -1,0 +1,51 @@
+.class Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Landroid/content/DialogInterface$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;->a()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b$a;->a:Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b$a;->a:Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;
+
+    iget-object p2, p1, Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;->b:Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment;
+
+    iget-object p1, p1, Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment$b;->a:Lcom/xiaomi/accountsdk/account/data/ActivatorPhoneInfo;
+
+    invoke-static {p2, p1}, Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment;->Z(Lcom/xiaomi/passport/v2/ui/PhoneLoginBaseFragment;Lcom/xiaomi/accountsdk/account/data/ActivatorPhoneInfo;)V
+
+    return-void
+.end method

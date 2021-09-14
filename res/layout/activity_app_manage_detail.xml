@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/layout_title" layout="@layout/activity_title" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/layout_usable_onoff" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_marginLeft="13.329987dip" android:layout_marginRight="13.329987dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/layout_title">
+        <TextView android:id="@id/tv_onoff_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/history_trace_text" android:id="@id/tv_onoff_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_manage_interval_allow_info" android:layout_below="@id/tv_onoff_title" />
+        <ImageView android:id="@id/iv_btn_onoff" android:background="@drawable/switch_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/view_division" android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="13.329987dip" android:layout_marginRight="13.329987dip" app:layout_constraintTop_toBottomOf="@id/layout_usable_onoff" />
+    <RelativeLayout android:id="@id/layout_time_insterval" android:padding="13.329987dip" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/view_division">
+        <TextView android:id="@id/tv_interval_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.219971dip" android:text="@string/app_manage_interval_title" />
+        <TextView android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.219971dip" android:layout_marginTop="10.219971dip" android:layout_below="@id/tv_interval_title" />
+        <android.support.v7.widget.RecyclerView android:id="@id/interval_time_recyclerview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_above="@id/iv_add_interval" android:layout_below="@id/tv_interval_title" />
+        <ImageView android:id="@id/iv_not_use_icon" android:background="@drawable/watch_app_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="12.329987sp" android:textColor="@color/history_trace_text" android:id="@id/iv_not_use_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_manage_no_interval" android:layout_below="@id/iv_not_use_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize4" android:textColor="@color/color_5" android:id="@id/tv_add_interval_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_manage_add_interval" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_add_interval" android:background="@drawable/btn_alarm_add_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/tv_add_interval_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

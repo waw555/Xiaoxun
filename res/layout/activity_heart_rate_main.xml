@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/activity_title" />
+    <ImageView android:id="@id/divide_line" android:background="@color/color_content_hint" android:layout_width="fill_parent" android:layout_height="1.0px" app:layout_constraintTop_toBottomOf="@id/title" />
+    <android.support.design.widget.TabLayout android:id="@id/time_mode_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/divide_line" app:tabGravity="center" app:tabMaxWidth="100.0dip" app:tabMinWidth="80.0dip" app:tabPaddingEnd="5.0dip" app:tabPaddingStart="10.0dip" app:tabTextAppearance="@style/HRTabLayoutTextStyle" />
+    <com.xiaoxun.xun.views.NoScrollView android:id="@id/vp_content" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/time_mode_tab" />
+    <com.github.mikephil.charting.charts.LineChart android:id="@id/chart" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginTop="30.0dip" app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

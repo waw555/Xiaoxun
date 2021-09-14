@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/color_6" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <android.support.constraint.ConstraintLayout android:id="@id/layout_statusbar" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:layout_constraintStart_toStartOf="parent" custom_setting:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/layout_statusbar_seat" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout android:id="@id/ic_me_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_statusbar" custom_setting:layout_constraintStart_toStartOf="parent" custom_setting:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/activity_title" />
+    </android.support.constraint.ConstraintLayout>
+    <RelativeLayout android:id="@id/no_logIn_ly" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ic_me_title">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/lout_me_head" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginTop="@dimen/warningItemtop" android:layout_marginRight="@dimen/divideleftandright" android:layout_marginBottom="@dimen/warningItembottom">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_me_head_no_login" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize0" android:textColor="@color/color_7" android:layout_gravity="center_vertical" android:id="@id/tv_me_loginstate_no_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/me_fragment_log_in" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_me_head_no_login" />
+            <ImageView android:id="@id/iv_me_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lout_me_head">
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_add_sw" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" custom_setting:iv_icon="@drawable/icon_addwatch" custom_setting:tv_title="@string/guide_bind_title" custom_setting:tv_title_size="@dimen/MyTextSize2" />
+            <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_about" android:layout_width="fill_parent" android:layout_height="@dimen/SingleItemHeight" custom_setting:iv_icon="@drawable/setting_about" custom_setting:tv_title="@string/setting_watch_about" custom_setting:tv_title_size="@dimen/MyTextSize2" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/log_in_ly" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ic_me_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:background="@color/color_low_content" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_me_head" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="55.0dip" />
+            <TextView android:textSize="15.0sp" android:layout_gravity="center_horizontal" android:id="@id/tv_me_loginstate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="\ 11111111111" />
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="85.0dip" android:src="@drawable/img_mefragment_default" />
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:id="@id/bt_add_device" android:background="@drawable/btn_normal_orange_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_device" android:layout_above="@id/tv_tips" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="@color/bg_color_dark_orange" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="40.0dip" android:text="@string/mefragment_no_watch_tips" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

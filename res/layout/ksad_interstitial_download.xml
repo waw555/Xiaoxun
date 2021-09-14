@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffffff" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ksad_app_icon" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/ksad_sdk_logo" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="14.0sp" android:textColor="#ff222222" android:ellipsize="end" android:id="@id/ksad_app_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/ksad_app_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" android:includeFontPadding="false" />
+    </LinearLayout>
+    <com.kwad.sdk.core.page.widget.TextProgressBar android:id="@id/ksad_interstitial_download_btn" android:layout_width="61.0dip" android:layout_height="24.0dip" android:indeterminateOnly="false" android:progressDrawable="@drawable/ksad_video_actionbar_app_progress" />
+</LinearLayout>

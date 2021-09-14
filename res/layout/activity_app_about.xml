@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom_setting="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:layout_above="@id/tv_nickname" android:layout_below="@id/title">
+        <ImageView android:id="@id/iv_app_about_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_about_logo" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:id="@id/tv_app_about_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/app_name" android:layout_below="@id/iv_app_about_icon" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:id="@id/tv_app_about_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/tv_app_about_name" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/color_5" android:id="@id/tv_app_corporation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/app_corporation_str" android:layout_below="@id/tv_app_about_version" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/iv_selector" android:paddingLeft="@dimen/divideleftandright" android:paddingRight="@dimen/divideleftandright" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="10.0dip" android:src="@color/line_grey" android:layout_below="@id/tv_app_corporation" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/iv_selector">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_account_setting" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/account_setting" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/privacy" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/agreement" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_updataphonenumber" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/bind_phone_number" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_account_cancellation" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/account_cancellation_str" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_feddback" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/app_about_feedback_str" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_apnconfig" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/setting_apnconfig" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_develop_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/str_dev_opt" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_select_server" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/select_server" />
+                <com.xiaoxun.xun.views.CustomSettingView android:id="@id/layout_unbinging_reset" android:layout_width="fill_parent" android:layout_height="wrap_content" custom_setting:tv_title="@string/select_unbinding_reset" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/MyTextSize2" android:textColor="@color/title_grey" android:id="@id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/logout_layout" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/logout_layout" android:layout_width="fill_parent" android:layout_height="60.659973dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/MyTextSize2" android:textColor="@color/title_grey" android:id="@id/btn_logout" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="39.329987dip" android:text="@string/logout" android:layout_centerInParent="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

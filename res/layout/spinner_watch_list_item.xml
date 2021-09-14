@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="109.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/selector" android:background="@drawable/select_arrow_0" android:layout_width="8.659973dip" android:layout_height="8.659973dip" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/title_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/selector" android:layout_centerVertical="true">
+            <ImageView android:id="@id/title_head_mask" android:layout_width="38.659973dip" android:layout_height="38.659973dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:id="@id/title_nice_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mylocationtitle" android:layout_toRightOf="@id/title_head" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/WatchListItemLine" android:layout_width="330.65625dip" android:layout_height="1.0px" android:layout_centerHorizontal="true" />
+</RelativeLayout>

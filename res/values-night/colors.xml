@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emui_color_bg">#ff000000</color>
+    <color name="hiad_activie_app_desc_color">#80ffffff</color>
+    <color name="hiad_open_btn_normal_bg">#1affffff</color>
+    <color name="hiad_open_btn_pressed_bg">#ff2e2e2e</color>
+    <color name="hiad_whythisad_root_bg">#ffffffff</color>
+</resources>

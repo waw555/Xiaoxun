@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/txt_coupon_color" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" />
+    <ImageView android:background="@color/txt_coupon_color" android:layout_width="1.0px" android:layout_height="50.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/time" android:layout_marginStart="18.0dip" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/time">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginBottom="13.0dip" android:src="@drawable/baimingdan_icon_lanjie" android:layout_marginStart="15.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/txt_coupon_color" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" android:text="@string/interception_list_item_content_1" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/icon" />
+    </RelativeLayout>
+</RelativeLayout>

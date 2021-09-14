@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/switch_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low_power_disable_str" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ToggleButton android:id="@id/tb_switch" android:background="@drawable/switch_toggle_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textOn="@null" android:textOff="@null" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="13.0dip" android:src="@color/color_line" android:layout_below="@id/tb_switch" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/content_ly" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:layout_constraintTop_toBottomOf="@id/switch_ly">
+        <TextView android:textSize="15.0sp" android:textColor="@color/txt_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/low_power_disable_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

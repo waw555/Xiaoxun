@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/activity_title" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_ly" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <TextView android:textSize="30.0sp" android:textStyle="bold" android:textColor="@color/pay_balance_color" android:layout_gravity="center_horizontal" android:id="@id/balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/pay_balance_format" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/bg_color_dark_orange" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/pay_select_channel" />
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/channel_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/btn_pay" android:background="@drawable/btn_dialgo_one_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/pay_confitm_btn" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

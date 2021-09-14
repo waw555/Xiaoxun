@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/tt_custom_dialog_bg" android:paddingTop="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="260.0dip" android:layout_centerInParent="true">
+            <TextView android:textSize="18.0sp" android:textColor="#ff333333" android:gravity="center" android:layout_gravity="center" android:id="@id/tt_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/tt_image" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="10.0dip" android:maxWidth="150.0dip" android:maxHeight="150.0dip" />
+            <TextView android:textSize="14.0sp" android:textColor="#bf161823" android:gravity="center" android:id="@id/tt_message" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:lineSpacingExtra="3.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="14.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tt_positive" android:background="#ff1a73e8" android:paddingTop="14.0dip" android:paddingBottom="14.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:paddingStart="6.0dip" android:paddingEnd="6.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                <Button android:textSize="14.0sp" android:textColor="#bf161823" android:gravity="center" android:layout_gravity="center" android:id="@id/tt_negtive" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@id/tt_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

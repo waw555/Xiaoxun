@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.CardView android:id="@id/layout_watch_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="1.0dip" android:layout_marginEnd="1.0dip">
+            <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="94.66998dip">
+                <ImageView android:id="@id/iv_watch_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/default_head" android:layout_marginStart="7.0dip" app:layout_constraintBottom_toTopOf="@id/tv_watch_name" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_chainStyle="packed" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_tile_content" android:id="@id/tv_watch_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/wechat_notice_bind_nickname" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="@id/iv_watch_head" app:layout_constraintStart_toStartOf="@id/iv_watch_head" app:layout_constraintTop_toBottomOf="@id/iv_watch_head" />
+                <View android:id="@id/divider" android:background="@color/divider" android:layout_width="1.0dip" android:layout_height="60.0dip" android:layout_marginStart="7.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/iv_watch_head" app:layout_constraintTop_toTopOf="parent" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/divider">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/group_call" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_call" android:layout_width="42.69998dip" android:layout_height="42.69998dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_2_title" android:id="@id/tv_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/group_video_call" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_video_call" android:layout_width="42.69998dip" android:layout_height="42.69998dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_2_title" android:id="@id/tv_video_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="1" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/group_listen" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_listen" android:layout_width="42.69998dip" android:layout_height="42.69998dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_2_title" android:id="@id/tv_listen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/group_find_watch" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/iv_find_watch" android:layout_width="42.69998dip" android:layout_height="42.69998dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/color_2_title" android:id="@id/tv_find_watch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:layout_width="10.0dip" android:layout_height="15.0dip" android:layout_marginTop="16.0dip" android:src="@drawable/login_back" android:layout_marginStart="14.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff666666" android:id="@id/tv_right_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verify_code_login" android:layout_marginEnd="14.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_back" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/iv_back" />
+</android.support.constraint.ConstraintLayout>

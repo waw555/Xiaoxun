@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/xiaomi_bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/birthday_picker_view" android:background="@drawable/weight_select" android:layout_width="wrap_content" android:layout_height="200.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_centerInParent="true" android:layout_centerHorizontal="true">
+            <com.xiaoxun.xun.views.CustomerPickerView android:id="@id/year_pv" android:layout_width="0.0dip" android:layout_height="200.0dip" android:layout_weight="3.0" />
+            <com.xiaoxun.xun.views.CustomerPickerView android:id="@id/month_pv" android:layout_width="0.0dip" android:layout_height="200.0dip" android:layout_weight="3.0" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_year_pv" android:layout_width="wrap_content" android:layout_height="200.0dip" android:text="@string/year" />
+        <TextView android:textSize="@dimen/xiaomiMyTextSize7" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_month_pv" android:layout_width="wrap_content" android:layout_height="200.0dip" android:text="@string/month" />
+        <LinearLayout android:background="@drawable/pv_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <View android:id="@id/line_1" android:background="@color/line_grey" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginBottom="23.0dip">
+        <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/cancel_btn" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/cancel" android:layout_weight="1.0" android:layout_marginStart="23.0dip" />
+        <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:id="@id/confirm_btn" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/confirm" android:layout_weight="1.0" android:layout_marginEnd="23.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/iv_verification_code" />
+    <item android:state_enabled="true" android:drawable="@drawable/iv_verification_code_res" />
+    <item android:state_enabled="false" android:drawable="@drawable/iv_verification_code" />
+    <item android:drawable="@drawable/iv_verification_code_res" />
+</selector>

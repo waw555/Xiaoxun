@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/card_manager_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/security_title" layout="@layout/activity_title" />
+    <RelativeLayout android:id="@id/card_img_ly" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="13.0dip" android:layout_below="@id/security_title">
+        <ImageView android:id="@id/card_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/intro_ly" android:layout_width="380.0dip" android:layout_height="70.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/card_img_ly">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_intro_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/nfc_card_doorcard_issue_intro_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/txt_intro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/nfc_card_doorcard_issue_introduce" android:singleLine="false" android:layout_below="@id/txt_intro_title" android:layout_marginEnd="20.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/devices_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="13.0dip" android:layout_marginBottom="13.0dip" android:layout_above="@id/card_issue" android:layout_below="@id/intro_ly">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/welcome_bg_color" android:id="@id/devices_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip" android:text="请选择开卡设备" android:layout_alignParentStart="true" />
+        <android.support.v7.widget.RecyclerView android:id="@id/devices_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_below="@id/devices_title" />
+        <ImageView android:id="@id/no_devices_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/no_devices_img" android:layout_below="@id/devices_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <Button android:textColor="@color/white" android:id="@id/card_issue" android:background="@drawable/btn_normal_orange_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/nfc_doorcard_go_issue" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/no_login_ly" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/security_title">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_login_img" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/txt_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="460.0dip" android:text="@string/nfc_doorcard_no_login_txt" android:layout_centerHorizontal="true" android:textAlignment="center" />
+        <Button android:textColor="@color/white" android:id="@id/back_mihome" android:background="@drawable/btn_normal_orange_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/nfc_doorcard_back_to_mihome" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

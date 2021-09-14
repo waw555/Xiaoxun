@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/task_hall_select_bg" android:layout_width="142.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_0" android:layout_width="140.0dip" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_0" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_0" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_devide_line" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_1" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_1" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_1" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_devide_line" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_2" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_2" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_2" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_devide_line" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_3" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_3" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_3" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_devide_line" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_4" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_4" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_4" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_devide_line" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_5" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_5" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_5" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/menu_item_devide_line" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/layout_select_6" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/task_hall_select_6" android:layout_marginStart="17.5dip" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/watch_behavior_task_hall_select_6" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+</LinearLayout>

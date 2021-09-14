@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/txt_grey" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/title" android:background="@color/bg_color_orange" android:layout_width="fill_parent" android:layout_height="45.299988dip">
+        <ImageButton android:id="@id/iv_title_userinfo" android:background="@drawable/btn_title_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.299988dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/textsize14" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerInParent="true" />
+        <ImageButton android:id="@id/iv_title_menu" android:background="@drawable/btn_share_selector" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.659973dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_marginTop="100.0dip" android:layout_below="@id/title">
+        <VideoView android:id="@id/videoV" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/videoPreview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="260.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/preview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sign" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_sign" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/progressbar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/curtain" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/ic_alipay_title" layout="@layout/activity_alipay_title" />
+    <LinearLayout android:gravity="center" android:id="@id/lout_alipay_pwderror" android:background="@color/alipay_ed4848" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="53.0dip" android:layout_below="@id/ic_alipay_title">
+        <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay_pwd_error" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/alipay_aaaaaa" android:id="@id/tv_alipay_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginTop="@dimen/warningItemtop" android:layout_marginRight="@dimen/divideleftandright" android:text="@string/alipay_describe" android:layout_below="@id/lout_alipay_pwderror" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_marginTop="100.0dip" android:layout_below="@id/tv_alipay_warning">
+        <com.xiaoxun.xun.views.PasswordView android:id="@id/passwordView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:cipherEnable="true" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/white" android:id="@id/btn_alipay_confirm" android:background="@drawable/btn_alipay_confirm" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/divideleftandright" android:layout_marginRight="@dimen/divideleftandright" android:layout_marginBottom="60.0dip" android:text="@string/confirm" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+</RelativeLayout>

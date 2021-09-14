@@ -1,0 +1,310 @@
+.class Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/xiaoxun/xun/utils/CustomSelectDialogUtil$AdapterItemClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->onItemClick(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/xiaoxun/xun/beans/GeneralMember;
+
+.field final synthetic b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+
+# direct methods
+.method constructor <init>(Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;Lcom/xiaoxun/xun/beans/GeneralMember;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iput-object p2, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->a:Lcom/xiaoxun/xun/beans/GeneralMember;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;I)V
+    .locals 13
+
+    const/4 p1, 0x1
+
+    if-ne p2, p1, :cond_0
+
+    .line 1
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    iget-object p2, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->a:Lcom/xiaoxun/xun/beans/GeneralMember;
+
+    invoke-static {p1, p2}, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;->a0(Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;Lcom/xiaoxun/xun/beans/GeneralMember;)V
+
+    goto/16 :goto_1
+
+    :cond_0
+    const/4 v0, 0x2
+
+    const v1, 0x7f110227
+
+    const v2, 0x7f1101cf
+
+    if-ne p2, v0, :cond_1
+
+    .line 2
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v0, "<font color=\""
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v0, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object v0, v0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    invoke-virtual {v0}, Lcom/xiaoxun/xun/activitys/NormalActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const v3, 0x7f060034
+
+    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getColor(I)I
+
+    move-result v0
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v0, "\">\""
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v0, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->a:Lcom/xiaoxun/xun/beans/GeneralMember;
+
+    iget-object v0, v0, Lcom/xiaoxun/xun/beans/GeneralMember;->nickname:Ljava/lang/String;
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, "\"</font>"
+
+    invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 3
+    iget-object v0, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object v0, v0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    const v3, 0x7f110229
+
+    new-array p1, p1, [Ljava/lang/Object;
+
+    const/4 v4, 0x0
+
+    aput-object p2, p1, v4
+
+    invoke-virtual {v0, v3, p1}, Landroid/app/Activity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 4
+    iget-object p2, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object v3, p2, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    const p2, 0x7f1107fa
+
+    .line 5
+    invoke-virtual {v3, p2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    .line 6
+    invoke-static {p1}, Landroid/text/Html;->fromHtml(Ljava/lang/String;)Landroid/text/Spanned;
+
+    move-result-object v5
+
+    new-instance v6, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$a;
+
+    invoke-direct {v6, p0}, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$a;-><init>(Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;)V
+
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    .line 7
+    invoke-virtual {p1, v2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    new-instance v8, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$b;
+
+    invoke-direct {v8, p0}, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$b;-><init>(Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;)V
+
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    .line 8
+    invoke-virtual {p1, v1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    .line 9
+    invoke-static/range {v3 .. v9}, Lcom/xiaoxun/xun/utils/DialogUtil;->CustomALertDialog(Landroid/content/Context;Ljava/lang/String;Landroid/text/Spanned;Lcom/xiaoxun/xun/utils/DialogUtil$OnCustomDialogListener;Ljava/lang/String;Lcom/xiaoxun/xun/utils/DialogUtil$OnCustomDialogListener;Ljava/lang/String;)Landroid/app/Dialog;
+
+    move-result-object p1
+
+    .line 10
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
+
+    goto :goto_1
+
+    :cond_1
+    const/4 p1, 0x3
+
+    if-ne p2, p1, :cond_4
+
+    .line 11
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->a:Lcom/xiaoxun/xun/beans/GeneralMember;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/beans/GeneralMember;->cellnum:Ljava/lang/String;
+
+    if-eqz p1, :cond_3
+
+    const-string p2, ""
+
+    invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_2
+
+    goto :goto_0
+
+    .line 12
+    :cond_2
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object v3, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    const/4 v4, 0x6
+
+    const/4 v5, 0x0
+
+    const p1, 0x7f11052e
+
+    .line 13
+    invoke-virtual {v3, p1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v6
+
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->a:Lcom/xiaoxun/xun/beans/GeneralMember;
+
+    iget-object v7, p1, Lcom/xiaoxun/xun/beans/GeneralMember;->nickname:Ljava/lang/String;
+
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    const p2, 0x7f110758
+
+    .line 14
+    invoke-virtual {p1, p2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    new-instance v9, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$c;
+
+    invoke-direct {v9, p0}, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$c;-><init>(Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;)V
+
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    .line 15
+    invoke-virtual {p1, v2}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v10
+
+    new-instance v11, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$d;
+
+    invoke-direct {v11, p0}, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h$d;-><init>(Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;)V
+
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    .line 16
+    invoke-virtual {p1, v1}, Landroid/app/Activity;->getText(I)Ljava/lang/CharSequence;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    .line 17
+    invoke-static/range {v3 .. v12}, Lcom/xiaoxun/xun/utils/CustomSelectDialogUtil;->CustomInputDialogWithParams(Landroid/content/Context;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/xiaoxun/xun/utils/CustomSelectDialogUtil$CustomDialogListener;Ljava/lang/String;Lcom/xiaoxun/xun/utils/CustomSelectDialogUtil$CustomDialogListener;Ljava/lang/String;)Landroid/app/Dialog;
+
+    move-result-object p1
+
+    .line 18
+    invoke-virtual {p1}, Landroid/app/Dialog;->show()V
+
+    goto :goto_1
+
+    .line 19
+    :cond_3
+    :goto_0
+    iget-object p1, p0, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n$h;->b:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;
+
+    iget-object p1, p1, Lcom/xiaoxun/xun/activitys/FamilyMemberActivity$n;->a:Lcom/xiaoxun/xun/activitys/FamilyMemberActivity;
+
+    const p2, 0x7f110327
+
+    invoke-virtual {p1, p2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-static {p1, p2}, Lcom/xiaoxun/xun/utils/ToastUtil;->show(Landroid/content/Context;Ljava/lang/String;)V
+
+    :cond_4
+    :goto_1
+    return-void
+.end method

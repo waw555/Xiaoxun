@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/activity_title" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/iv_watch_navi" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/watch_navi_description" android:scaleType="fitCenter" android:layout_centerHorizontal="true" app:layout_constraintBottom_toTopOf="@id/tv_privacy_policy" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            <TextView android:textSize="10.0sp" android:id="@id/tv_privacy_policy" android:layout_width="219.0dip" android:layout_height="25.0dip" android:layout_marginBottom="12.0dip" android:text="@string/navi_authority_privacy" app:layout_constraintBottom_toTopOf="@id/iv_agree_authority" app:layout_constraintEnd_toEndOf="@id/iv_agree_authority" app:layout_constraintStart_toStartOf="@id/iv_agree_authority" />
+            <Button android:id="@id/iv_agree_authority" android:background="@drawable/btn_auth_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="85.0dip" android:layout_marginBottom="15.0dip" android:onClick="clickAuthority" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_watch_navi" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

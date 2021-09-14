@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wearable_config version="1">
+    <int name="PDMS_notify_interval">10</int>
+    <int name="gatt_value_size">20</int>
+    <string name="spp_uuid">00001101-0000-1000-8000-00805F9B34FB</string>
+    <string name="dogp_uuid">000018A0-0000-1000-8000-00805F9B34FB</string>
+    <string name="dogp_read_uuid">00002AA0-0000-1000-8000-00805F9B34FB</string>
+    <string name="dogp_write_uuid">00002AA1-0000-1000-8000-00805F9B34FB</string>
+    <int name="gatt_reconnect_time">60</int>
+</wearable_config>

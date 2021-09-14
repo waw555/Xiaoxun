@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/color_6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/true_black" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:text="title" />
+            <TextView android:textSize="@dimen/xiaomiMyTextSize3" android:textColor="@color/color_5" android:gravity="start" android:id="@id/func_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:text="func_desc" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" />
+            <View android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="23.329987dip" />
+            <ListView android:id="@id/item_select_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@color/transparent" android:dividerHeight="1.0px" android:layout_weight="1.0" />
+            <View android:background="@color/line_grey" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_one_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:layout_marginBottom="23.329987dip" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/btn_unbind_selector" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/cancel" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/layout_two_btns" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.329987dip" android:layout_marginBottom="23.329987dip" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip">
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/btn_left" android:background="@drawable/btn_alarm_customer_week_cancel_select" android:layout_width="0.0dip" android:layout_height="39.329987dip" android:text="@string/cancel" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/xiaomiMyTextSize1" android:textColor="@color/dark_grey" android:gravity="center" android:id="@id/btn_right" android:background="@drawable/btn_alarm_customer_week_confirm_select" android:layout_width="0.0dip" android:layout_height="39.329987dip" android:text="@string/confirm" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

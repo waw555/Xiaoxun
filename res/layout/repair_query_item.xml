@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_repair_status">
+        <TextView android:textSize="10.0dip" android:textColor="@color/dark_grey" android:id="@id/iv_repair_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="10.0dip" android:textColor="@color/dark_grey" android:id="@id/iv_repair_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toEndOf="@id/iv_repair_name" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/bg_color_orange" android:id="@id/repair_flag_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/repair_flag_desc" android:layout_below="@id/iv_repair_name" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/bg_color_orange" android:id="@id/repair_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="\#" android:layout_below="@id/iv_repair_name" android:layout_toEndOf="@id/repair_flag_desc" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/bg_color_orange" android:id="@id/iv_repair_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/iv_repair_name" android:layout_toEndOf="@id/repair_flag" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/bg_color_orange" android:ellipsize="end" android:id="@id/iv_repair_subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_below="@id/iv_repair_name" android:layout_toEndOf="@id/iv_repair_no" />
+    </RelativeLayout>
+    <TextView android:textColor="#ffffffff" android:gravity="center" android:id="@id/iv_repair_status" android:background="@color/bg_color_orange" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>
