@@ -27179,8 +27179,10 @@
 .end method
 
 .method public requestCfgUpdate(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 3
+    .locals 4
+	const-string v3, "LOG_ImibabyApp.smali_requestCfgUpdate"
 
+	invoke-static {v3, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
     .line 1
     new-instance v0, Lnet/minidev/json/JSONObject;
 
@@ -27250,7 +27252,9 @@
     move-result-object v1
 
     invoke-static {v1}, Lcom/xiaoxun/xun/utils/LogUtil;->e(Ljava/lang/String;)V
+	const-string v3, "LOG_ImibabyApp.smali_requestCfgUpdate_1"
 
+	invoke-static {v3, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
     .line 9
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -27273,7 +27277,9 @@
     move-result-object v1
 
     invoke-static {v1}, Lcom/xiaoxun/xun/utils/LogUtil;->e(Ljava/lang/String;)V
+	const-string v3, "LOG_ImibabyApp.smali_requestCfgUpdate_2"
 
+	invoke-static {v3, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
     .line 10
     invoke-virtual {v0}, Lnet/minidev/json/JSONObject;->toJSONString()Ljava/lang/String;
 
@@ -27282,7 +27288,11 @@
     invoke-static {v0, p2, p2}, Lcom/xiaoxun/xun/utils/AESUtil;->encryptAESCBC(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[B
 
     move-result-object p2
+	
+	const-string v3, "LOG_ImibabyApp.smali_requestCfgUpdate_3"
 
+	invoke-static {v3, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+	
     .line 11
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -27305,7 +27315,11 @@
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p2
+	
+	const-string v3, "LOG_ImibabyApp.smali_requestCfgUpdate_4"
 
+	invoke-static {v3, p2}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
+	
     .line 12
     new-instance p3, Lcom/xiaoxun/xun/gallary/downloadUtils/c;
 
